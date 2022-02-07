@@ -49,20 +49,25 @@ public class Player : MonoBehaviour
 
     void jetMovement()
     {
+        float leftEdge = -9.8f;
+        float topEdge = 6f;
+        float bottomEdge = -4f;
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * moveX * speed * Time.deltaTime);
         transform.Translate(Vector3.up * moveY * speed * Time.deltaTime);
-        
-        if ( transform.position.y >= 6)
+
+        if ( transform.position.x <= leftEdge)
         {
-            transform.position = new Vector3(transform.position.x, 6, 0);
-        } else if(transform.position.y <= -4)
-        {
-            transform.position = new Vector3(transform.position.x, -4, 0);
+            transform.position = new Vector3(leftEdge, transform.position.y, 0);
         }
-            
-        
+        if ( transform.position.y >= topEdge )
+        {
+            transform.position = new Vector3(transform.position.x, topEdge, 0);
+        } else if(transform.position.y <= bottomEdge)
+        {
+            transform.position = new Vector3(transform.position.x, bottomEdge, 0);
+        }
     }
 
     void fireLaser()
