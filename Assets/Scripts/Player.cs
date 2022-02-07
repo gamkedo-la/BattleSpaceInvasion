@@ -12,10 +12,26 @@ public class Player : MonoBehaviour
     private float _fireRate = 0.5f;
     private float nextFire = -1f;
 
+    [SerializeField]
+    private AudioClip laser1Sound;
+    //[SerializeField]
+    private AudioSource audioSource;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         transform.position = new Vector3(0, 0, 0);
+
+        if(audioSource == null)
+        {
+            Debug.LogError("AudioSource on JETSPACESHIP is NULL");
+        }
+        else
+        {
+            audioSource.clip = laser1Sound;
+        }
     }
 
     // Update is called once per frame
@@ -53,6 +69,8 @@ public class Player : MonoBehaviour
     {
         Vector3 rotationVector = new Vector3(0, 0, 180);
         Instantiate(_laserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
+
+        audioSource.Play();
     }
 }
 
