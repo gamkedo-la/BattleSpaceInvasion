@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
     void jetMovement()
     {
         float leftEdge = -9.8f;
+        float rightEdge = 9.8f;
         float topEdge = 6f;
         float bottomEdge = -4f;
         float moveX = Input.GetAxis("Horizontal");
@@ -57,7 +58,10 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.right * moveX * speed * Time.deltaTime);
         transform.Translate(Vector3.up * moveY * speed * Time.deltaTime);
 
-        if ( transform.position.x <= leftEdge)
+        if ( transform.position.x >= rightEdge)
+        {
+            transform.position = new Vector3(rightEdge, transform.position.y, 0);
+        } else if ( transform.position.x <= leftEdge)
         {
             transform.position = new Vector3(leftEdge, transform.position.y, 0);
         }
