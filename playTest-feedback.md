@@ -22,7 +22,7 @@
 4.
 5.
 
-<!--PLAYTEST NOTES WEEK DETAILS TEMPLATE(Note: You can just copy and paste the information here for details about things you've observed in the game :) -->
+<!--PLAYTEST NOTES WEEKLY DETAILS TEMPLATE(Note: You can just copy and paste the information here for details about things you've observed in the game :) -->
 ##WEEK #:
 ##DATE:
 ##NAME OF PLAYTESTER:
