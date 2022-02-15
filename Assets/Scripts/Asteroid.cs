@@ -6,6 +6,7 @@ public class Asteroid : MonoBehaviour
 {
     public GameObject explosion;
     public float degreesPerSec = 360f;
+    private float speed = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,20 @@ public class Asteroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Rotate();
+        Move();
+    }
+
+    private void Rotate()
+    {
         float rotAmount = degreesPerSec * Time.deltaTime;
         float currentRotation = transform.localRotation.eulerAngles.z;
         transform.localRotation = Quaternion.Euler(new Vector3(0, 0, currentRotation + rotAmount));
+    }
+
+    private void Move()
+    {
+        transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -28,6 +40,12 @@ public class Asteroid : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other);
             Destroy(gameObject);
+        }
+        else if(other.tag == "Player")
+        {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            // TODO: Deal damage to player
         }
     }
 }
