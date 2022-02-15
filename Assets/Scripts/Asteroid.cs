@@ -26,6 +26,7 @@ public class Asteroid : MonoBehaviour
         if(other.tag == "laser")
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(other);
             Destroy(gameObject);
         }
     }
