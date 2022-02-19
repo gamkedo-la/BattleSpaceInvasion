@@ -14,6 +14,7 @@ public class Power_Up : ScriptableObject
     [SerializeField] PowerUpCategory category;
     [SerializeField] int multiplier = 0;
     [SerializeField] int damage = 0;
-    [SerializeField] string prefab_name;
+    [SerializeField] string sprite;
+    [SerializeField] string power_up_name;
 
 }
