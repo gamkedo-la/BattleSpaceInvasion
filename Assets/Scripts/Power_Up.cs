@@ -5,16 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="ScriptableObjects/PowerUp", order = 1)]
 public class Power_Up : ScriptableObject
 {
-    enum PowerUpCategory
+    public enum PowerUpCategory
     {
         Speed,
         Weapon
     };
 
-    [SerializeField] PowerUpCategory category;
-    [SerializeField] int multiplier = 0;
-    [SerializeField] int damage = 0;
-    [SerializeField] string sprite;
-    [SerializeField] string power_up_name;
+    public PowerUpCategory category;
+    public int multiplier = 0;
+    public int damage = 0;
+    public Sprite sprite;
+    public string power_up_name;
 
 }
