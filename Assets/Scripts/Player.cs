@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private float speed = 2.5f;
+    private float speed_modifier = 1.0f;
 
     [SerializeField]
     private GameObject _laserPrefab;
@@ -55,8 +56,8 @@ public class Player : MonoBehaviour
         float bottomEdge = -4f;
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.right * moveX * speed * Time.deltaTime);
-        transform.Translate(Vector3.up * moveY * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * moveX * getTotalSpeed() * Time.deltaTime);
+        transform.Translate(Vector3.up * moveY * getTotalSpeed() * Time.deltaTime);
 
         if ( transform.position.x >= rightEdge)
         {
@@ -80,6 +81,30 @@ public class Player : MonoBehaviour
         Instantiate(_laserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
 
         audioSource.Play();
+    }
+
+    float getTotalSpeed()
+    {
+        return speed * speed_modifier;
+    }
+
+    void resetSpeedModifier()
+    {
+        speed_modifier = 1.0f;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "power_up")
+        {
+            Power_Up power_up = other.gameObject.GetComponent<Power_Up_Display>().power_up;
+            if (power_up != null && power_up.category == Power_Up.PowerUpCategory.Speed)
+            {
+                this.speed_modifier = power_up.multiplier;
+            }
+
+            Destroy(other.gameObject);
+        }
     }
 }
 
