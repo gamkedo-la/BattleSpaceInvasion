@@ -5,6 +5,7 @@ using UnityEngine;
 public class Power_Up_Display : MonoBehaviour
 {
     public Power_Up power_up;
+    private float speed = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,11 @@ public class Power_Up_Display : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Move();
+    }
+
+    private void Move()
+    {
+        transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
     }
 }
