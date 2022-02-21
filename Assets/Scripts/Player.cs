@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -45,7 +46,17 @@ public class Player : MonoBehaviour
            
             fireLaser();
         }
-            
+        //Below are our test keys for jumping scenes for test cases. 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            //Reminder: Making this call requires using "using UnityEngine.SceneManagement;"
+            SceneManager.LoadScene("GalaxyNebula");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("JungleLevel");
+        }
+
     }
 
     void jetMovement()
