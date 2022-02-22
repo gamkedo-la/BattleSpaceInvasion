@@ -23,6 +23,6 @@ public class Laser : MonoBehaviour
         }
     }
 
-   //Boost speed of laser when powerUp is collected. 
+    //Boost speed of laser when powerUp is collected. 
 
 }
