@@ -34,4 +34,9 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.deltaTime);
         
     }
+
+    //Add life variable to Red_SpaceShip
+    //If redSpaceship is hit by laser once start first fire animation and reduce life variable
+    //If redSpaceship is hit twice add additional fire animatino and reduce life of variable.
+    // if redSpaceship is hit the third time, destroy and apply explosion animation. 
 }
