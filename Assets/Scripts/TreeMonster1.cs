@@ -24,5 +24,10 @@ public class TreeMonster1 : MonoBehaviour
     void treeMonster1_Movement()
     {
         transform.Translate(Vector3.down * speed * Time.deltaTime);
+        // If treemonster1 hits the spaceShip - animate tree monster sticking on the ship.
+        // Animate and transform tree monster into branches that sticks to the ship.
+        // Reduce the speed of the spaceShip once treeMonster sticks on the spaceShip. 
+        // Apply animation to treeMonster1 as if running on the ground and move left or right after touching ground
+        // Respawn on top of the screen or trees when it collides with a tree on the Jungle Planet. 
     }
 }
