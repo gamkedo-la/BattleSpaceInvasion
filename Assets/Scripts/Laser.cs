@@ -22,4 +22,7 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+   //Boost speed of laser when powerUp is collected. 
+
 }
