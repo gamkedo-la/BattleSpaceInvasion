@@ -6,11 +6,14 @@ public class CameraShake : MonoBehaviour
 {
     public Animator cameraAnimator;
 
-    public void CamShakeAnimator()
+      public void CamShakeAnimator()
     {
         cameraAnimator.SetTrigger("shake");
     }
 
+
+    
     //need to figure out how to make cameraShake follow spaceship 
-    //stop shake once object is destroyed. 
+    // hot to use animation.Stop()  to stop shake once object is destroyed. - WIP
+
 }

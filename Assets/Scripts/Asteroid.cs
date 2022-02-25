@@ -11,11 +11,13 @@ public class Asteroid : MonoBehaviour
     //Camera shake when this object gets destroyed - test
     private CameraShake shake;
 
+    
 
     // Start is called before the first frame update
     void Start()
     {
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
+       
     }
 
     // Update is called once per frame
@@ -52,7 +54,10 @@ public class Asteroid : MonoBehaviour
             shake.CamShakeAnimator();
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
+           
             // TODO: Deal damage to player
+
         }
+       
     }
 }
