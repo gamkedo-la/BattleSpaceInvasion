@@ -6,6 +6,7 @@ TagManager:
   tags:
   - laser
   - power_up
+  - ScreenShake
   layers:
   - Default
   - TransparentFX
