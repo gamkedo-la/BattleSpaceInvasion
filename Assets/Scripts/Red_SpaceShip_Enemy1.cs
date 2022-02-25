@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Red_SpaceShip_Enemy1 : MonoBehaviour
 {
-
+    public GameObject explosion;
     private float speed = 5.0f;
+    //private float health = 3f;
 
+    private CameraShake shake;
     private Vector3 scaleChange;
 
     // Start is called before the first frame update
     void Start()
     {
+
         transform.position = new Vector3(13, 4, 0);
         scaleChange = new Vector3(0.6f, 0.6f, 1);
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
     }
 
     // Update is called once per frame
@@ -35,8 +39,33 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
         
     }
 
-    //Add life variable to Red_SpaceShip
-    //If redSpaceship is hit by laser once start first fire animation and reduce life variable
-    //If redSpaceship is hit twice add additional fire animatino and reduce life of variable.
-    // if redSpaceship is hit the third time, destroy and apply explosion animation. 
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //Add life variable to Red_SpaceShip
+        //If redSpaceship is hit by laser once start first fire animation and reduce life variable
+        //If redSpaceship is hit twice add additional fire animatino and reduce life of variable.
+        // if redSpaceship is hit the third time, destroy and apply explosion animation. 
+       
+        if (other.tag == "laser")
+        {
+            shake.CamShakeAnimator();
+            Instantiate(explosion,transform.position, Quaternion.identity);
+           // Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+        
+        if (other.tag == "Player")
+        {
+          
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+
+            // TODO: Deal damage to player
+
+        }
+
+    }
+
+  
 }

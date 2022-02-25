@@ -130,9 +130,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5328716582430454705, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
     - target: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
       propertyPath: m_Name
       value: red_SpaceShip_Enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
+      propertyPath: m_TagString
+      value: redShipEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8089304426491430426, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
       propertyPath: m_RootOrder
@@ -234,6 +242,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraAnimator: {fileID: 630487948}
+--- !u!1 &401697868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
+  m_PrefabInstance: {fileID: 76830960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &401697872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401697868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.17}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.65, y: 6.47}
+    newSize: {x: 5.65, y: 6.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.65, y: 6.47}
+  m_EdgeRadius: 0
 --- !u!1 &470091175
 GameObject:
   m_ObjectHideFlags: 0

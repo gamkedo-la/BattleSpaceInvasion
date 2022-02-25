@@ -7,6 +7,7 @@ TagManager:
   - laser
   - power_up
   - ScreenShake
+  - redShipEnemy
   layers:
   - Default
   - TransparentFX
