@@ -10,6 +10,8 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
 
     private CameraShake shake;
     private Vector3 scaleChange;
+    [SerializeField]
+    private int redSpaceShipLives = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -50,9 +52,14 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
         if (other.tag == "laser")
         {
             shake.CamShakeAnimator();
-            Instantiate(explosion,transform.position, Quaternion.identity);
-           // Destroy(other.gameObject);
-            Destroy(this.gameObject);
+            if(redSpaceShipLives < 3)
+            {
+               // Instantiate(explosion, transform.position, Quaternion.identity);
+                Destroy(other.gameObject);
+               
+            }
+            //Destroy(this.gameObject);
+
         }
         
         if (other.tag == "Player")
@@ -68,11 +75,18 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
             }
             Destroy(this.gameObject);
 
-            
-            
-
         }
 
+    }
+
+    public void redSpaceShipDamage()
+    {
+        redSpaceShipLives--;
+
+        if (redSpaceShipLives < 1)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
    

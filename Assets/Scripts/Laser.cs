@@ -25,4 +25,21 @@ public class Laser : MonoBehaviour
 
     //Boost speed of laser when powerUp is collected. 
 
+    //damage redSpaceShip 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "redShipEnemy")
+        {
+            // TODO: Deal damage to redSpaceShip
+
+            Red_SpaceShip_Enemy1 redSpaceShip = other.transform.GetComponent<Red_SpaceShip_Enemy1>();
+            if (redSpaceShip != null) // perform a null check error handling. 
+            {
+                redSpaceShip.redSpaceShipDamage();
+            }
+            Destroy(this.gameObject);
+        }
+
+    }
+
 }
