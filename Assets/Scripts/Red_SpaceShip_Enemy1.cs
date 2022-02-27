@@ -62,9 +62,9 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
             // TODO: Deal damage to player
 
             Player player = other.transform.GetComponent<Player>();
-            if (player != null)
+            if (player != null) // perform a null check error handling. 
             {
-                player.Damage();
+                player.PlayerDamage();
             }
             Destroy(this.gameObject);
 
@@ -74,6 +74,8 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
         }
 
     }
+
+   
 
   
 }
