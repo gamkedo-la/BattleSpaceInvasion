@@ -18,7 +18,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
     {
 
         transform.position = new Vector3(13, 4, 0);
-        scaleChange = new Vector3(0.6f, 0.6f, 1);
+        scaleChange = new Vector3(0.5f, 0.5f, 1);
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
     }
 
