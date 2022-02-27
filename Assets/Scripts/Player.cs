@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     //[SerializeField]
     private AudioSource audioSource;
 
+    [SerializeField]
+    private int playerLives = 5;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -115,6 +119,16 @@ public class Player : MonoBehaviour
             }
 
             Destroy(other.gameObject);
+        }
+    }
+
+    public void Damage()
+    {
+        playerLives--;
+
+        if (playerLives < 1)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
