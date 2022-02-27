@@ -5,7 +5,7 @@ using UnityEngine;
 public class Red_SpaceShip_Enemy1 : MonoBehaviour
 {
     public GameObject explosion;
-    private float speed = 5.0f;
+    private float speed = 2.0f;
     //private float health = 3f;
 
     private CameraShake shake;
@@ -44,7 +44,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Add life variable to Red_SpaceShip
+        //Add life variable to Red_SpaceShip - Ok
         //If redSpaceship is hit by laser once start first fire animation and reduce life variable
         //If redSpaceship is hit twice add additional fire animation and reduce life of variable.
         // if redSpaceship is hit the third time, destroy and apply explosion animation. 
@@ -54,7 +54,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
             shake.CamShakeAnimator();
             if(redSpaceShipLives < 3)
             {
-               // Instantiate(explosion, transform.position, Quaternion.identity);
+              
                 Destroy(other.gameObject);
                
             }
@@ -85,6 +85,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
 
         if (redSpaceShipLives < 1)
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }
