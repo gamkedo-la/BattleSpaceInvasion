@@ -54,7 +54,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
             shake.CamShakeAnimator();
             if(redSpaceShipLives < 3)
             {
-              
+               
                 Destroy(other.gameObject);
                
             }
