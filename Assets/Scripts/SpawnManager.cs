@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject redSpaceShipPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,13 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
+
+    //spawn game objects 
+    //create a coroutine of type IEnumerator -- Yield Events
+    // while loop
+
+   
+
 }
