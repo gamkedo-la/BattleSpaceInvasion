@@ -5,7 +5,7 @@ using UnityEngine;
 public class Red_SpaceShip_Enemy1 : MonoBehaviour
 {
     public GameObject explosion;
-    private float speed = 2.0f;
+    private float speed = 5.0f;
     //private float health = 3f;
 
     private CameraShake shake;
@@ -27,7 +27,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
     {
         transform.localScale = scaleChange; // used localScale property to scale object. 
         redSpaceshipMovement();
-        if(transform.position.x < -9f)
+       if(transform.position.x < -9f)
         {
             float random = Random.Range(-4f, 4f);
             transform.position = new Vector3(8, random, 0);
