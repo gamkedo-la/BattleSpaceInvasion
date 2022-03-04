@@ -22,11 +22,27 @@ public class Player : MonoBehaviour
     [SerializeField]
     private int playerLives = 5;
 
+    // screen markers
+    public Transform leftMarker;
+    public Transform rightMarker;
+    public Transform topMarker;
+    public Transform bottomMarker;
+
+    // dervive boundary values
+    private float leftEdge;
+    private float rightEdge;
+    private float topEdge;
+    private float bottomEdge;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        leftEdge = leftMarker.position.x;
+        rightEdge = rightMarker.position.x;
+        topEdge = topMarker.position.y;
+        bottomEdge = bottomMarker.position.y;
+
         audioSource = GetComponent<AudioSource>();
         transform.position = new Vector3(0, 0, 0);
 
@@ -65,10 +81,7 @@ public class Player : MonoBehaviour
 
     void jetMovement()
     {
-        float leftEdge = -9.8f;
-        float rightEdge = 9.8f;
-        float topEdge = 6f;
-        float bottomEdge = -4f;
+       
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * moveX * getTotalSpeed() * Time.deltaTime);
