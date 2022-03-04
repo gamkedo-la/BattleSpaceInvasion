@@ -10178,6 +10178,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &1823555172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823555173}
+  - component: {fileID: 1823555174}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1823555173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823555172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6045322, y: 2.4843361, z: -0.16968712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1823555174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823555172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc71fd8e0573da44095aa2be728a5910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redSpaceShipPrefab: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
 --- !u!1001 &324704652126886206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10286,6 +10331,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 932591504848434734, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1297490496462976026, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10294,9 +10343,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1324333774922942864, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3395744389401681034, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3609723677042255890, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_Name
       value: EveryLevelPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037845017274113034, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
