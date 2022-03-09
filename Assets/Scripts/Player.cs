@@ -74,6 +74,10 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            SceneManager.LoadScene("MotherShip");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
             SceneManager.LoadScene("JungleLevel");
         }
 
