@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
     private float topEdge;
     private float bottomEdge;
 
+    // shield flag
+    public bool shieldActive = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +68,20 @@ public class Player : MonoBehaviour
             nextFire = Time.time + _fireRate;
            
             fireLaser();
+        }
+        // check if shield button is pressed
+        
+        if (Input.GetKey(KeyCode.LeftShift)) 
+        {
+            shieldActive = true;
+        } else 
+        {
+            shieldActive = false;
+        }
+
+        if (shieldActive)
+        {
+            Debug.Log("Shield on!");
         }
         //Below are our test keys for jumping scenes for test cases. 
         if (Input.GetKeyDown(KeyCode.Alpha1))
