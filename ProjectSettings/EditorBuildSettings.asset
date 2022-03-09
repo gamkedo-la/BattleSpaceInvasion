@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GalaxyNebula.unity
     guid: 1a9f43e2ad9ea1243a9b023bd0c1971f
   - enabled: 1
+    path: Assets/Scenes/MotherShip.unity
+    guid: 52d25dfa0139021438b1f2b71ff40831
+  - enabled: 1
     path: Assets/Scenes/JungleLevel.unity
     guid: 168eb199a6c1bc645b37632d68ff5470
   m_configObjects: {}
