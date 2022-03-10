@@ -37,6 +37,9 @@ public class Player : MonoBehaviour
     // shield flag
     public bool shieldActive = false;
 
+    //animation to midbot
+    public Animator anim;
+
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +60,8 @@ public class Player : MonoBehaviour
         {
             audioSource.clip = laser1Sound;
         }
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -96,6 +101,11 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SceneManager.LoadScene("JungleLevel");
+        }
+
+        if (Input.GetKeyDown("q"))
+        {
+            anim.Play("JetMidBot");
         }
 
     }
