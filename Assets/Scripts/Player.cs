@@ -108,6 +108,11 @@ public class Player : MonoBehaviour
             anim.Play("JetMidBot");
         }
 
+        if (Input.GetKeyDown("e"))
+        {
+            anim.Play("MidBotJet");
+        }
+
     }
 
     void jetMovement()
