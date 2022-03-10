@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
             anim.Play("JetMidBot");
         }
 
-        if (Input.GetKeyDown("e"))
+        else if (Input.GetKeyDown("e"))
         {
             anim.Play("MidBotJet");
         }
