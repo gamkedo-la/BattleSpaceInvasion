@@ -103,6 +103,13 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("JungleLevel");
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("CaveLevel");
+        }
+
+
+
         if (Input.GetKeyDown("q"))
         {
             anim.Play("JetMidBot");
