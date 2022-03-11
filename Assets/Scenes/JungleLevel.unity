@@ -5608,6 +5608,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1297490494805941584, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: _laserPrefab
+      value: 
+      objectReference: {fileID: 8861518004655608860, guid: 26420b2217b3cb048b2dc3b7bbc0867e, type: 3}
     - target: {fileID: 1297490494805941586, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_SortingOrder
       value: 2
