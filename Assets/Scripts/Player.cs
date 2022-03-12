@@ -38,12 +38,14 @@ public class Player : MonoBehaviour
     public bool shieldActive = false;
 
     //animation to midbot
-    public Animator anim;
+    private Animator anim;
+    private bool isBotMode = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
+       
         leftEdge = leftMarker.position.x;
         rightEdge = rightMarker.position.x;
         topEdge = topMarker.position.y;
@@ -110,13 +112,15 @@ public class Player : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown("q") && isBotMode == false)
         {
+            isBotMode = true;
             anim.Play("JetMidBot");
         }
 
-        else if (Input.GetKeyDown("e"))
+        else if (Input.GetKeyDown("e") && isBotMode)
         {
+            isBotMode = false;
             anim.Play("MidBotJet");
         }
 
