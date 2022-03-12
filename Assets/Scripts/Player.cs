@@ -152,6 +152,8 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, bottomEdge, 0);
         }
+
+        
     }
 
     void fireLaser()
@@ -185,7 +187,7 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-
+       
        
     }
 

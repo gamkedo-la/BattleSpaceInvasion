@@ -3,7 +3,7 @@
 2. Player boundary at the bottom seems appropriate if we put a feature for a platform from where 
 the robot can stand on. 
 3. Ordinary speed of player can still be increase a bit. (optional)
-4. Bug on the start of the scene for the key "e" animation from midbot to jet.
+4. 
 5.
 
 <!--LASER FIRE-->
@@ -32,10 +32,18 @@ the robot can stand on.
 4.
 5.
 
+<!--SOLVE TEMPLATE-->
+1.Bug on the start of the scene for the key "e" animation from midbot to jet.
+2. 
+3.
+
+
 <!--BUG NOTES TEMPLATE-->
 1.
 2.
 3.
 4.
 5.
+
+
 

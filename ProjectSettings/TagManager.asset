@@ -8,6 +8,7 @@ TagManager:
   - power_up
   - ScreenShake
   - redShipEnemy
+  - caveWorld-floor
   layers:
   - Default
   - TransparentFX
