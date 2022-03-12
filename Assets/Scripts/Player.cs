@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     //animation to midbot
     private Animator anim;
     private bool isBotMode = false;
-
+    public bool robotWalkLevel = false; // check box if its a walking level
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +69,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isBotMode && robotWalkLevel)
+        {
+            transform.Translate(Vector3.up * -2.0f * Time.deltaTime);
+        }
         jetMovement();
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
         {
