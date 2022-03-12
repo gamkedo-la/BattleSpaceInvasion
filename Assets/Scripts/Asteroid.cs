@@ -8,18 +8,6 @@ public class Asteroid : MonoBehaviour
     public float degreesPerSec = 360f;
     private float speed = 5f;
 
-    //Camera shake when this object gets destroyed - test
-    private CameraShake shake;
-
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
-       
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -51,7 +39,7 @@ public class Asteroid : MonoBehaviour
         }
         else if(other.tag == "Player")
         {
-            shake.CamShakeAnimator();
+            CameraShake.instance.Shake(100.0f);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
            

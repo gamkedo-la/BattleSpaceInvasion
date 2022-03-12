@@ -108,6 +108,7 @@ MonoBehaviour:
   rightMarker: {fileID: 1324333774922942864}
   topMarker: {fileID: 9037845017274113034}
   bottomMarker: {fileID: 932591504848434734}
+  shieldActive: 0
 --- !u!50 &1297490494805941585
 Rigidbody2D:
   serializedVersion: 4
@@ -262,6 +263,7 @@ GameObject:
   - component: {fileID: 1297490496462976026}
   - component: {fileID: 1297490496462976029}
   - component: {fileID: 1297490496462976028}
+  - component: {fileID: 3205710825803018868}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -335,6 +337,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297490496462976031}
   m_Enabled: 1
+--- !u!114 &3205710825803018868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297490496462976031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d31e68d9af0dd419fb6613875e3b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3032948993143616223
 GameObject:
   m_ObjectHideFlags: 0

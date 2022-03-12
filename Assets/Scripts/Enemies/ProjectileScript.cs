@@ -9,7 +9,7 @@ public class ProjectileScript : MonoBehaviour
     private float speed = 2.0f;
     //private float health = 3f;
 
-    private CameraShake shake;
+    
     private Vector3 scaleChange;
     [SerializeField]
     private int spaceshipLives = 3;
@@ -20,7 +20,6 @@ public class ProjectileScript : MonoBehaviour
 
         transform.position = new Vector3(13, 4, 0);
         scaleChange = new Vector3(0.5f, 0.5f, 1);
-        // shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
         StartCoroutine(AutoFire());
 
     }
@@ -61,8 +60,8 @@ public class ProjectileScript : MonoBehaviour
        
         if (other.tag == "laser")
         {
-            shake.CamShakeAnimator();
-            if(spaceshipLives < 3)
+            CameraShake.instance.Shake(50.0f);
+            if (spaceshipLives < 3)
             {
                
                 Destroy(other.gameObject);

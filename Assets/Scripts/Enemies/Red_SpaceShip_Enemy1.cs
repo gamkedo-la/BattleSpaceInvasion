@@ -8,7 +8,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
     private float speed = 5.0f;
     //private float health = 3f;
 
-    private CameraShake shake;
+   
     private Vector3 scaleChange;
     [SerializeField]
     private int redSpaceShipLives = 3;
@@ -19,7 +19,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
 
         transform.position = new Vector3(13, 4, 0);
         scaleChange = new Vector3(0.5f, 0.5f, 1);
-        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<CameraShake>();
+        
     }
 
     // Update is called once per frame
@@ -51,8 +51,8 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
        
         if (other.tag == "laser")
         {
-            shake.CamShakeAnimator();
-            if(redSpaceShipLives < 3)
+            CameraShake.instance.Shake(100.0f);
+            if (redSpaceShipLives < 3)
             {
                
                 Destroy(other.gameObject);
