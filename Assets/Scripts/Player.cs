@@ -28,19 +28,21 @@ public class Player : MonoBehaviour
     public Transform topMarker;
     public Transform bottomMarker;
 
-    // dervive boundary values
+    // derive boundary values
     private float leftEdge;
     private float rightEdge;
     private float topEdge;
     private float bottomEdge;
 
     // shield flag
-    public bool shieldActive = false;
+    static public bool shieldActive = false;
 
     //animation to midbot
     private Animator anim;
     private bool isBotMode = false;
     public bool robotWalkLevel = false; // check box if its a walking level
+
+    static public Vector3 currentPos;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +71,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentPos = transform.position;
         if (isBotMode && robotWalkLevel)
         {
             transform.Translate(Vector3.up * -2.0f * Time.deltaTime);
