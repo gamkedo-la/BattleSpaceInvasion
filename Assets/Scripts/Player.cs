@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
 
         if (shieldActive)
         {
-            Debug.Log("Shield on!");
+            // Debug.Log("Shield on!");
         }
         //Below are our test keys for jumping scenes for test cases. 
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -194,13 +194,18 @@ public class Player : MonoBehaviour
        
     }
 
+    
+
     public void PlayerDamage()
     {
-        playerLives--;
-
-        if (playerLives < 1)
+        if (!shieldActive) // only take damage if shield is down...this is a bit broad right now
         {
-            Destroy(this.gameObject);
+            playerLives--;
+            Debug.Log("lost a life! now have " + playerLives + "lives");
+            if (playerLives < 1)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
