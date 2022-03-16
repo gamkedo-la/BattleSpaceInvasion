@@ -3,8 +3,8 @@
 2. Player boundary at the bottom seems appropriate if we put a feature for a platform from where 
 the robot can stand on. 
 3. Ordinary speed of player can still be increase a bit. (optional)
-4. 
-5.
+4. Player edge collider2d not working
+5. JetToRobot animation not working when implemented on script.
 
 <!--LASER FIRE-->
 1. Implemented a shake effect that gets triggered but does not get de-activated once it hit enemies and objects.
@@ -32,7 +32,7 @@ the robot can stand on.
 4.
 5.
 
-<!--SOLVE TEMPLATE-->
+<!--SOLVE Issues-->
 1.Bug on the start of the scene for the key "e" animation from midbot to jet.
 2. 
 3.

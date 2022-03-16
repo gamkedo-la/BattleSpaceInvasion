@@ -122,7 +122,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown("q") && isBotMode == false)
         {
             isBotMode = true;
-            anim.Play("JetMidBot");
+            //anim.Play("JetMidBot");
+            anim.Play("JetToRobot");
         }
 
         else if (Input.GetKeyDown("e") && isBotMode)
