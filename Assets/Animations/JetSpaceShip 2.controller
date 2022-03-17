@@ -48,6 +48,32 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1102 &731104435581552477
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RobotToJet
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: a9abff579c60cff4c8e6a349855ea04f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &3677407800397124993
 AnimatorState:
   serializedVersion: 6
@@ -85,16 +111,19 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7605947645451612762}
-    m_Position: {x: 580, y: -130, z: 0}
+    m_Position: {x: 540, y: -110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3677407800397124993}
-    m_Position: {x: 580, y: 20, z: 0}
+    m_Position: {x: 550, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8771048867657022687}
     m_Position: {x: 290, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -9122148673422896955}
-    m_Position: {x: 560, y: 100, z: 0}
+    m_Position: {x: 540, y: -230, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 731104435581552477}
+    m_Position: {x: 575, y: -165, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
