@@ -44,6 +44,10 @@ public class Player : MonoBehaviour
 
     static public Vector3 currentPos;
 
+
+    //ROBOT energy variable
+    private int robotEnergy = 20;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -135,12 +139,20 @@ public class Player : MonoBehaviour
             anim.Play("RobotToJet");
         }
 
-        if (isBotMode == true)
+        if (Input.GetKeyDown(KeyCode.Space) && isBotMode == true)
+        {
+
+            //isBotMode = true;
+           
+            fireLaser();
+               
+           
+            robotEnergy--;
+            anim.Play("RobotFlightLaser");           
+        }
+        else
         {
            
-            //isBotMode = true;
-            anim.Play("RobotFlightLaser");
-            fireLaser();
         }
 
     }
