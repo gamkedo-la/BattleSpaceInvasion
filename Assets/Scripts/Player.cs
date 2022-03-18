@@ -46,7 +46,8 @@ public class Player : MonoBehaviour
 
 
     //ROBOT energy variable
-    private int robotEnergy = 20;
+    [SerializeField]
+    private float robotEnergy = 20.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -145,14 +146,16 @@ public class Player : MonoBehaviour
             //isBotMode = true;
            
             fireLaser();
-               
-           
             robotEnergy--;
             anim.Play("RobotFlightLaser");           
         }
         else
         {
-           
+            if(robotEnergy <= 0)
+            {
+                anim.Play("RobotToJet");
+            }
+            
         }
 
     }
