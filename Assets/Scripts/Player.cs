@@ -80,8 +80,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
         {
             nextFire = Time.time + _fireRate;
-           
+            isBotMode = true;
+            anim.Play("RobotFlightLaser");
             fireLaser();
+           
         }
         // check if shield button is pressed
         
@@ -167,6 +169,10 @@ public class Player : MonoBehaviour
         Instantiate(_laserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
 
         audioSource.Play();
+       
+        
+        
+       
     }
 
     float getTotalSpeed()
