@@ -77,14 +77,14 @@ public class Player : MonoBehaviour
             transform.Translate(Vector3.up * -2.0f * Time.deltaTime);
         }
         jetMovement();
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
+        if (Input.GetKeyDown(KeyCode.Space)  && Time.time > nextFire)
         {
-            nextFire = Time.time + _fireRate;
-            isBotMode = true;
-            anim.Play("RobotFlightLaser");
+            nextFire = Time.time + _fireRate;          
             fireLaser();
-           
+            
         }
+
+        
         // check if shield button is pressed
         
         if (Input.GetKey(KeyCode.LeftShift)) 
@@ -133,6 +133,14 @@ public class Player : MonoBehaviour
             isBotMode = false;
           //  anim.Play("MidBotJet");
             anim.Play("RobotToJet");
+        }
+
+        if (isBotMode == true)
+        {
+           
+            //isBotMode = true;
+            anim.Play("RobotFlightLaser");
+            fireLaser();
         }
 
     }
