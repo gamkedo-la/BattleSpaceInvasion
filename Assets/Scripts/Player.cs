@@ -154,6 +154,7 @@ public class Player : MonoBehaviour
             if(robotEnergy <= 0)
             {
                 anim.Play("RobotToJet");
+                isBotMode = false;
             }
             
         }
