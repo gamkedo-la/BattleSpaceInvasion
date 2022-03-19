@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     private GameObject _laserPrefab;
     [SerializeField]
     private float _fireRate = 0.5f;
-    private float _recoilTime = 0.059f;
+    //private float _fireRateBot = 0.1f;
+    //private float _recoilTime = 0.059f;
+    private float _recoilTime = 0.003f;
     private float nextFire = -1f;
 
     [SerializeField]
@@ -168,7 +170,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire && isBotMode == true)
+        if (Input.GetKeyDown(KeyCode.Space) && isBotMode == true)
         {
 
             //isBotMode = true;
@@ -180,7 +182,7 @@ public class Player : MonoBehaviour
             robotShootFrame[robotShootFrameNumber].SetActive(true);
 
             nextFire = Time.time + _recoilTime;
-            nextFire = Time.time + _fireRate;
+            //nextFire = Time.time + _fireRateBot;
             // anim.Play("RobotFlightLaser");           
         }
         else
