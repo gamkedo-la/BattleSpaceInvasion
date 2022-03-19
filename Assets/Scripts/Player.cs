@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public GameObject[] robotShootFrame;
+    private int robotShootFrameNumber = 0;
+    private SpriteRenderer spriteRenderer;
+
     private float speed = 2.5f;
     private float speed_modifier = 1.0f;
 
@@ -12,6 +16,7 @@ public class Player : MonoBehaviour
     private GameObject _laserPrefab;
     [SerializeField]
     private float _fireRate = 0.5f;
+    private float _recoilTime = 0.2f;
     private float nextFire = -1f;
 
     [SerializeField]
@@ -52,7 +57,14 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        for(int i = 0; i< robotShootFrame.Length; i++)
+        {
+            robotShootFrame[i].SetActive(false);
+        }
+        robotShootFrameNumber = robotShootFrame.Length;
+
+        spriteRenderer = gameObject.GetComponent <SpriteRenderer>();
+
         leftEdge = leftMarker.position.x;
         rightEdge = rightMarker.position.x;
         topEdge = topMarker.position.y;
@@ -82,7 +94,7 @@ public class Player : MonoBehaviour
             transform.Translate(Vector3.up * -2.0f * Time.deltaTime);
         }
         jetMovement();
-        if (Input.GetKeyDown(KeyCode.Space)  && Time.time > nextFire)
+        if (Input.GetKeyDown(KeyCode.Space)  && Time.time > nextFire && isBotMode == false)
         {
             nextFire = Time.time + _fireRate;          
             fireLaser();
@@ -140,6 +152,22 @@ public class Player : MonoBehaviour
             anim.Play("RobotToJet");
         }
 
+        if(Time.time > nextFire && robotShootFrameNumber < robotShootFrame.Length)
+        {
+            
+            robotShootFrame[robotShootFrameNumber].SetActive(false);
+            robotShootFrameNumber++;
+            if(robotShootFrameNumber < robotShootFrame.Length)
+            {
+                robotShootFrame[robotShootFrameNumber].SetActive(true);
+                nextFire = Time.time + _recoilTime;
+            }
+            else
+            {
+                spriteRenderer.color = Color.white;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && isBotMode == true)
         {
 
@@ -147,12 +175,18 @@ public class Player : MonoBehaviour
            
             fireLaser();
             robotEnergy--;
-            anim.Play("RobotFlightLaser");           
+            spriteRenderer.color = Color.clear;
+            robotShootFrameNumber = 0;
+            robotShootFrame[robotShootFrameNumber].SetActive(true);
+
+            nextFire = Time.time + _recoilTime;
+            // anim.Play("RobotFlightLaser");           
         }
         else
         {
             if(robotEnergy <= 0)
             {
+                Debug.Log("Out of energy go back to jet");
                 anim.Play("RobotToJet");
                 isBotMode = false;
             }
@@ -193,9 +227,7 @@ public class Player : MonoBehaviour
         Instantiate(_laserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
 
         audioSource.Play();
-       
-        
-        
+    
        
     }
 
