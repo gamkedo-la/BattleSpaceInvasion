@@ -168,7 +168,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isBotMode == true)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire && isBotMode == true)
         {
 
             //isBotMode = true;
@@ -180,6 +180,7 @@ public class Player : MonoBehaviour
             robotShootFrame[robotShootFrameNumber].SetActive(true);
 
             nextFire = Time.time + _recoilTime;
+            nextFire = Time.time + _fireRate;
             // anim.Play("RobotFlightLaser");           
         }
         else
