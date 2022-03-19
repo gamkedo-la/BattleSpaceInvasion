@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
-  redSpaceShipLives: 3
+  redSpaceShipLives: 10
 --- !u!61 &-8799395186085583300
 BoxCollider2D:
   m_ObjectHideFlags: 0
