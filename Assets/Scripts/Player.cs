@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     private GameObject _laserPrefab;
     [SerializeField]
     private float _fireRate = 0.5f;
-    private float _recoilTime = 0.2f;
+    private float _recoilTime = 0.059f;
     private float nextFire = -1f;
 
     [SerializeField]
