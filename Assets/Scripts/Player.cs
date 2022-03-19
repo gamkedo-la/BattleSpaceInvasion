@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     private float _fireRate = 0.5f;
     //private float _fireRateBot = 0.1f;
     //private float _recoilTime = 0.059f;
-    private float _recoilTime = 0.003f;
+    private float _recoilTime = 0.005f;
     private float nextFire = -1f;
 
     [SerializeField]
