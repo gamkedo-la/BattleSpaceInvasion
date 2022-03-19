@@ -145,16 +145,26 @@ public class Player : MonoBehaviour
             isBotMode = true;
             //anim.Play("JetMidBot");
             anim.Play("JetToRobot");
+
         }
+        
 
         else if (Input.GetKeyDown("e") && isBotMode)
         {
             isBotMode = false;
-          //  anim.Play("MidBotJet");
+            //  anim.Play("MidBotJet");
             anim.Play("RobotToJet");
         }
 
-        if(Time.time > nextFire && robotShootFrameNumber < robotShootFrame.Length)
+        if (Input.GetKeyDown("r") && isBotMode == true)
+        {
+            isBotMode = true;
+            anim.Play("RobotFireMissile");
+        }
+
+
+
+        if (Time.time > nextFire && robotShootFrameNumber < robotShootFrame.Length)
         {
             
             robotShootFrame[robotShootFrameNumber].SetActive(false);
