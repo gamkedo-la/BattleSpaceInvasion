@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class TreeMonster1 : MonoBehaviour
 {
-    private float speed = 5.0f;
+    private float speed = 7.0f;
     private Vector3 scaleChange;
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(0, 4, 0);
+        transform.position = new Vector3(0, 10, 0);
         scaleChange = new Vector3(0.2f, 0.2f, 1);
     }
 
@@ -18,12 +18,15 @@ public class TreeMonster1 : MonoBehaviour
     {
         transform.localScale = scaleChange; // used localScale property to scale object. 
         treeMonster1_Movement();
+      
     }
 
 
     void treeMonster1_Movement()
     {
+       
         transform.Translate(Vector3.down * speed * Time.deltaTime);
+        
         // If treemonster1 hits the spaceShip - animate tree monster sticking on the ship.
         // Animate and transform tree monster into branches that sticks to the ship.
         // Reduce the speed of the spaceShip once treeMonster sticks on the spaceShip. 
