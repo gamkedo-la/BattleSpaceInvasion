@@ -56,6 +56,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float robotEnergy = 20.0f;
 
+    [SerializeField]
+    private float fireMissileEnergyConsumption = 15f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -160,6 +163,10 @@ public class Player : MonoBehaviour
         {
             isBotMode = true;
             anim.Play("RobotFireMissile");
+            if (robotEnergy >= 15)
+            {
+                robotEnergy = robotEnergy - fireMissileEnergyConsumption; 
+            }
         }
 
 
