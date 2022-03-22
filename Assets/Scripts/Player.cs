@@ -163,16 +163,18 @@ public class Player : MonoBehaviour
         {
             isBotMode = true;
            
-            if (robotEnergy >= 15)
+            if (robotEnergy > fireMissileEnergyConsumption && robotEnergy != 15)
+            {
+               robotEnergy = robotEnergy - fireMissileEnergyConsumption;
+
+                anim.Play("RobotFireMissile");
+            }
+            else if (robotEnergy >= fireMissileEnergyConsumption)
             {
                 anim.Play("RobotFireMissile");
-                robotEnergy = robotEnergy - fireMissileEnergyConsumption;
-               
+                //robotEnergy = robotEnergy;
+                //anim.Play("RobotToJet");
 
-            }
-            else
-            {
-                robotEnergy = robotEnergy;
             }
            
         }
