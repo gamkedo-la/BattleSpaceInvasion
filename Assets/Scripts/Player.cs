@@ -162,11 +162,19 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown("r") && isBotMode == true)
         {
             isBotMode = true;
-            anim.Play("RobotFireMissile");
+           
             if (robotEnergy >= 15)
             {
-                robotEnergy = robotEnergy - fireMissileEnergyConsumption; 
+                anim.Play("RobotFireMissile");
+                robotEnergy = robotEnergy - fireMissileEnergyConsumption;
+               
+
             }
+            else
+            {
+                robotEnergy = robotEnergy;
+            }
+           
         }
 
 
