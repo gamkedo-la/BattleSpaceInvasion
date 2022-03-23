@@ -21,5 +21,12 @@ public class MotherShipEntrance : MonoBehaviour
     private void Move()
     {
         transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
+        // Stop moving when entrance is shown on screen. Still looking for examples. 
+        // Try using IEnumerator - while yield return. 
+
+        //if (transform.position == 22f)
+        //{
+        //    this.Stop;
+        //}
     }
 }
