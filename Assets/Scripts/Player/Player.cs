@@ -125,18 +125,24 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             //Reminder: Making this call requires using "using UnityEngine.SceneManagement;"
+            SceneManager.LoadScene("IntroStory");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
             SceneManager.LoadScene("GalaxyNebula");
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SceneManager.LoadScene("MotherShip");
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+
+        if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             SceneManager.LoadScene("JungleLevel");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             SceneManager.LoadScene("CaveLevel");
         }
