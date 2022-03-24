@@ -30,7 +30,7 @@ public class Ufo1 : MonoBehaviour
 
         Vector3 direction = player.position - transform.position;
 
-        float angle = Mathf.Atan2(direction.y, direction.x) *Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(direction.y, direction.x) *  Mathf.Rad2Deg;
         ufo1rb.rotation = angle;
         direction.Normalize();
         movement = direction;
