@@ -15601,6 +15601,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3051384027764479797, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051384027764479797, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -85386115
+      objectReference: {fileID: 0}
     - target: {fileID: 3333730814875591423, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33
@@ -15624,6 +15632,10 @@ PrefabInstance:
     - target: {fileID: 3609723677042255890, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_Name
       value: EveryLevelPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181480037098064371, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9037845017274113034, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
