@@ -21,6 +21,7 @@ public class PlayerShield : MonoBehaviour
         if (shieldActive) 
         {
             gameObject.layer = 0; // default layer
+            transform.RotateAround(transform.position, Vector3.forward, Time.deltaTime * 360.0f);
         } 
         else
         {
