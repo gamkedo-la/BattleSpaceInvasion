@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 42940976}
   - component: {fileID: 42940975}
+  - component: {fileID: 42940977}
   m_Layer: 0
   m_Name: asteroid2
   m_TagString: Untagged
@@ -207,6 +208,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &42940977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42940974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8718cea56a7ec468cdc77ea92c7e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
+  degreesPerSec: 360
 --- !u!4 &395868560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 375855116036094843, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
@@ -15388,6 +15403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945534276}
   - component: {fileID: 1945534275}
+  - component: {fileID: 1945534277}
   m_Layer: 0
   m_Name: asteroid3
   m_TagString: Untagged
@@ -15462,6 +15478,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945534277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945534274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8718cea56a7ec468cdc77ea92c7e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
+  degreesPerSec: 360
 --- !u!1 &2040631915
 GameObject:
   m_ObjectHideFlags: 0
