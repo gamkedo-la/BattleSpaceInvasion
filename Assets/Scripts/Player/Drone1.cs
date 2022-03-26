@@ -10,20 +10,28 @@ public class Drone1 : MonoBehaviour
     [SerializeField]
     private GameObject largeLaserPrefab;
 
-
-
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        fireLargeLaser();
-        // gameObject.GetComponent<spriteRenderer>().enabled = true; //Activate this when we have collected a power up.
+        StartCoroutine(FireWithDelay());
+    }
+
+    
+    IEnumerator FireWithDelay()
+    {
+        while (true)
+        {
+            fireLargeLaser();
+            yield return new WaitForSeconds(0.3f);
+        }
+        
+        
     }
 
 
     void fireLargeLaser()
     {
         Vector3 rotationVector = new Vector3(0, 0, 180);
-        Instantiate(largeLaserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
+        Instantiate(largeLaserPrefab, transform.position + new Vector3(1.21f, 0, 0), Quaternion.Euler(rotationVector));
 
         
 
