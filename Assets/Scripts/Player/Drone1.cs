@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,7 @@ public class Drone1 : MonoBehaviour
     void Update()
     {
         fireLargeLaser();
+        // gameObject.GetComponent<spriteRenderer>().enabled = true; //Activate this when we have collected a power up.
     }
 
 
