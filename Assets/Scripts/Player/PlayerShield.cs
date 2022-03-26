@@ -7,9 +7,11 @@ public class PlayerShield : MonoBehaviour
     // Start is called before the first frame update
 
     private bool shieldActive = false;
+    public SpriteRenderer spriteRenderer;
     void Start()
     {
         transform.position = Player.currentPos; 
+        spriteRenderer = GetComponent<SpriteRenderer>();
         
     }
 
@@ -18,6 +20,21 @@ public class PlayerShield : MonoBehaviour
     {
         transform.position = Player.currentPos; 
         shieldActive = Player.shieldActive;
+        Color newColor = spriteRenderer.color;
+        newColor.r += Time.deltaTime*0.5f;
+        newColor.g += Time.deltaTime*0.75f;
+        newColor.b += Time.deltaTime*1.0f;
+        // ideally this would be done in a shader
+        if (newColor.r > 1.0f) {
+            newColor.r = 0.0f;
+        }
+        if (newColor.g > 1.0f) {
+            newColor.g = 0.0f;
+        }
+        if (newColor.b > 1.0f) {
+            newColor.b = 0.0f;
+        }
+        spriteRenderer.color = newColor;
         if (shieldActive) 
         {
             gameObject.layer = 0; // default layer
