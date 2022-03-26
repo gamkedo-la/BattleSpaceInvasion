@@ -34,7 +34,7 @@ public class Ufo1 : MonoBehaviour
         //ufo1rb.rotation = angle;
         direction.Normalize();
         movement = direction;
-        Debug.Log(direction); //test distance between ufo1
+      
         //Ufo1Movement();
         //if (transform.position.x < 4.9f)
         //{
