@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public GameObject[] robotShootFrame;
+
+    public GameObject jetEngineParticle;
+    public GameObject robotEngineParticle;
+
+
+
     private int robotShootFrameNumber = 0;
     private SpriteRenderer spriteRenderer;
 
@@ -88,6 +94,39 @@ public class Player : MonoBehaviour
         }
 
         anim = GetComponent<Animator>();
+
+        ChangeToRobotMode(isBotMode, true);
+
+
+    }
+
+
+    //
+
+    void ChangeToRobotMode(bool toRobot, bool skipAnimation = false)
+    {
+        isBotMode = toRobot;
+        if (toRobot)
+        {
+            jetEngineParticle.SetActive(false);
+            robotEngineParticle.SetActive(true);
+            if(skipAnimation == false)
+            {
+                anim.Play("JetToRobot");
+            }
+          
+
+        }
+        else
+        {
+            jetEngineParticle.SetActive(true);
+            robotEngineParticle.SetActive(false);
+            if(skipAnimation == false)
+            {
+                anim.Play("RobotToJet");
+            }
+            
+        }
     }
 
     // Update is called once per frame
@@ -151,24 +190,24 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown("q") && isBotMode == false)
         {
-            isBotMode = true;
+            ChangeToRobotMode(true);
             //anim.Play("JetMidBot");
-            anim.Play("JetToRobot");
+           
 
         }
         
 
         else if (Input.GetKeyDown("e") && isBotMode)
         {
-            isBotMode = false;
+            ChangeToRobotMode(false);
             //  anim.Play("MidBotJet");
-            anim.Play("RobotToJet");
+           
         }
 
         if (Input.GetKeyDown("r") && isBotMode == true)
         {
-            isBotMode = true;
-           
+            ChangeToRobotMode(true);
+
             if (robotEnergy > fireMissileEnergyConsumption && robotEnergy != 15)
             {
                robotEnergy = robotEnergy - fireMissileEnergyConsumption;
@@ -223,10 +262,9 @@ public class Player : MonoBehaviour
             if(robotEnergy <= 0)
             {
                 Debug.Log("Out of energy go back to jet");
-                anim.Play("RobotToJet");
-                isBotMode = false;
+                ChangeToRobotMode(false);
             }
-            
+
         }
 
     }
