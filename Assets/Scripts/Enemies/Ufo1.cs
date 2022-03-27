@@ -15,6 +15,8 @@ public class Ufo1 : MonoBehaviour
 
     private Vector2 movement;
 
+    private bool shipFacingRight = false;
+
 
 
     // Start is called before the first frame update
@@ -22,6 +24,8 @@ public class Ufo1 : MonoBehaviour
     {
         //transform.position= new Vector3(10, 2, 0);
         ufo1rb = this.GetComponent<Rigidbody2D>();
+        
+
     }
 
     // Update is called once per frame
@@ -35,26 +39,51 @@ public class Ufo1 : MonoBehaviour
         direction.Normalize();
         movement = direction;
       
-        //Ufo1Movement();
-        //if (transform.position.x < 4.9f)
-        //{
-        //  // float random = Random.Range(-2.5f, 7f);
-
-        //    transform.position = new Vector3(0, -2.5f, 0);
-
-        //}
-
+       
         
     }
 
     private void FixedUpdate()
     {
         Ufo1Movement(movement);
+        changeDirection();
+
+
+
     }
+
+
+    void changeDirection()
+    {
+        
+
+        if (transform.position.x >= 0)
+        {
+           // shipFacingRight == false;
+            // change rotation (180,0,180)
+            Debug.Log("position of is rotation x > 0");
+            Vector3 rotationVector = new Vector3(180, 0, 180);
+            Quaternion rotation = Quaternion.Euler(rotationVector);
+        }
+        else
+        {
+            //shipFacingRight == true;
+            //change rotation (0,0,0)
+            Debug.Log("position of is rotation x < 0");
+            Vector3 rotationVector = new Vector3(0, 0, 0);
+            Quaternion rotation = Quaternion.Euler(rotationVector);
+        }
+    }
+
+
+
     void Ufo1Movement(Vector2 direction)
     {
         //    transform.Translate(Vector3.left * speed * Time.deltaTime);
         ufo1rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
+
+      
+
     }
 
 
