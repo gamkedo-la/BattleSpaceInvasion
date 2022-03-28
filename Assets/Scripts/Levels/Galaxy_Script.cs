@@ -8,6 +8,8 @@ public class Galaxy_Script : MonoBehaviour
     [SerializeField]
     private Vector2 scrollSpeed;
 
+    private AudioSource audioSource;
+
     private Material materialToScroll;
     // Start is called before the first frame update
     void Start()
