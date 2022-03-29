@@ -6,6 +6,9 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject redSpaceShipPrefab;
+    [SerializeField]
+    private GameObject redEnemyContainer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +31,8 @@ public class SpawnManager : MonoBehaviour
             Vector3 postToSpawn = new Vector3(Random.Range(7f, -7f), 4, 0);
             Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.identity);
             Vector3 rotationVector = new Vector3(0, 0, 90);
-            Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.Euler(rotationVector));
+            GameObject newRedEnemy = Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.Euler(rotationVector));
+            newRedEnemy.transform.parent = redEnemyContainer.transform;
             yield return new WaitForSeconds(5.0f);
         }
         
