@@ -33,7 +33,7 @@ public class SpawnManager : MonoBehaviour
             Vector3 postToSpawn = new Vector3(Random.Range(7f, -7f), 4, 0);
             Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.identity);
 
-            Vector3 asteroid1ToSpawn = new Vector3(Random.Range(7f, -7f), 4, 0);
+            Vector3 asteroid1ToSpawn = new Vector3(12, Random.Range(3f, -3f), 0);
             Instantiate(asteroid1Prefab, asteroid1ToSpawn, Quaternion.identity);
 
             Vector3 rotationVector = new Vector3(0, 0, 90);
