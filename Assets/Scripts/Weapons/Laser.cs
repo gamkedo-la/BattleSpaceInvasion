@@ -33,6 +33,7 @@ public class Laser : MonoBehaviour
             // TODO: Deal damage to redSpaceShip
 
             Red_SpaceShip_Enemy1 redSpaceShip = other.transform.GetComponent<Red_SpaceShip_Enemy1>();
+
             if (redSpaceShip != null) // perform a null check error handling. 
             {
                 redSpaceShip.redSpaceShipDamage();
