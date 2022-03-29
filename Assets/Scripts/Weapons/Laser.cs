@@ -36,6 +36,7 @@ public class Laser : MonoBehaviour
             if (redSpaceShip != null) // perform a null check error handling. 
             {
                 redSpaceShip.redSpaceShipDamage();
+                Debug.Log("Laser Hits RED SHIP");
             }
             Destroy(this.gameObject);
         }

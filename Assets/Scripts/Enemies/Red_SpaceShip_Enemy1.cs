@@ -51,14 +51,16 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
        
         if (other.tag == "laser")
         {
-           
-            if (redSpaceShipLives < 3)
-            {
-               
-                Destroy(other.gameObject);
-                Destroy(this.gameObject);
-               
-            }
+            CameraShake.instance.Shake(100.0f);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+
+            //if (redSpaceShipLives == 0)
+            //{
+                
+
+            //}
             //Destroy(this.gameObject);
 
         }
@@ -84,7 +86,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
     {
         redSpaceShipLives--;
 
-        if (redSpaceShipLives < 1)
+        if (redSpaceShipLives <= 0)
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
