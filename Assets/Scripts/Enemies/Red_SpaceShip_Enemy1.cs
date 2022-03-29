@@ -29,7 +29,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
         redSpaceshipMovement();
        if(transform.position.x < -9f)
         {
-            float random = Random.Range(-4f, 4f);
+            float random = Random.Range(-3f, 3f);
             transform.position = new Vector3(8, random, 0);
         }
     }
@@ -51,11 +51,12 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
        
         if (other.tag == "laser")
         {
-            CameraShake.instance.Shake(100.0f);
+           
             if (redSpaceShipLives < 3)
             {
                
                 Destroy(other.gameObject);
+                Destroy(this.gameObject);
                
             }
             //Destroy(this.gameObject);
@@ -64,7 +65,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
         
         if (other.tag == "Player")
         {
-          
+            CameraShake.instance.Shake(100.0f);
             Instantiate(explosion, transform.position, Quaternion.identity);
             // TODO: Deal damage to player
 
