@@ -15840,6 +15840,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1297490494805941584, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: _fireRate
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1297490494805941586, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_SortingOrder
       value: 2
