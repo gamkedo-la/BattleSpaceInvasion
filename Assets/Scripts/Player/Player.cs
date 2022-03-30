@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     private float speed = 2.5f;
     private float speed_modifier = 1.0f;
 
+   
+
     [SerializeField]
     private GameObject _laserPrefab;
     [SerializeField]
