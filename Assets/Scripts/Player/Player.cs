@@ -67,6 +67,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float fireMissileEnergyConsumption = 15f;
 
+    //SPAWN MANAGER
+    private SpawnManager spawnManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,6 +101,13 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
 
         ChangeToRobotMode(isBotMode, true);
+
+        spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        if (spawnManager == null)
+        {
+            Debug.LogError("The Spawn Manager is NULL.");
+
+        }
 
 
     }
@@ -344,6 +354,7 @@ public class Player : MonoBehaviour
             Debug.Log("lost a life! now have " + playerLives + "lives");
             if (playerLives < 1)
             {
+                spawnManager.PlayerDies();
                 Destroy(this.gameObject);
             }
         }

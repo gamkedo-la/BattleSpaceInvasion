@@ -12,6 +12,8 @@ public class SpawnManager : MonoBehaviour
     private GameObject redEnemyContainer;
 
 
+    private bool stopEnemySpawning = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class SpawnManager : MonoBehaviour
 
    IEnumerator SpawnRoutine()
     {
-        while (true)
+        while (stopEnemySpawning == false)
         {
             Vector3 postToSpawn = new Vector3(Random.Range(7f, -7f), 4, 0);
             Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.identity);
@@ -51,5 +53,10 @@ public class SpawnManager : MonoBehaviour
     //spawn game objects 
     //create a coroutine of type IEnumerator -- Yield Events
     // while loop
+
+    public void PlayerDies()
+    {
+        stopEnemySpawning = true;
+    }
 
 }
