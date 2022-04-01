@@ -45,7 +45,7 @@ public class SpawnManager : MonoBehaviour
             
             GameObject newAsteriod1 = Instantiate(asteroid1Prefab, asteroid1ToSpawn, Quaternion.identity);
             newAsteriod1.transform.parent = redEnemyContainer.transform;
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(3.0f);
         }
         
     }
