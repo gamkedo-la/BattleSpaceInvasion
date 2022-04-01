@@ -8,6 +8,7 @@ public class PlayerShield : MonoBehaviour
 
     private bool shieldActive = false;
     public SpriteRenderer spriteRenderer;
+
     void Start()
     {
         transform.position = Player.currentPos; 

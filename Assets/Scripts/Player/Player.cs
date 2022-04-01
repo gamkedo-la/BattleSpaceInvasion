@@ -51,6 +51,13 @@ public class Player : MonoBehaviour
 
     // shield flag
     static public bool shieldActive = false;
+    private bool shieldCoolDownDone = true;
+    private float shieldActiveTimer = 0.0f;
+    private float shieldActiveTimerMax = 1.5f; // this can be tweaked, will try to have it visible to the editor
+
+    private float shieldCoolDownTimer = 0.0f;
+
+    private float shieldCoolDownTimerMax = 1.0f;
 
     //animation to midbot
     private Animator anim;
@@ -162,7 +169,9 @@ public class Player : MonoBehaviour
         
         if (Input.GetKey(KeyCode.LeftShift)) 
         {
-            shieldActive = true;
+            if (shieldCoolDownDone) {
+                shieldActive = true;
+            }
         } else 
         {
             shieldActive = false;
@@ -170,7 +179,21 @@ public class Player : MonoBehaviour
 
         if (shieldActive)
         {
-            // Debug.Log("Shield on!");
+            shieldActiveTimer += Time.deltaTime;
+            if (shieldActiveTimer >= shieldActiveTimerMax) {
+                shieldActiveTimer = 0.0f;
+                shieldActive = false;
+                shieldCoolDownDone = false;
+            }
+            
+        }
+
+        if (!shieldCoolDownDone) {
+            shieldCoolDownTimer += Time.deltaTime;
+            if (shieldCoolDownTimer >= shieldCoolDownTimerMax) {
+                shieldCoolDownDone = true;
+                shieldCoolDownTimer = 0.0f;
+            }
         }
         //Below are our test keys for jumping scenes for test cases. 
         if (Input.GetKeyDown(KeyCode.Alpha1))
