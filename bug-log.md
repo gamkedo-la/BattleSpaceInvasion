@@ -4,14 +4,14 @@
 the robot can stand on. 
 3. Ordinary speed of player can still be increase a bit. (optional)
 4. Player edge collider2d not working
-5. JetToRobot animation not working when implemented on script.
+5.
 
 <!--LASER FIRE-->
-1. Implemented a shake effect that gets triggered but does not get de-activated once it hit enemies and objects.
+1. 
 2.
 
 <!--REDSPACESHIP MOVEMENT-->
-1.
+1. Enemy container still not working properly
 2.
 3.
 4.
@@ -26,16 +26,20 @@ the robot can stand on.
 5.
 
 <!--SOUNDS-->
-1.
+1. Still need to add some notes to Galaxy Battle Sounds
 2.
 3.
 4.
 5.
 
+<!--LEVELS-->
+1. Need to stop the mothership to stop when we reach the control room.
+
 <!--SOLVE Issues-->
 1.Bug on the start of the scene for the key "e" animation from midbot to jet.
-2. 
-3.
+2. Implemented a shake effect that gets triggered but does not get de-activated once it hit enemies and objects.
+3. JetToRobot animation not working when implemented on script.
+4
 
 
 <!--BUG NOTES TEMPLATE-->
