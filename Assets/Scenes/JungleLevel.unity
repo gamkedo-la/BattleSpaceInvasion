@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 543082496}
   - component: {fileID: 543082497}
   - component: {fileID: 543082498}
+  - component: {fileID: 543082499}
   m_Layer: 0
   m_Name: bird_head
   m_TagString: Untagged
@@ -251,7 +252,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1825089941}
+  t: 0.5
   speed: 2.8
+--- !u!50 &543082499
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543082495}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &572772292
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +442,7 @@ GameObject:
   - component: {fileID: 984349836}
   - component: {fileID: 984349838}
   - component: {fileID: 984349837}
+  - component: {fileID: 984349839}
   m_Layer: 0
   m_Name: bird_head (2)
   m_TagString: Untagged
@@ -452,6 +477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1825089941}
+  t: 0
   speed: 2.8
 --- !u!212 &984349838
 SpriteRenderer:
@@ -505,6 +532,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &984349839
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984349835}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1096695562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,6 +705,7 @@ GameObject:
   - component: {fileID: 1441751254}
   - component: {fileID: 1441751256}
   - component: {fileID: 1441751255}
+  - component: {fileID: 1441751257}
   m_Layer: 0
   m_Name: bird_head (3)
   m_TagString: Untagged
@@ -691,6 +740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1825089941}
+  t: 0
   speed: 2.8
 --- !u!212 &1441751256
 SpriteRenderer:
@@ -744,6 +795,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1441751257
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441751253}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1502461524
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +938,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1825089941 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1297490494805941587, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+  m_PrefabInstance: {fileID: 1297490496049371502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2025519939
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +954,7 @@ GameObject:
   - component: {fileID: 2025519940}
   - component: {fileID: 2025519942}
   - component: {fileID: 2025519941}
+  - component: {fileID: 2025519943}
   m_Layer: 0
   m_Name: bird_head (1)
   m_TagString: Untagged
@@ -911,6 +989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1825089941}
+  t: 0
   speed: 2.8
 --- !u!212 &2025519942
 SpriteRenderer:
@@ -964,6 +1044,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2025519943
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025519939}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2058269024
 GameObject:
   m_ObjectHideFlags: 0
