@@ -9,6 +9,7 @@ TagManager:
   - ScreenShake
   - redShipEnemy
   - caveWorld-floor
+  - redShipEnemyLeft
   layers:
   - Default
   - TransparentFX
