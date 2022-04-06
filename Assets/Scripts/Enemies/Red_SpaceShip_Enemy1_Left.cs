@@ -27,10 +27,10 @@ public class Red_SpaceShip_Enemy1_Left : MonoBehaviour
     {
         transform.localScale = scaleChange; // used localScale property to scale object. 
         redSpaceshipMovement();
-        if (transform.position.x < -9f)
+        if (transform.position.x > 9f)
         {
             float random = Random.Range(-3f, 3f);
-            transform.position = new Vector3(5, random, 0);
+            transform.position = new Vector3(-8, random, 0);
         }
     }
 
