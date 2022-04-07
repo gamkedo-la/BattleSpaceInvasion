@@ -38,7 +38,7 @@ public class PlayerShield : MonoBehaviour
         spriteRenderer.color = newColor;
         if (shieldActive) 
         {
-            gameObject.layer = 0; // default layer
+            gameObject.layer = 0; // default layer- this is obscured atm?
             transform.RotateAround(transform.position, Vector3.forward, Time.deltaTime * 360.0f);
         } 
         else

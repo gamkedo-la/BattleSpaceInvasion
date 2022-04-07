@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     private int robotShootFrameNumber = 0;
     private SpriteRenderer spriteRenderer;
 
+    private bool debugSpeedOn = false;
+    private float debugSpeed = 10.0f;
     private float speed = 2.5f;
     private float speed_modifier = 1.0f;
 
@@ -175,6 +177,10 @@ public class Player : MonoBehaviour
         } else 
         {
             shieldActive = false;
+        }
+
+        if (Input.GetKey(KeyCode.Tab)) {
+            debugSpeedOn = !debugSpeedOn;
         }
 
         if (shieldActive)
@@ -342,6 +348,9 @@ public class Player : MonoBehaviour
 
     float getTotalSpeed()
     {
+        if (debugSpeedOn) {
+            return debugSpeed * speed_modifier;
+        }
         return speed * speed_modifier;
     }
 
