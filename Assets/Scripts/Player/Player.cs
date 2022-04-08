@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public GameObject jetEngineParticle;
     public GameObject robotEngineParticle;
 
-
+    public ParticleSystem shieldEffect;
 
     private int robotShootFrameNumber = 0;
     private SpriteRenderer spriteRenderer;
@@ -201,6 +201,11 @@ public class Player : MonoBehaviour
                 shieldCoolDownTimer = 0.0f;
             }
         }
+        var shieldEmitter = shieldEffect.emission;
+        if (shieldEmitter.enabled != shieldActive) {
+            shieldEmitter.enabled = shieldActive;
+        }
+
         //Below are our test keys for jumping scenes for test cases. 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {

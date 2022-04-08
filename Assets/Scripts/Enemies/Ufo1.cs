@@ -61,7 +61,7 @@ public class Ufo1 : MonoBehaviour
         {
            // shipFacingRight == false;
             // change rotation (180,0,180)
-            Debug.Log("position of is rotation x > 0");
+            //Debug.Log("position of is rotation x > 0");
             Vector3 rotationVector = new Vector3(180, 0, 180);
             Quaternion rotation = Quaternion.Euler(rotationVector);
         }
@@ -69,7 +69,7 @@ public class Ufo1 : MonoBehaviour
         {
             //shipFacingRight == true;
             //change rotation (0,0,0)
-            Debug.Log("position of is rotation x < 0");
+            //Debug.Log("position of is rotation x < 0");
             Vector3 rotationVector = new Vector3(0, 0, 0);
             Quaternion rotation = Quaternion.Euler(rotationVector);
         }
