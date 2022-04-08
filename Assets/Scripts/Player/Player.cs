@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     static public bool shieldActive = false;
     private bool shieldCoolDownDone = true;
     private float shieldActiveTimer = 0.0f;
-    private float shieldActiveTimerMax = 20.0f; // this can be tweaked, will try to have it visible to the editor
+    private float shieldActiveTimerMax = 2.0f; // this can be tweaked, will try to have it visible to the editor
 
     private float shieldCoolDownTimer = 0.0f;
 
