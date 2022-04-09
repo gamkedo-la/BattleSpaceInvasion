@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private GameObject _laserPrefab;
+    private GameObject _originalLaserPrefab;
+
     [SerializeField]
     private float _fireRate = 0.4f;
     //private float _fireRateBot = 0.1f;
@@ -369,9 +371,17 @@ public class Player : MonoBehaviour
         if (other.tag == "power_up")
         {
             Power_Up power_up = other.gameObject.GetComponent<Power_Up_Display>().power_up;
-            if (power_up != null && power_up.category == Power_Up.PowerUpCategory.Speed)
+            if (power_up != null)
             {
-                this.speed_modifier = power_up.multiplier;
+                if (power_up.category == Power_Up.PowerUpCategory.Speed)
+                {
+                    this.speed_modifier = power_up.multiplier; 
+                }
+                else if (power_up.category == Power_Up.PowerUpCategory.Weapon && power_up.weapon_prefab != null)
+                {
+                    this._originalLaserPrefab = this._laserPrefab;
+                    this._laserPrefab = power_up.weapon_prefab;
+                }
             }
 
             Destroy(other.gameObject);
