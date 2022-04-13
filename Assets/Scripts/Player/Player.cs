@@ -349,6 +349,8 @@ public class Player : MonoBehaviour
         Instantiate(_laserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
 
         audioSource.Play();
+
+        ScoreManager.instance.AddPoints(5);
     
        
     }
