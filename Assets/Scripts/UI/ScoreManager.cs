@@ -31,5 +31,10 @@ public class ScoreManager : MonoBehaviour
     {
         display.text = score.ToString("000000")+"00"; 
     }
-        
+    
+    public int GetScore()
+    {
+        return score;
+    }
+
 }
