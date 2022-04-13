@@ -350,7 +350,7 @@ public class Player : MonoBehaviour
 
         audioSource.Play();
 
-        ScoreManager.instance.AddPoints(5);
+      
     
        
     }

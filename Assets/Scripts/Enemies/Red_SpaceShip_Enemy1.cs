@@ -57,6 +57,7 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
             {
                 CameraShake.instance.Shake(100.0f);
                 Instantiate(explosion, transform.position, Quaternion.identity);
+                ScoreManager.instance.AddPoints(3);
                 Destroy(other.gameObject);
                 Destroy(this.gameObject);
 

@@ -29,7 +29,7 @@ public class ScoreManager : MonoBehaviour
 
     void UpdateScore()
     {
-        display.text = "0000" + score;
+        display.text = score.ToString("000000")+"00"; 
     }
         
 }

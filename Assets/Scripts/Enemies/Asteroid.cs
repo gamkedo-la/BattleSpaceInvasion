@@ -34,6 +34,7 @@ public class Asteroid : MonoBehaviour
         {
            
             Instantiate(explosion, transform.position, Quaternion.identity);
+            ScoreManager.instance.AddPoints(1);
             Destroy(other);
             Destroy(gameObject);
         }
