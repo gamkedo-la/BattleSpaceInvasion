@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     public Transform target;
+    private AudioSource audioSource;
     private Rigidbody2D rb;
     public float t;
      [SerializeField]
