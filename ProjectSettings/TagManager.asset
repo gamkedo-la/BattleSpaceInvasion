@@ -10,6 +10,7 @@ TagManager:
   - redShipEnemy
   - caveWorld-floor
   - redShipEnemyLeft
+  - ufo1Tag
   layers:
   - Default
   - TransparentFX

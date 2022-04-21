@@ -16,8 +16,8 @@ public class Ufo1 : MonoBehaviour
     private Vector2 movement;
 
     private bool shipFacingRight = false;
-
-
+    [SerializeField]
+    private int ufo1Lives;
 
     // Start is called before the first frame update
     void Start()
@@ -87,8 +87,52 @@ public class Ufo1 : MonoBehaviour
     }
 
 
-    void FollowPlayer()
+    void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "laser")
+        {
 
+
+            if (ufo1Lives == 0)
+            {
+                //CameraShake.instance.Shake(100.0f);
+                //Instantiate(explosion, transform.position, Quaternion.identity);
+                ScoreManager.instance.AddPoints(3);
+                Destroy(other.gameObject);
+                Destroy(this.gameObject);
+
+            }
+            //Destroy(this.gameObject);
+
+        }
+
+        if (other.tag == "Player")
+        {
+            //CameraShake.instance.Shake(100.0f);
+            //Instantiate(explosion, transform.position, Quaternion.identity);
+            // TODO: Deal damage to player
+
+            Player player = other.transform.GetComponent<Player>();
+            if (player != null) // perform a null check error handling. 
+            {
+                player.PlayerDamage();
+            }
+            Destroy(this.gameObject);
+
+        }
     }
+
+    public void ufo1Damage()
+    {
+        ufo1Lives--;
+
+        if (ufo1Lives <= 0)
+        {
+            //Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
+    }
+
+
+
 }

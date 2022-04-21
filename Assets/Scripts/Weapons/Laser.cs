@@ -42,6 +42,23 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+
+        if (other.tag == "ufo1Tag")
+        {
+            // TODO: Deal damage to redSpaceShip
+
+            Ufo1 ufo1 = other.transform.GetComponent<Ufo1>();
+
+            if (ufo1 != null) // perform a null check error handling. 
+            {
+                ufo1.ufo1Damage();
+                Debug.Log("Laser Hits UFO1");
+            }
+            Destroy(this.gameObject);
+        }
+
+
+
     }
 
 }
