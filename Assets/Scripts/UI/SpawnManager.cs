@@ -13,6 +13,9 @@ public class SpawnManager : MonoBehaviour
     private GameObject asteroid2Prefab;
 
     [SerializeField]
+    private GameObject asteroid3Prefab;
+
+    [SerializeField]
     private GameObject redEnemyContainer;
 
 
@@ -45,6 +48,9 @@ public class SpawnManager : MonoBehaviour
             Vector3 asteroid2ToSpawn = new Vector3(12, Random.Range(4f, -4f), 0);
             Instantiate(asteroid1Prefab, asteroid1ToSpawn, Quaternion.identity);
 
+            Vector3 asteroid3ToSpawn = new Vector3(12, Random.Range(4f, -4f), 0);
+            Instantiate(asteroid1Prefab, asteroid3ToSpawn, Quaternion.identity);
+
             Vector3 rotationVector = new Vector3(0, 0, 90);
 
             //New Asteroids
@@ -58,6 +64,10 @@ public class SpawnManager : MonoBehaviour
 
             GameObject newAsteriod2 = Instantiate(asteroid2Prefab, asteroid2ToSpawn, Quaternion.identity);
             newAsteriod2.transform.parent = redEnemyContainer.transform;
+
+            GameObject newAsteriod3 = Instantiate(asteroid3Prefab, asteroid3ToSpawn, Quaternion.identity);
+            newAsteriod2.transform.parent = redEnemyContainer.transform;
+
             yield return new WaitForSeconds(3.0f);
         }
         
