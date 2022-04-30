@@ -7,6 +7,8 @@ public class Inner_MotherShip_Boss : MonoBehaviour
 
     public GameObject motherShip;
 
+    private AudioSource audioSource;
+
     [SerializeField]
     Transform[] Positions;
 
