@@ -234,6 +234,11 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("CaveLevel");
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SceneManager.LoadScene("CharacterScene");
+        }
+
 
 
         if (Input.GetKeyDown("q") && isBotMode == false)
