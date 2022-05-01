@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private int playerLives = 5;
+    public delegate void PlayerLivesChanged(int newLivesValue);
+    public PlayerLivesChanged playerLivesChanged;
 
     // screen markers
     public Transform leftMarker;
@@ -405,6 +407,7 @@ public class Player : MonoBehaviour
         if (!shieldActive) // only take damage if shield is down...this is a bit broad right now
         {
             playerLives--;
+            playerLivesChanged?.Invoke(playerLives);
             Debug.Log("lost a life! now have " + playerLives + "lives");
             if (playerLives < 1)
             {
@@ -412,6 +415,11 @@ public class Player : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+    }
+
+    public int GetPlayerLives()
+    {
+        return playerLives;
     }
 }
 
