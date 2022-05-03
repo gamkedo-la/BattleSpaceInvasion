@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Intro_Story : MonoBehaviour
+public class Character_Story : MonoBehaviour
 {
     private float speed = 1.3f;
     // Start is called before the first frame update
@@ -22,4 +22,6 @@ public class Intro_Story : MonoBehaviour
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
+
+
 }
