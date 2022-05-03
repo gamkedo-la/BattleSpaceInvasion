@@ -8,13 +8,14 @@ public class Character_Story : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(31f,2.6f,0);
+     //   transform.position = new Vector3(31f,2.6f,0);
     }
 
     // Update is called once per frame
     void Update()
     {
         CaptainCidMovement();
+        DrSamanthaMovement();
     }
 
 
@@ -23,5 +24,10 @@ public class Character_Story : MonoBehaviour
         transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
 
+
+    void DrSamanthaMovement()
+    {
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
+    }
 
 }
