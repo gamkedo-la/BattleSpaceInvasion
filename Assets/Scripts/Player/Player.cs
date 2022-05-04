@@ -115,12 +115,12 @@ public class Player : MonoBehaviour
 
         ChangeToRobotMode(isBotMode, true);
 
-        spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
-        if (spawnManager == null)
-        {
-            Debug.LogError("The Spawn Manager is NULL.");
+       // spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        //if (spawnManager == null)
+        //{
+          //  Debug.LogError("The Spawn Manager is NULL.");
 
-        }
+//        }
 
 
     }
