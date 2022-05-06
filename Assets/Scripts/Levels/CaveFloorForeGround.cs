@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CaveFloorForeGround : MonoBehaviour
 {
-    private float speed = 1.0f;
+    private float CaveForeGroundSpeed = 1.0f;
+    private float CaveBottomSpikeSpeed = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,17 @@ public class CaveFloorForeGround : MonoBehaviour
     void Update()
     {
         CaveForeGroundMovement();
+        //CaveBottomSpike();
     }
 
     void CaveForeGroundMovement()
     {
-        transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
+        transform.position = new Vector3(transform.position.x - (CaveForeGroundSpeed * Time.deltaTime), transform.position.y, 0);
     }
     
+
+    //void CaveBottomSpike()
+    //{
+    //    transform.position = new Vector3(transform.position.x - (CaveBottomSpikeSpeed * Time.deltaTime), transform.position.y, 0);
+    //}
 }
