@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
         bottomEdge = bottomMarker.position.y;
 
         audioSource = GetComponent<AudioSource>();
-        transform.position = new Vector3(0, 0, 0);
+        transform.position = new Vector3(-7f, 2.25f, 0);
 
         if(audioSource == null)
         {
