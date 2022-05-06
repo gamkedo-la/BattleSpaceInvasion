@@ -16,6 +16,11 @@ public class MotherShipEntrance : MonoBehaviour
     void Update()
     {
         Move();
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            ScoreManager.instance.AddPoints(minimumScoreHundredNeeded);
+            Debug.Log("Test Starting Boss Movement");
+        }
     }
 
 
