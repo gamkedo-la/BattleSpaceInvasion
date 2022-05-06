@@ -42,13 +42,13 @@ public class Bird : MonoBehaviour
        // transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
         rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
         
-        //if (transform.position.x == -20f)
-        //{
-        //    Debug.Log("Bird is at -20f");
-        //    Vector3 a = transform.position;
-        //    Vector3 b = target.position;
-        //    transform.position = Vector3.MoveTowards(a, Vector3.Lerp(a, b, t), speed + 5);
-        //}
+        
+        //Bird will shoot up
+        //Remove the bird head and transition to bird launch (either front or back of jet)
+        //Pick player position at that time and quickly fly toward it.
+        // remove bird launch and turns to bird attack png.
+        // add rotation applied to aim at the point picked.
+        //Bird should only pick that one set of coordinates and fly toward it. Shouldn't continually lock on and follow the player.
 
     }
 }
