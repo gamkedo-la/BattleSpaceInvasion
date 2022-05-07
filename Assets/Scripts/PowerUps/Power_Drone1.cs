@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Power_Drone1 : MonoBehaviour
 {
-    public GameObject drone;
+    public GameObject drone1;
+    public GameObject drone2;
 
     void Start()
     {
-        drone.SetActive(false);
+        drone1.SetActive(false);
+        drone2.SetActive(false);
     }
 
    void OnTriggerEnter2D(Collider2D col) 
@@ -16,7 +18,8 @@ public class Power_Drone1 : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             Debug.Log("Drone power up bump");
-            drone.SetActive(true);
+            drone1.SetActive(true);
+            drone2.SetActive(true);
             Destroy(gameObject);
         }
         
