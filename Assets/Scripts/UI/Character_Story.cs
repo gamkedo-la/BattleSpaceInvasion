@@ -16,6 +16,7 @@ public class Character_Story : MonoBehaviour
     {
         CaptainCidMovement();
         DrSamanthaMovement();
+        AlienPrincesMovement();
     }
 
 
@@ -26,6 +27,11 @@ public class Character_Story : MonoBehaviour
 
 
     void DrSamanthaMovement()
+    {
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
+    }
+
+    void AlienPrincesMovement()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
