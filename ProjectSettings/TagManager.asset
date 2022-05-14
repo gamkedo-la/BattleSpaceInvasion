@@ -11,6 +11,7 @@ TagManager:
   - caveWorld-floor
   - redShipEnemyLeft
   - ufo1Tag
+  - largeLaser
   layers:
   - Default
   - TransparentFX

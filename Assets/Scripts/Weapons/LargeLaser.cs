@@ -37,7 +37,7 @@ public class LargeLaser : MonoBehaviour
             if (redSpaceShip != null) // perform a null check error handling. 
             {
                 redSpaceShip.redSpaceShipDamage();
-                Debug.Log("Laser Hits RED SHIP");
+                Debug.Log("LargeLaser Hits RED SHIP");
             }
             Destroy(this.gameObject);
         }
