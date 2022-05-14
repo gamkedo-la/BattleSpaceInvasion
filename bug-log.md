@@ -7,7 +7,7 @@ the robot can stand on.
 5.
 
 <!--LASER FIRE-->
-1. 
+1. Large laser on top drone not visible once we use the num key to go back to scene.
 2.
 
 <!--REDSPACESHIP MOVEMENT-->
