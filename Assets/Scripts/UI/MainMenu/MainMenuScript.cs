@@ -9,4 +9,10 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(1);// main game scene intro story
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("QUIT! (Won't do anything while in Unity editor)");
+        Application.Quit();
+    }
 }
