@@ -6,6 +6,7 @@ public class ProjectileScript : MonoBehaviour
 {
     public GameObject explosion;
     public GameObject shotPrefab;
+    public GameObject laserSpawnPoint;
     private float speed = 2.0f;
     //private float health = 3f;
 
@@ -27,7 +28,7 @@ public class ProjectileScript : MonoBehaviour
         while (true) {
             yield return new WaitForSeconds(0.25f);
             GameObject shotGO = GameObject.Instantiate(shotPrefab) as GameObject;
-            shotGO.transform.position = transform.position;
+            shotGO.transform.position = laserSpawnPoint.transform.position;
         }
     }
 
@@ -53,6 +54,7 @@ public class ProjectileScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other);
         //Add life variable to Red_SpaceShip - Ok
         //If redSpaceship is hit by laser once start first fire animation and reduce life variable
         //If redSpaceship is hit twice add additional fire animation and reduce life of variable.
@@ -61,6 +63,7 @@ public class ProjectileScript : MonoBehaviour
         if (other.tag == "laser")
         {
             CameraShake.instance.Shake(50.0f);
+            SpaceShipDamage();
             if (spaceshipLives < 3)
             {
                
