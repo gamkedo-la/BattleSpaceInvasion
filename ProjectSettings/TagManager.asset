@@ -12,6 +12,7 @@ TagManager:
   - redShipEnemyLeft
   - ufo1Tag
   - largeLaser
+  - ignimbrite1
   layers:
   - Default
   - TransparentFX
