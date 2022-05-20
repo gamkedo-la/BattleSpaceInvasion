@@ -139,7 +139,7 @@ public class Player : MonoBehaviour
             {
                 anim.Play("JetToRobot");
             }
-          
+            //Make robot look to the left when pressing A key
 
         }
         else
