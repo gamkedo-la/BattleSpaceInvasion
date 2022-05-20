@@ -15801,6 +15801,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -85386115
       objectReference: {fileID: 0}
+    - target: {fileID: 5868639713740825374, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7173653626770068698, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: drone1
       value: 
