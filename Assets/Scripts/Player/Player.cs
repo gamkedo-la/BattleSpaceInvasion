@@ -139,7 +139,7 @@ public class Player : MonoBehaviour
             {
                 anim.Play("JetToRobot");
             }
-            //Make robot look to the left when pressing A key
+           
 
         }
         else
@@ -331,6 +331,25 @@ public class Player : MonoBehaviour
         float moveY = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * moveX * getTotalSpeed() * Time.deltaTime);
         transform.Translate(Vector3.up * moveY * getTotalSpeed() * Time.deltaTime);
+
+        if(moveX < 0.0f && isBotMode)
+        {
+            Vector3 newScale = transform.localScale;
+            if(newScale.x > 0.0f)
+            {
+                newScale.x *= -1.0f;
+                transform.localScale = newScale;
+            }
+        }
+        if (moveX > 0.0f || isBotMode == false)
+        {
+            Vector3 newScale = transform.localScale;
+            if (newScale.x < 0.0f)
+            {
+                newScale.x *= -1.0f;
+                transform.localScale = newScale;
+            }
+        }
 
         if ( transform.position.x >= rightEdge)
         {
