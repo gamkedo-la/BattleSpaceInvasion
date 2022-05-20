@@ -37,7 +37,7 @@ public class Laser : MonoBehaviour
             if (redSpaceShip != null) // perform a null check error handling. 
             {
                 redSpaceShip.redSpaceShipDamage();
-                Debug.Log("Laser Hits RED SHIP");
+                //Debug.Log("Laser Hits RED SHIP");
             }
             Destroy(this.gameObject);
         }
@@ -52,7 +52,7 @@ public class Laser : MonoBehaviour
             if (ufo1 != null) // perform a null check error handling. 
             {
                 ufo1.ufo1Damage();
-                Debug.Log("Laser Hits UFO1");
+                //Debug.Log("Laser Hits UFO1");
             }
             Destroy(this.gameObject);
         }
@@ -66,7 +66,7 @@ public class Laser : MonoBehaviour
             if (ignimbrite1 != null) // perform a null check error handling. 
             {
                 ignimbrite1.ignimbrite1Damage();
-                Debug.Log("Laser Hits Ignimbrite 1 Commander");
+                //Debug.Log("Laser Hits Ignimbrite 1 Commander");
             }
             Destroy(this.gameObject);
         }

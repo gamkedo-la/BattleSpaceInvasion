@@ -316,7 +316,7 @@ public class Player : MonoBehaviour
         {
             if(robotEnergy <= 0)
             {
-                Debug.Log("Out of energy go back to jet");
+                //Debug.Log("Out of energy go back to jet");
                 ChangeToRobotMode(false);
             }
 
@@ -408,7 +408,7 @@ public class Player : MonoBehaviour
         {
             playerLives--;
             playerLivesChanged?.Invoke(playerLives);
-            Debug.Log("lost a life! now have " + playerLives + "lives");
+            //Debug.Log("lost a life! now have " + playerLives + "lives");
             if (playerLives < 1)
             {
                 spawnManager.PlayerDies();
