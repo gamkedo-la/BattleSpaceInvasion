@@ -382,6 +382,8 @@ public class Player : MonoBehaviour
             //{
             //   Instantiate(_laserPrefab, transform.position + new Vector3(-2.20f, 0, 0), Quaternion.Euler(rotationVector));
             //}
+
+            
             
         }
 

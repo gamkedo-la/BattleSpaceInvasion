@@ -6,6 +6,7 @@ public class LargeLaser : MonoBehaviour
 {
     [SerializeField]
     private int laserSpeed = 1000;
+    public bool moveLeft = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class LargeLaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * laserSpeed);
+        transform.Translate(Vector3.left * Time.deltaTime * laserSpeed * (moveLeft ? -1.0f : 1.0f));
 
         if (transform.position.x > 10f || transform.position.x < -15f)
         {
