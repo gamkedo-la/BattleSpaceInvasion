@@ -372,11 +372,17 @@ public class Player : MonoBehaviour
     void fireLaser()
     {
         Vector3 rotationVector = new Vector3(0, 0, 180);
-        GameObject laser = (GameObject)Instantiate(_laserPrefab, transform.position + new Vector3(2.21f, 0, 0), Quaternion.Euler(rotationVector));
+        GameObject laser = (GameObject)Instantiate(_laserPrefab, transform.position + new Vector3(0.0f, 0, 0), Quaternion.Euler(rotationVector)); //2.21 new vector
         if(transform.localScale.x < 0.0f)
         {
+           
             Laser laserScript = laser.GetComponent<Laser>();
             laserScript.moveLeft = true;
+            //if (laserScript.moveLeft)
+            //{
+            //   Instantiate(_laserPrefab, transform.position + new Vector3(-2.20f, 0, 0), Quaternion.Euler(rotationVector));
+            //}
+            
         }
 
 
