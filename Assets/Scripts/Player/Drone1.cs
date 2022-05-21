@@ -27,6 +27,16 @@ public class Drone1 : MonoBehaviour
         
     }
 
+    //void changePosition()
+    //{
+        
+    //    if (Player.robotMode = true)
+    //    {
+    //        transform.position = new Vector3(0, 0.20f, 0);
+    //    }
+
+    //}
+
 
     void fireLargeLaser()
     {

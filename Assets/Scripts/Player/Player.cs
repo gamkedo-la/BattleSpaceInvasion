@@ -70,6 +70,8 @@ public class Player : MonoBehaviour
     private bool isBotMode = false;
     public bool robotWalkLevel = false; // check box if its a walking level
 
+    //public static bool robotMode = false;
+
     static public Vector3 currentPos;
 
 
@@ -139,7 +141,7 @@ public class Player : MonoBehaviour
             {
                 anim.Play("JetToRobot");
             }
-           
+            //robotMode = true;
 
         }
         else
