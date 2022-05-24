@@ -13,6 +13,9 @@ TagManager:
   - ufo1Tag
   - largeLaser
   - ignimbrite1
+  - asteroid3
+  - asteroid2
+  - asteroid1
   layers:
   - Default
   - TransparentFX
