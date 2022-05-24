@@ -10439,6 +10439,7 @@ GameObject:
   - component: {fileID: 1884028126}
   - component: {fileID: 1884028128}
   - component: {fileID: 1884028129}
+  - component: {fileID: 1884028130}
   m_Layer: 0
   m_Name: IgnimbriteCommanders
   m_TagString: ignimbrite1
@@ -10506,7 +10507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884028125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9691, y: 0.9081, z: 0}
+  m_LocalPosition: {x: 6.93, y: 0.86, z: 0}
   m_LocalScale: {x: 1.5832702, y: 1.363295, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10526,18 +10527,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.58}
+  m_Offset: {x: -0.79, y: 1.08}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8, y: 5}
+    oldSize: {x: 8, y: 6.75}
     newSize: {x: 8, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.65, y: 3.76}
+  m_Size: {x: 0.62, y: 0.65}
   m_EdgeRadius: 0
 --- !u!114 &1884028129
 MonoBehaviour:
@@ -10553,6 +10554,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
   ignimbrite1Lives: 10
+--- !u!95 &1884028130
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884028125}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 618d17fa82ceaa043a5435f042a569b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1918425359
 GameObject:
   m_ObjectHideFlags: 0
