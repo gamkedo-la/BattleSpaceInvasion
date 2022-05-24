@@ -13,14 +13,24 @@ public class Power_Drone1 : MonoBehaviour
         drone2.SetActive(false);
     }
 
-   void OnTriggerEnter2D(Collider2D col) 
+   void OnTriggerEnter2D(Collider2D collission) 
     {
-        if(col.gameObject.tag == "Player")
+        if(collission.gameObject.tag == "Player")
         {
-            Debug.Log("Drone power up bump");
-            drone1.SetActive(true);
-            drone2.SetActive(true);
+            //Debug.Log("Drone power up bump");
+            Player player = collission.transform.GetComponent<Player>();
+           
+            if ( player != null)
+            {
+                
+                player.Drone1Active();
+                drone1.SetActive(true);
+                drone2.SetActive(true);
+              
+
+            }
             Destroy(gameObject);
+
         }
         
     }

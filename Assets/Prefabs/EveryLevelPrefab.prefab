@@ -420,6 +420,8 @@ MonoBehaviour:
   robotWalkLevel: 0
   robotEnergy: 20
   fireMissileEnergyConsumption: 15
+  drone1: {fileID: 330184205888209832}
+  drone2: {fileID: 7927943590709769707}
 --- !u!50 &1297490494805941585
 Rigidbody2D:
   serializedVersion: 4

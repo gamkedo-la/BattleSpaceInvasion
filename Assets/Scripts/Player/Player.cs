@@ -85,6 +85,12 @@ public class Player : MonoBehaviour
     //SPAWN MANAGER
     private SpawnManager spawnManager;
 
+
+    //DRONE1 
+    private bool isDrone1Active = false;
+    public GameObject drone1;
+    public GameObject drone2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -428,12 +434,26 @@ public class Player : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-
-       
-       
     }
 
-    
+    public void Drone1Active()
+    {
+        isDrone1Active = true;
+        drone1.SetActive(true);
+        drone2.SetActive(true);
+        StartCoroutine(Drone1PowerDown());
+    }
+
+
+    IEnumerator Drone1PowerDown()
+    {
+        yield return new WaitForSeconds(5.0f);
+        drone1.SetActive(false);
+        drone2.SetActive(false);
+        isDrone1Active = false;
+    }
+
+
 
     public void PlayerDamage()
     {
