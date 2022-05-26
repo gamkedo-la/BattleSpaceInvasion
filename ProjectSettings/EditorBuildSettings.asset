@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroStory.unity
     guid: a08c3212633d7b5458a747736e37fa0e
   - enabled: 1
+    path: Assets/Scenes/Mission Log 1.unity
+    guid: 3c9016c0017864a4b8d1d63203f58e7a
+  - enabled: 1
     path: Assets/Scenes/GalaxyNebula.unity
     guid: 1a9f43e2ad9ea1243a9b023bd0c1971f
   - enabled: 1
