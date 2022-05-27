@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeLaserPrefab: {fileID: 2254719049156394530, guid: 3afe8a833524a56f8bfde30fa94805ca, type: 3}
+  drone1: {fileID: 330184205888209832}
+  drone2: {fileID: 7927943590709769707}
   speed: 2.5
 --- !u!1 &915430050629469800
 GameObject:
@@ -11910,6 +11912,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeLaserPrefab: {fileID: 2254719049156394530, guid: 3afe8a833524a56f8bfde30fa94805ca, type: 3}
+  drone1: {fileID: 330184205888209832}
+  drone2: {fileID: 7927943590709769707}
   speed: 2.5
 --- !u!1 &8131691243982961028
 GameObject:

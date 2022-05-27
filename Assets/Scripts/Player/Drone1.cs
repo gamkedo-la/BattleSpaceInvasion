@@ -14,10 +14,17 @@ public class Drone1 : MonoBehaviour
     private bool isDroneFacingLeft = false;
 
     [SerializeField]
+    private GameObject drone1;
+    [SerializeField]
+    private GameObject drone2;
+
+    [SerializeField]
     private float speed;
 
     void Start()
     {
+        //if drone1 is set active position y axis
+        //if drone1 is set active position y axis
         //transform.position = new Vector3(-1.76f, 0.8f, 0);
         StartCoroutine(FireWithDelay());
     }
