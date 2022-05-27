@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeLaserPrefab: {fileID: 2254719049156394530, guid: 3afe8a833524a56f8bfde30fa94805ca, type: 3}
+  speed: 2.5
 --- !u!1 &915430050629469800
 GameObject:
   m_ObjectHideFlags: 0
@@ -11909,6 +11910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeLaserPrefab: {fileID: 2254719049156394530, guid: 3afe8a833524a56f8bfde30fa94805ca, type: 3}
+  speed: 2.5
 --- !u!1 &8131691243982961028
 GameObject:
   m_ObjectHideFlags: 0

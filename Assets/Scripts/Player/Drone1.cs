@@ -13,12 +13,23 @@ public class Drone1 : MonoBehaviour
 
     private bool isDroneFacingLeft = false;
 
+    [SerializeField]
+    private float speed;
+
     void Start()
     {
+        //transform.position = new Vector3(-1.76f, 0.8f, 0);
         StartCoroutine(FireWithDelay());
     }
 
-    
+
+    void Update()
+    {
+        droneMovement();
+    }
+
+
+
     IEnumerator FireWithDelay()
     {
         while (true)
@@ -57,5 +68,11 @@ public class Drone1 : MonoBehaviour
         {
             GameObject LargeLaser = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(1.21f, 0, 0), Quaternion.Euler(rotationVector));
         }
+    }
+
+
+    void droneMovement()
+    {
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 }

@@ -10887,9 +10887,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EveryLevelPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3729526023805307363, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4125413803415651124, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5173189350505310845, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5398507308762735159, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
