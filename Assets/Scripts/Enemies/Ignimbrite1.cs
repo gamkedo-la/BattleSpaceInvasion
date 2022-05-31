@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ignimbrite1 : MonoBehaviour
 {
@@ -108,6 +109,7 @@ public class Ignimbrite1 : MonoBehaviour
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
+            SceneManager.LoadScene("JungleLevel");
         }
     }
 }
