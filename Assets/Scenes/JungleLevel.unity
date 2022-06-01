@@ -1051,7 +1051,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1005422417
 AudioSource:
@@ -2492,6 +2492,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80ba71dc6a4f466439febf42a5f6d239, type: 3}
+--- !u!1001 &5459660635741289251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3500040718017718342, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_Name
+      value: rays_of_sunshine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.2166
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9876
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628875749546193102, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d375785dd93476640bfd5e8146ba2f7e, type: 3}
 --- !u!1001 &7229942168750149855
 PrefabInstance:
   m_ObjectHideFlags: 0
