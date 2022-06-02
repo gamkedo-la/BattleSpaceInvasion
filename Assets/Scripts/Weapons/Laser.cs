@@ -73,7 +73,20 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-     
+        if (other.tag == "jungleShipBoss")
+        {
+            // TODO: Deal damage to redSpaceShip
+
+            JungleShipBoss jungleShipBoss = other.transform.GetComponent<JungleShipBoss>();
+
+            if (jungleShipBoss != null) // perform a null check error handling. 
+            {
+                jungleShipBoss.jungleShipBossDamage();
+                //Debug.Log("Laser Hits Ignimbrite 1 Commander");
+            }
+            Destroy(this.gameObject);
+        }
+
 
 
 
