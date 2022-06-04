@@ -7,12 +7,12 @@ public class Ignimbrite1 : MonoBehaviour
 {
     public GameObject explosion;
     private float speed = 5.0f;
-    //private float health = 3f;
-
 
     private Vector3 scaleChange;
     [SerializeField]
-    private int ignimbrite1Lives = 10;
+    private float health = 10;
+
+    private float totalHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class Ignimbrite1 : MonoBehaviour
 
         //transform.position = new Vector3(13, 4, 0);
         //scaleChange = new Vector3(0.4f, 0.4f, 1);
+        totalHealth = health;
 
     }
 
@@ -54,7 +55,7 @@ public class Ignimbrite1 : MonoBehaviour
         {
 
 
-            if (ignimbrite1Lives == 0)
+            if (health == 0)
             {
                 CameraShake.instance.Shake(100.0f);
                 Instantiate(explosion, transform.position, Quaternion.identity);
@@ -71,7 +72,7 @@ public class Ignimbrite1 : MonoBehaviour
         {
 
 
-            if (ignimbrite1Lives == 0)
+            if (health == 0)
             {
                 CameraShake.instance.Shake(100.0f);
                 Instantiate(explosion, transform.position, Quaternion.identity);
@@ -101,11 +102,19 @@ public class Ignimbrite1 : MonoBehaviour
 
     }
 
+    public float GetCurrentHealth() {
+        return health;
+    }
+
+    public float GetTotalHealth() {
+        return totalHealth;
+    }
+
     public void ignimbrite1Damage()
     {
-        ignimbrite1Lives--;
+        health--;
 
-        if (ignimbrite1Lives <= 0)
+        if (health <= 0)
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);

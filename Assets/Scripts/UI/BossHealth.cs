@@ -3,9 +3,10 @@ using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
-    private static Image HealthBarImage;
+    public Image HealthBarImage;
+    public Ignimbrite1 boss;
 
-    public static void SetValue(float value)
+    public void SetValue(float value)
     {
         HealthBarImage.fillAmount = value;
         if(HealthBarImage.fillAmount < 0.2f)
@@ -22,19 +23,24 @@ public class BossHealth : MonoBehaviour
         }
     }
 
-    public static float GetCurrentValue()
+    public float GetCurrentValue()
     {
         return HealthBarImage.fillAmount;
     }
 
-    public static void SetColor(Color healthColor)
+    public void SetColor(Color healthColor)
     {
         HealthBarImage.color = healthColor;
     }
 
     private void Start()
     {
-        HealthBarImage = GetComponent<Image>();
         HealthBarImage.fillAmount = 1f;
+    }
+
+    public void Update() 
+    {
+        SetValue(boss.GetCurrentHealth()/boss.GetTotalHealth());
+        Debug.Log(boss.GetCurrentHealth()/boss.GetTotalHealth());
     }
 }
