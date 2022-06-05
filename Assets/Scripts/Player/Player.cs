@@ -481,8 +481,16 @@ public class Player : MonoBehaviour
                 BoxCollider2D collider2D = GetComponent<BoxCollider2D>();
                 collider2D.enabled = false;
                 this.enabled = false;
+                StartCoroutine(ResetAfterDelay());
             }
         }
+    }
+
+    IEnumerator ResetAfterDelay()
+    {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("MainMenu");
+        //Debug.Log("Resetting game");
     }
 
     public int GetPlayerLives()
