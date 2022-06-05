@@ -7,6 +7,7 @@ public class MainMenuScript : MonoBehaviour
 {
    public void LoadGame()
     {
+        ScoreManager.ResetScore(); // prevents score from saving after finishing game. 
         SceneManager.LoadScene(1);// main game scene intro story
     }
 

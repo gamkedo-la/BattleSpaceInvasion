@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     private Text display;
-    private int score = 0;
+    private static int score = 0;
 
     void Awake()
     {
@@ -19,6 +19,11 @@ public class ScoreManager : MonoBehaviour
     {
         display = gameObject.GetComponent<Text>();
         UpdateScore(); //Singleton
+    }
+
+    public static void ResetScore() 
+    {
+        score = 0;
     }
 
     public void AddPoints(int newPoints)
