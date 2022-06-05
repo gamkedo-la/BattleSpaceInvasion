@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
 
         ChangeToRobotMode(isBotMode, true);
 
-       // spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+       //spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         //if (spawnManager == null)
         //{
           //  Debug.LogError("The Spawn Manager is NULL.");
@@ -165,6 +165,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            PlayerDamage();
+        }
+
         currentPos = transform.position;
         if (isBotMode && robotWalkLevel)
         {
@@ -464,8 +469,18 @@ public class Player : MonoBehaviour
             //Debug.Log("lost a life! now have " + playerLives + "lives");
             if (playerLives < 1)
             {
-                spawnManager.PlayerDies();
-                Destroy(this.gameObject);
+                //spawnManager.PlayerDies();
+                // Destroy(this.gameObject);
+                SpriteRenderer[] allRenderers = GetComponentsInChildren<SpriteRenderer>();
+                foreach(SpriteRenderer renderer in allRenderers)
+                {
+                    renderer.enabled = false;
+                }
+                jetEngineParticle.SetActive(false);
+                robotEngineParticle.SetActive(false);
+                BoxCollider2D collider2D = GetComponent<BoxCollider2D>();
+                collider2D.enabled = false;
+                this.enabled = false;
             }
         }
     }
