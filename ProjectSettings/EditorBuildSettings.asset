@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ArrivalSceneCrashedShip.unity
     guid: a112855ddbee6d94c94042e29e6f8fbb
   - enabled: 1
+    path: Assets/Scenes/IntroCharacterDialog.unity
+    guid: 9801a1708a30d824c838eaa9ead2d234
+  - enabled: 1
     path: Assets/Scenes/Mission Log 1.unity
     guid: 3c9016c0017864a4b8d1d63203f58e7a
   - enabled: 1
