@@ -118,7 +118,7 @@ public class Ignimbrite1 : MonoBehaviour
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
-            SceneManager.LoadScene("JungleLevel");
+            SceneManager.LoadScene("Mission Log 2");
         }
     }
 }
