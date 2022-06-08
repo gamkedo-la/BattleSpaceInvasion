@@ -15953,6 +15953,10 @@ PrefabInstance:
       propertyPath: drone2
       value: 
       objectReference: {fileID: 1473958218}
+    - target: {fileID: 7173653626770068698, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: dronePowerUpPrefab
+      value: 
+      objectReference: {fileID: 343862584}
     - target: {fileID: 7181480037098064371, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 7

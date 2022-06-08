@@ -6,18 +6,20 @@ public class PowerUpManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject powerUpDronePrefab;
-
+    //public GameObject powerUpDrone;
+    
     private bool stopPowerUpSpawning = false;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(PowerUpSpawnTime());
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-      
+        powerUpDronePrefab.SetActive(true);
     }
 
 
