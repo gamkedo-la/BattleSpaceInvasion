@@ -6,8 +6,10 @@ public class Power_Drone1 : MonoBehaviour
 {
     public GameObject drone1;
     public GameObject drone2;
-    private float speed = 5f;
-
+    private float speed = 2f;
+    public float degreesPerSec = 300f;
+    private float rotationSpeed = 0.5f;
+    
     void Start()
     {
         drone1.SetActive(false);
@@ -17,6 +19,7 @@ public class Power_Drone1 : MonoBehaviour
     void Update()
     {
         PowerUpDroneMove();
+        Rotate();
     }
 
    void OnTriggerEnter2D(Collider2D collission) 
@@ -45,5 +48,12 @@ public class Power_Drone1 : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
     }
-   
+
+    private void Rotate()
+    {
+        float rotAmount = degreesPerSec * rotationSpeed  * Time.deltaTime;
+        float currentRotation = transform.localRotation.eulerAngles.z;
+        transform.localRotation = Quaternion.Euler(new Vector3(0, 0, currentRotation + rotAmount));
+    }
+
 }
