@@ -9,7 +9,11 @@ public class Power_Drone1 : MonoBehaviour
     private float speed = 2f;
     public float degreesPerSec = 300f;
     private float rotationSpeed = 0.5f;
-    
+
+    [SerializeField]
+    private GameObject dronePowerUpPrefab;
+
+
     void Start()
     {
         drone1.SetActive(false);
@@ -55,5 +59,8 @@ public class Power_Drone1 : MonoBehaviour
         float currentRotation = transform.localRotation.eulerAngles.z;
         transform.localRotation = Quaternion.Euler(new Vector3(0, 0, currentRotation + rotAmount));
     }
+
+
+
 
 }
