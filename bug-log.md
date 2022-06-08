@@ -8,7 +8,7 @@ the robot can stand on.
 
 <!--LASER FIRE-->
 1. Large laser on top drone not visible once we use the num key to go back to scene.
-2.
+2. 
 
 <!--REDSPACESHIP MOVEMENT-->
 1. Enemy container still not working properly
@@ -19,7 +19,7 @@ the robot can stand on.
 
 
 <!--USER INTERFACE-->
-1.
+1. Bug on Jungle Scene - Possible issue is with powerUp Manager need to add it. 
 2.
 3.
 4.
