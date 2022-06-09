@@ -8,7 +8,7 @@ the robot can stand on.
 
 <!--LASER FIRE-->
 1. Large laser on top drone not visible once we use the num key to go back to scene.
-2. 
+2. Need to activate large laser when we collect spawned powerup.
 
 <!--REDSPACESHIP MOVEMENT-->
 1. Enemy container still not working properly
