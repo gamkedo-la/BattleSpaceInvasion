@@ -6,10 +6,19 @@ public class CaveFloorForeGround : MonoBehaviour
 {
     private float CaveForeGroundSpeed = 1.0f;
     private float CaveBottomSpikeSpeed = 0.5f;
+
+
+    [SerializeField]
+    Transform[] Positions;
+
+    private int NextPositionIndex;
+    Transform NextPosition;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        NextPosition = Positions[0];
     }
 
     // Update is called once per frame
@@ -21,7 +30,20 @@ public class CaveFloorForeGround : MonoBehaviour
 
     void CaveForeGroundMovement()
     {
-        transform.position = new Vector3(transform.position.x - (CaveForeGroundSpeed * Time.deltaTime), transform.position.y, 0);
+        //transform.position = new Vector3(transform.position.x - (CaveForeGroundSpeed * Time.deltaTime), transform.position.y, 0);
+        if(transform.position == NextPosition.position)
+        {
+            NextPositionIndex++;
+            if (NextPositionIndex >= Positions.Length)
+            {
+                NextPositionIndex = 0;
+            }
+            NextPosition = Positions[NextPositionIndex];
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NextPosition.position, CaveForeGroundSpeed * Time.deltaTime);
+        }
     }
     
 
