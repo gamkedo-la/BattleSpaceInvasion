@@ -58,7 +58,6 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
                 ScoreManager.instance.AddPoints(3);
                 Destroy(other.gameObject);
                 Destroy(this.gameObject);
-                ScoreManager.instance.AddPoints(2);
             }
         }
 
