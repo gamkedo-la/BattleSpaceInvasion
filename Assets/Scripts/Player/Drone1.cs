@@ -68,13 +68,18 @@ public class Drone1 : MonoBehaviour
             Vector3 rotationVectorLeft = new Vector3(0, 0, -180);
             GameObject LargeLaser = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(-1.21f, 0, 0), Quaternion.Euler(rotationVectorLeft));
             LargeLaser largeLaserScript = LargeLaser.GetComponent<LargeLaser>();
-            largeLaserScript.moveLeft = true;
+            //largeLaserScript.moveLeft = true;
            
         }
         else
         {
             GameObject LargeLaser = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(1.21f, 0, 0), Quaternion.Euler(rotationVector));
         }
+    }
+
+    void fireLaserRobotLeft()
+    {
+
     }
 
 
