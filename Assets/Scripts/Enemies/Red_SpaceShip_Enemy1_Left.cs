@@ -51,18 +51,14 @@ public class Red_SpaceShip_Enemy1_Left : MonoBehaviour
 
         if (other.tag == "laser")
         {
-
-
             if (redSpaceShipLeftLives == 0)
             {
                 CameraShake.instance.Shake(100.0f);
                 Instantiate(explosion, transform.position, Quaternion.identity);
                 Destroy(other.gameObject);
                 Destroy(this.gameObject);
-
+                ScoreManager.instance.AddPoints(2);
             }
-            //Destroy(this.gameObject);
-
         }
 
         if (other.tag == "Player")

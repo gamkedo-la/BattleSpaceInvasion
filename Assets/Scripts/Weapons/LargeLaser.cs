@@ -46,7 +46,7 @@ public class LargeLaser : MonoBehaviour
 
         if (other.tag == "ufo1Tag")
         {
-            // TODO: Deal damage to redSpaceShip
+            // TODO: Deal damage to ufo1
 
             Ufo1 ufo1 = other.transform.GetComponent<Ufo1>();
 

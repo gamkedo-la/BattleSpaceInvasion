@@ -51,8 +51,6 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
        
         if (other.tag == "laser")
         {
-            
-
             if (redSpaceShipLives == 0)
             {
                 CameraShake.instance.Shake(100.0f);
@@ -60,10 +58,8 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
                 ScoreManager.instance.AddPoints(3);
                 Destroy(other.gameObject);
                 Destroy(this.gameObject);
-
+                ScoreManager.instance.AddPoints(2);
             }
-            //Destroy(this.gameObject);
-
         }
 
         if (other.tag == "largeLaser")
