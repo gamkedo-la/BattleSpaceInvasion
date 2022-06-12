@@ -17,6 +17,7 @@ TagManager:
   - asteroid2
   - asteroid1
   - jungleShipBoss
+  - laserLeft
   layers:
   - Default
   - TransparentFX

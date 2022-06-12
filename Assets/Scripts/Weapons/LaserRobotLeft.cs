@@ -6,6 +6,8 @@ public class LaserRobotLeft : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private bool isRobotFacingLeft = false;
+
+    private int speed = 1000;
     // Start is called before the first frame update
     void Start()
     {

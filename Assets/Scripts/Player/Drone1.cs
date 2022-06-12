@@ -10,6 +10,9 @@ public class Drone1 : MonoBehaviour
     [SerializeField]
     private GameObject largeLaserPrefab;
 
+    [SerializeField]
+    private GameObject laserFireLeftPrefab;
+
 
     private bool isDroneFacingLeft = false;
 
@@ -42,6 +45,7 @@ public class Drone1 : MonoBehaviour
         while (true)
         {
             fireLargeLaser();
+            //fireLaserRobotLeft();
             yield return new WaitForSeconds(0.3f);
         }
         
@@ -67,7 +71,7 @@ public class Drone1 : MonoBehaviour
         {
             Vector3 rotationVectorLeft = new Vector3(0, 0, -180);
             GameObject LargeLaser = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(-1.21f, 0, 0), Quaternion.Euler(rotationVectorLeft));
-            LargeLaser largeLaserScript = LargeLaser.GetComponent<LargeLaser>();
+            //LargeLaser largeLaserScript = LargeLaser.GetComponent<LargeLaser>();
             //largeLaserScript.moveLeft = true;
            
         }
@@ -77,10 +81,12 @@ public class Drone1 : MonoBehaviour
         }
     }
 
-    void fireLaserRobotLeft()
-    {
-
-    }
+    //void fireLaserRobotLeft()
+    //{
+    //    Vector3 rV = new Vector3(0, 0, -180);
+    //    GameObject LaserLeft = (GameObject)Instantiate(laserFireLeftPrefab, transform.position + new Vector3(-1.21f, 0, 0), Quaternion.Euler(rV));
+    //    LaserLeft laserDirectionLeft = LaserLeft.GetComponent<laserRobotLeft>();
+    //}
 
 
     void droneMovement()
