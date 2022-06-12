@@ -47,7 +47,7 @@ public class ProjectileScript : MonoBehaviour
     void SpaceshipMovement()
     {
       
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
         
     }
 
