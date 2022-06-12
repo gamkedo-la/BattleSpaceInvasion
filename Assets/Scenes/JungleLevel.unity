@@ -1334,7 +1334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8089304426491430426, guid: 3bfeb8ef19f268141be70954207081ab, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8089304426491430426, guid: 3bfeb8ef19f268141be70954207081ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2240,11 +2240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f24108e408cafe488abb3815ddf64f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1597763477 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5369769698316521693, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
-  m_PrefabInstance: {fileID: 1297490496049371502}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1825089938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1297490494805941589, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
@@ -2275,51 +2270,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1297490494805941587, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
   m_PrefabInstance: {fileID: 1297490496049371502}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1869203186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1869203188}
-  - component: {fileID: 1869203187}
-  m_Layer: 0
-  m_Name: PowerUpManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1869203187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869203186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e35a1a050ea0ee43822dee5fc27916b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUpDronePrefab: {fileID: 1597763477}
---- !u!4 &1869203188
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869203186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025519939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,7 +2883,7 @@ PrefabInstance:
     - target: {fileID: 7173653626770068698, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: dronePowerUpPrefab
       value: 
-      objectReference: {fileID: 1597763477}
+      objectReference: {fileID: 0}
     - target: {fileID: 8639605947091901756, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

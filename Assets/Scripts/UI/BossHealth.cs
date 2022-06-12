@@ -41,6 +41,6 @@ public class BossHealth : MonoBehaviour
     public void Update() 
     {
         SetValue(boss.GetCurrentHealth()/boss.GetTotalHealth());
-        Debug.Log(boss.GetCurrentHealth()/boss.GetTotalHealth());
+        //Debug.Log(boss.GetCurrentHealth()/boss.GetTotalHealth());
     }
 }

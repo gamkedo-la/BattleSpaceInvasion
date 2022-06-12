@@ -11,7 +11,7 @@ public class Drone1 : MonoBehaviour
     private GameObject largeLaserPrefab;
 
 
-    private bool isDroneFacingLeft = false;
+   
 
     [SerializeField]
     private GameObject drone1;
@@ -43,13 +43,13 @@ public class Drone1 : MonoBehaviour
 
     IEnumerator FireWithDelay()
     {
-        Debug.Log("Start Large Laser");
+       
         while (true)
         {
             fireLargeLaser();
             //fireLaserRobotLeft();
             yield return new WaitForSeconds(0.3f);
-            Debug.Log("Firing Large Laser");
+           
         }
         
         
@@ -70,7 +70,8 @@ public class Drone1 : MonoBehaviour
     {
         Vector3 rotationVector = new Vector3(0, 0, 180);
         //GameObject LargeLaser  = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(1.21f, 0, 0), Quaternion.Euler(rotationVector));
-        if (transform.localScale.x < 0.0f && isDroneFacingLeft == true)
+       
+        if (transform.lossyScale.x < 0.0f)
         {
             Vector3 rotationVectorLeft = new Vector3(0, 0, -180);
             GameObject LargeLaser = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(-1.21f, 0, 0), Quaternion.Euler(rotationVectorLeft));
