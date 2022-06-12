@@ -189,11 +189,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3677478000239250640, guid: 801963d422d43ee42b79ee3b2f3ebfd9, type: 3}
   m_PrefabInstance: {fileID: 3677478000265017056}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &343862584 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5369769698316521693, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
-  m_PrefabInstance: {fileID: 1297490496049371502}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &395868560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 375855116036094843, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
@@ -15216,7 +15211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e35a1a050ea0ee43822dee5fc27916b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpDronePrefab: {fileID: 343862584}
+  powerUpDronePrefab: {fileID: 4234735222115688585, guid: fe3557a62c367584faa3aa389fa6e176, type: 3}
 --- !u!4 &1121131921
 Transform:
   m_ObjectHideFlags: 0
@@ -15967,6 +15962,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5398507308762735159, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5532359813174664437, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -16010,7 +16009,7 @@ PrefabInstance:
     - target: {fileID: 7173653626770068698, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: dronePowerUpPrefab
       value: 
-      objectReference: {fileID: 343862584}
+      objectReference: {fileID: 0}
     - target: {fileID: 7181480037098064371, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 7

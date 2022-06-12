@@ -446,6 +446,10 @@ public class Player : MonoBehaviour
         isDrone1Active = true;
         drone1.SetActive(true);
         drone2.SetActive(true);
+        Drone1 droneScript = drone1.GetComponent<Drone1>();
+        droneScript.StartFiring();
+        droneScript = drone2.GetComponent<Drone1>();
+        droneScript.StartFiring();
         StartCoroutine(Drone1PowerDown());
     }
 

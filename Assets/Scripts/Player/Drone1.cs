@@ -26,9 +26,13 @@ public class Drone1 : MonoBehaviour
         //if drone1 is set active position y axis
         //if drone1 is set active position y axis
         //transform.position = new Vector3(-1.76f, 0.8f, 0);
-        StartCoroutine(FireWithDelay());
+        
     }
 
+    public void StartFiring()
+    {
+        StartCoroutine(FireWithDelay());
+    }
 
     void Update()
     {
@@ -39,11 +43,13 @@ public class Drone1 : MonoBehaviour
 
     IEnumerator FireWithDelay()
     {
+        Debug.Log("Start Large Laser");
         while (true)
         {
             fireLargeLaser();
             //fireLaserRobotLeft();
             yield return new WaitForSeconds(0.3f);
+            Debug.Log("Firing Large Laser");
         }
         
         

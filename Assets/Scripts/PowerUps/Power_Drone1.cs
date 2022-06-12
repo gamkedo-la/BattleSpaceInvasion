@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class Power_Drone1 : MonoBehaviour
 {
-    public GameObject drone1;
-    public GameObject drone2;
+   
     
     private float speed = 2f;
     public float degreesPerSec = 300f;
     private float rotationSpeed = 0.5f;
 
-    [SerializeField]
-    public GameObject dronePowerUpPrefab;
-
+   
 
     void Start()
     {
-        drone1.SetActive(false);
-        drone2.SetActive(false);
+       
     }
 
     void Update()
@@ -38,14 +34,9 @@ public class Power_Drone1 : MonoBehaviour
             {
                 
                 player.Drone1Active();
-                drone1.SetActive(true);
-                drone2.SetActive(true);
-                dronePowerUpPrefab.SetActive(false);
-
-
-
+             
             }
-            //Destroy(gameObject);
+            Destroy(gameObject);
 
         }
         
