@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeLaserPrefab: {fileID: 2254719049156394530, guid: 3afe8a833524a56f8bfde30fa94805ca, type: 3}
+  laserFireLeftPrefab: {fileID: 604315348944369193, guid: 38e4add181ef2c245b5d67f59b5eb505, type: 3}
   drone1: {fileID: 330184205888209832}
   drone2: {fileID: 7927943590709769707}
   speed: 2.5
@@ -1787,6 +1788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drone1: {fileID: 330184205888209832}
   drone2: {fileID: 7927943590709769707}
+  degreesPerSec: 300
+  dronePowerUpPrefab: {fileID: 0}
 --- !u!1 &5478056309541465014
 GameObject:
   m_ObjectHideFlags: 0
@@ -11912,6 +11915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   largeLaserPrefab: {fileID: 2254719049156394530, guid: 3afe8a833524a56f8bfde30fa94805ca, type: 3}
+  laserFireLeftPrefab: {fileID: 0}
   drone1: {fileID: 330184205888209832}
   drone2: {fileID: 7927943590709769707}
   speed: 2.5
