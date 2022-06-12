@@ -15909,6 +15909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EveryLevelPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3729526023805307363, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: laserFireLeftPrefab
+      value: 
+      objectReference: {fileID: 604315348944369193, guid: 38e4add181ef2c245b5d67f59b5eb505, type: 3}
     - target: {fileID: 4125413803415651124, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 8
