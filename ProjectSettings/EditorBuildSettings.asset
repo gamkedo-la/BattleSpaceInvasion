@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MotherShip.unity
     guid: 52d25dfa0139021438b1f2b71ff40831
   - enabled: 1
+    path: Assets/Scenes/ShipDashBoardDialog.unity
+    guid: daa3028549de74c4d867fdedfeed53f0
+  - enabled: 1
     path: Assets/Scenes/Mission Log 2.unity
     guid: abf967fd0632efb48813c60a4edb1f31
   - enabled: 1

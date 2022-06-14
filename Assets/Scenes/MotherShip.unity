@@ -217,7 +217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4815429320013000244, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4815429320013000244, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
       propertyPath: playerReference
