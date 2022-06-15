@@ -5819,6 +5819,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 330184205888209832, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 375855116036094843, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5927,6 +5931,22 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.7830189
       objectReference: {fileID: 0}
+    - target: {fileID: 1414860488451194628, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414860488451194628, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075334119271128944, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075334119271128944, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.946
+      objectReference: {fileID: 0}
     - target: {fileID: 2814411474488758684, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5974,6 +5994,10 @@ PrefabInstance:
     - target: {fileID: 7173653626770068698, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: dronePowerUpPrefab
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927943590709769707, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8100929035018516390, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
