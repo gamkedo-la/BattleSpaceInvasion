@@ -1827,7 +1827,7 @@ RectTransform:
   - {fileID: 1817693474}
   - {fileID: 343182305}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1846,6 +1846,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb969ab4a6c9292488321171d6569599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
+  settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
+  audioManagerGO: {fileID: 1082434639}
 --- !u!114 &782091006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,6 +1862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
+  audioSlider: {fileID: 41190370}
+  settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
 --- !u!1 &805500288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2673,72 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 10}
   m_Constraint: 1
   m_ConstraintCount: 1
+--- !u!1 &1082434639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082434641}
+  - component: {fileID: 1082434640}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1082434640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082434639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a37c408da56d2a40af655277908e976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Mech Sound
+    clip: {fileID: 8300000, guid: 4f8f3f24b8028dd4394eb09d76fcd556, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MainMenuTheme
+    clip: {fileID: 8300000, guid: 9eb5e03f551687e4d8c0c1477092a366, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: laser1
+    clip: {fileID: 8300000, guid: 90001e35b3304ca4687b52920749b6f7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  audioMixerGroup: {fileID: 24300002, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
+  audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
+  settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
+--- !u!4 &1082434641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082434639}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 572.6417, y: 157.49161, z: -33.292114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083017909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +2981,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465559944
 GameObject:
@@ -7722,7 +7793,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1469848472
 GameObject:
@@ -12904,7 +12975,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1673341330
 GameObject:
@@ -13119,7 +13190,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713408774
 GameObject:
@@ -13618,7 +13689,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1750931295
 GameObject:
@@ -14144,7 +14215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1893477165
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14254,7 +14325,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917295708
 GameObject:
