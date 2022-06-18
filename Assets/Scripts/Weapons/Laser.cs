@@ -87,6 +87,20 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        if (other.tag == "planetGuardianBoss")
+        {
+            // TODO: Deal damage to planetGuardian
+
+            PlantGuardianBoss planetGuardianBoss = other.transform.GetComponent<PlantGuardianBoss>();
+
+            if (planetGuardianBoss != null) // perform a null check error handling. 
+            {
+                planetGuardianBoss.plantGuardianDamage();
+                //Debug.Log("Laser Hits planet guardian ");
+            }
+            Destroy(this.gameObject);
+        }
+
 
 
 

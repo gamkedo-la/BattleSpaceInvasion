@@ -18,6 +18,7 @@ TagManager:
   - asteroid1
   - jungleShipBoss
   - laserLeft
+  - planetGuardianBoss
   layers:
   - Default
   - TransparentFX
