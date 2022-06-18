@@ -12,20 +12,44 @@ public class PlantGuardianBoss : MonoBehaviour
     private float health = 5;
 
 
+    [SerializeField]
+    Transform[] Positions;
+
+    private int NextPositionIndex;
+    Transform NextPosition;
+
+    
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        NextPosition = Positions[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        planetGuardianMovement();
     }
 
+    void planetGuardianMovement()
+    {
+        if(transform.position == NextPosition.position)
+        {
+            NextPositionIndex++;
+            if(NextPositionIndex >= Positions.Length)
+            {
+                NextPositionIndex = 0;
+            }
+            NextPosition = Positions[NextPositionIndex];
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NextPosition.position, speed * Time.deltaTime);
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
