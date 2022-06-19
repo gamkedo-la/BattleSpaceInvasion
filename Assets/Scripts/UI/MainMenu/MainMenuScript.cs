@@ -13,11 +13,11 @@ public class MainMenuScript : MonoBehaviour
 
     private void Start()
     {
-        //audioMixer.SetFloat("Volume", Mathf.Log10(settings.soundSetting) * 20);
-        //Debug.Log("Sound volume is at: " + (settings.soundSetting * 100) + "%");
+        audioMixer.SetFloat("Volume", Mathf.Log10(settings.soundSetting) * 20);
+        Debug.Log("Sound volume is at: " + (settings.soundSetting * 100) + "%");
 
-        //audioManager = audioManagerGO.GetComponent<AudioManager>();
-        //PlayThemeSound();
+        audioManager = audioManagerGO.GetComponent<AudioManager>();
+        PlayThemeSound();
     }
 
     public void LoadGame()

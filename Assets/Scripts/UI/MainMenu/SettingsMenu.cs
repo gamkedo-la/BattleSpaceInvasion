@@ -15,13 +15,18 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
-        //audioSlider.value = settings.soundSetting;
-        //audioSlider.onValueChanged.AddListener(UpdateSlider);
+        if(audioSlider == null)
+        {
+            this.enabled = false;
+            return;
+        }
+        audioSlider.value = settings.soundSetting;
+        audioSlider.onValueChanged.AddListener(UpdateSlider);
     }
 
     private void UpdateSlider(float soundChange)
     {
-        //settings.soundSetting = audioSlider.value;
+        settings.soundSetting = audioSlider.value;
     }
 
     public void SetVolume(float volume)
