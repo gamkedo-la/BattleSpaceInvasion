@@ -19,6 +19,7 @@ TagManager:
   - jungleShipBoss
   - laserLeft
   - planetGuardianBoss
+  - SceneManager
   layers:
   - Default
   - TransparentFX

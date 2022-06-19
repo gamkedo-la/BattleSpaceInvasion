@@ -12,6 +12,7 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider audioSlider;
     public SettingsSO settings;
+    public AudioSO audios;
 
     private void Start()
     {

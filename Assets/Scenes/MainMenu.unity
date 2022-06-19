@@ -2702,25 +2702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a37c408da56d2a40af655277908e976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: Mech Sound
-    clip: {fileID: 8300000, guid: 4f8f3f24b8028dd4394eb09d76fcd556, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: MainMenuTheme
-    clip: {fileID: 8300000, guid: 9eb5e03f551687e4d8c0c1477092a366, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: laser1
-    clip: {fileID: 8300000, guid: 90001e35b3304ca4687b52920749b6f7, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
+  audios: {fileID: 11400000, guid: 69a6937067226964b830e1e84437fea4, type: 2}
   audioMixerGroup: {fileID: 24300002, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
   audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
   settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}

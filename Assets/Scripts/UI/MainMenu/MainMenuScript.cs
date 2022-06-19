@@ -34,13 +34,11 @@ public class MainMenuScript : MonoBehaviour
 
     public void PlayThemeSound()
     {
-        //audioManager.Play("MainMenuTheme");
         audioManager.gameObject.GetComponent<AudioManager>().Play("MainMenuTheme");
     }
 
     private void OnDisable()
     {
-        //audioManager.Stop("MainMenuTheme");
         if(audioManager != null)
             audioManager.gameObject.GetComponent<AudioManager>().Stop("MainMenuTheme");
     }

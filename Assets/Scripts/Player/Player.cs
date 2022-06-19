@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
     private AudioClip laser1Sound;
     //[SerializeField]
     private AudioSource audioSource;
+    [SerializeField] GameObject audioManagerGO;
+    private AudioManager audioManager;
 
     [SerializeField]
     private int playerLives = 5;
@@ -94,7 +96,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i< robotShootFrame.Length; i++)
+        audioManagerGO = GameObject.FindGameObjectWithTag("SceneManager");
+        audioManager = audioManagerGO.GetComponent<AudioManager>();
+        for (int i = 0; i< robotShootFrame.Length; i++)
         {
             robotShootFrame[i].SetActive(false);
         }
@@ -110,6 +114,7 @@ public class Player : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         transform.position = new Vector3(-7f, 2.25f, 0);
 
+        /*
         if(audioSource == null)
         {
             Debug.LogError("AudioSource on JETSPACESHIP is NULL");
@@ -118,6 +123,7 @@ public class Player : MonoBehaviour
         {
             audioSource.clip = laser1Sound;
         }
+        */
 
         anim = GetComponent<Animator>();
 
@@ -131,6 +137,11 @@ public class Player : MonoBehaviour
 //        }
 
 
+    }
+
+    public void PlayAudioClip(string sound)
+    {
+        audioManager.Play(sound);
     }
 
 
@@ -400,10 +411,10 @@ public class Player : MonoBehaviour
             
         }
 
+        PlayAudioClip("laser1");
+        //audioSource.Play();
 
-        audioSource.Play();
 
-        
     }
 
     float getTotalSpeed()
