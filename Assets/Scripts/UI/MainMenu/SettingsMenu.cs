@@ -16,6 +16,11 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
+        if(audioSlider == null)
+        {
+            this.enabled = false;
+            return;
+        }
         audioSlider.value = settings.soundSetting;
         audioSlider.onValueChanged.AddListener(UpdateSlider);
     }
