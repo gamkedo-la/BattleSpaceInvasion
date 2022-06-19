@@ -14,6 +14,13 @@ public class Ignimbrite1 : MonoBehaviour
 
     private float totalHealth;
 
+
+    [SerializeField]
+    Transform[] Positions;
+
+    private int NextPositionIndex;
+    Transform NextPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +28,7 @@ public class Ignimbrite1 : MonoBehaviour
         //transform.position = new Vector3(13, 4, 0);
         //scaleChange = new Vector3(0.4f, 0.4f, 1);
         totalHealth = health;
+        NextPosition = Positions[0];
 
     }
 
@@ -34,6 +42,7 @@ public class Ignimbrite1 : MonoBehaviour
         //    float random = Random.Range(-3f, 3f);
         //    transform.position = new Vector3(8, random, 0);
         //}
+        IgnimbriteMovement();
     }
 
     //void redSpaceshipMovement()
@@ -42,6 +51,23 @@ public class Ignimbrite1 : MonoBehaviour
     //    transform.Translate(Vector3.up * speed * Time.deltaTime);
 
     //}
+
+    void IgnimbriteMovement()
+    {
+        if (transform.position == NextPosition.position)
+        {
+            NextPositionIndex++;
+            if (NextPositionIndex >= Positions.Length)
+            {
+                NextPositionIndex = 0;
+            }
+            NextPosition = Positions[NextPositionIndex];
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NextPosition.position, speed * Time.deltaTime);
+        }
+    }
 
 
     void OnTriggerEnter2D(Collider2D other)
