@@ -8,15 +8,15 @@ public class MainMenuScript : MonoBehaviour
 {
     [SerializeField] AudioMixer audioMixer;
     [SerializeField] SettingsSO settings;
-    
-    private AudioManager audioManager;
+    [SerializeField] GameObject audioManagerGO;
+    [SerializeField] AudioManager audioManager;
 
     private void Start()
     {
         audioMixer.SetFloat("Volume", Mathf.Log10(settings.soundSetting) * 20);
         Debug.Log("Sound volume is at: " + (settings.soundSetting * 100) + "%");
 
-        audioManager = AudioManager.instance;
+        audioManager = audioManagerGO.GetComponent<AudioManager>();
         PlayThemeSound();
     }
 

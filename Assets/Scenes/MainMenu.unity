@@ -208,8 +208,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 2050140525}
   m_HandleRect: {fileID: 1469848473}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 0
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
   settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
-  audioManagerGO: {fileID: 1082434639}
+  audioManager: {fileID: 1082434640}
 --- !u!114 &782091006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,6 +1864,7 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
   audioSlider: {fileID: 41190370}
   settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
+  audios: {fileID: 11400000, guid: 69a6937067226964b830e1e84437fea4, type: 2}
 --- !u!1 &805500288
 GameObject:
   m_ObjectHideFlags: 0

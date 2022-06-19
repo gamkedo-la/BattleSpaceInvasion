@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioMixer audioMixer;
 
     private float[] originalVolumes;
-    public static AudioManager instance;
+    //public static AudioManager instance;
 
     public SettingsSO settings;
 

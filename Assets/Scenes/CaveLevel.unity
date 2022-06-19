@@ -6349,6 +6349,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6554656002527452710, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+      propertyPath: audios
+      value: 
+      objectReference: {fileID: 11400000, guid: 69a6937067226964b830e1e84437fea4, type: 2}
     - target: {fileID: 7173653626770068698, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
       propertyPath: dronePowerUpPrefab
       value: 
