@@ -5,15 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-
+    public PauseMenu pause { get; private set; }
+    public GameObject pauseGO;
     public Animator transition;
-
+    private bool isPaused;
     public float transitionTime = 1f;
+
+
+    private void Awake()
+    {
+        pause = pauseGO.GetComponent<PauseMenu>();
+    }
+
+    private void OnEnable()
+    {
+        //Subscribe to get notified when game is paused
+        pause.Paused += SetPauseStatus;
+    }
+
+    private void Start()
+    {
+        isPaused = false;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isPaused)
         {
             LoadNextLevel();
         }
@@ -37,4 +55,14 @@ public class LevelLoader : MonoBehaviour
         //Load scene
     }
 
+    private void SetPauseStatus(bool paused)
+    {
+        isPaused = paused;
+    }
+
+    private void OnDisable()
+    {
+        //Unsubscribe to get notified when game is paused
+        pause.Paused -= SetPauseStatus;
+    }
 }

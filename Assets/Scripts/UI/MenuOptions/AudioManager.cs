@@ -27,18 +27,6 @@ public class AudioManager : MonoBehaviour
     //singleton to last throughtout each scene
     void Awake()
     {
-        /*
-        if (instance == null)
-            instance = this;
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        DontDestroyOnLoad(gameObject);
-        */
-
         //apply the desired settings to each sound
         foreach (Sound s in audios.sounds)
         {
@@ -50,21 +38,6 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
         originalVolumes = new float[audios.sounds.Length];
-
-        /*
-        //apply the desired settings to each sound
-        foreach (Sound s in sounds)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.outputAudioMixerGroup = audioMixerGroup;
-
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.loop;
-        }
-        originalVolumes = new float[sounds.Length];
-        */
     }
 
     //set the main audio volume

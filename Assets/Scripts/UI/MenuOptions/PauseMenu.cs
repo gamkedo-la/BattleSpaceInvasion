@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    public event Action<bool> Paused = delegate { };
+
     [SerializeField] string mainMenu;
 
     public static bool gameIsPaused = false;
@@ -37,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+        Paused.Invoke(gameIsPaused);
     }
 
     public void Pause()
@@ -44,6 +48,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
+        Paused.Invoke(gameIsPaused);
     }
 
     public void LoadMenu()

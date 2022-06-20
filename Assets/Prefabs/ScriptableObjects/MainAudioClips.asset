@@ -23,7 +23,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4f8f3f24b8028dd4394eb09d76fcd556, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: laser1
     clip: {fileID: 8300000, guid: 90001e35b3304ca4687b52920749b6f7, type: 3}

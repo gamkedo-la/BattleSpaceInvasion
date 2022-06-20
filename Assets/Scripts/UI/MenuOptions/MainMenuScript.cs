@@ -9,7 +9,7 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] AudioMixer audioMixer;
     [SerializeField] SettingsSO settings;
     [SerializeField] GameObject audioManagerGO;
-    [SerializeField] AudioManager audioManager;
+    private AudioManager audioManager;
 
     private void Start()
     {
