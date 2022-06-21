@@ -415,6 +415,7 @@ MonoBehaviour:
   _laserPrefab: {fileID: 8861518004655608860, guid: 26420b2217b3cb048b2dc3b7bbc0867e, type: 3}
   _fireRate: 0.5
   laser1Sound: {fileID: 8300000, guid: 90001e35b3304ca4687b52920749b6f7, type: 3}
+  audioManagerGO: {fileID: 4737463487717263457, guid: 2aa0ad813206eed4fa00aba60dcaf922, type: 3}
   playerLives: 5
   leftMarker: {fileID: 3395744389401681034}
   rightMarker: {fileID: 1324333774922942864}

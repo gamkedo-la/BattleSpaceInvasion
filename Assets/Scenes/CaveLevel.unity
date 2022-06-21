@@ -191,6 +191,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6553373225498961218, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
+      propertyPath: pauseGO
+      value: 
+      objectReference: {fileID: 790601369}
+    - target: {fileID: 6553373225498961218, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
