@@ -283,7 +283,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6553373225498961218, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
+    - {fileID: 4815429320013000244, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
 --- !u!1 &294909961
 GameObject:
@@ -327,6 +329,7 @@ GameObject:
   - component: {fileID: 366917162}
   - component: {fileID: 366917161}
   - component: {fileID: 366917160}
+  - component: {fileID: 366917163}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: SceneManager
@@ -382,6 +385,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &366917163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366917159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a37c408da56d2a40af655277908e976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audios: {fileID: 11400000, guid: 69a6937067226964b830e1e84437fea4, type: 2}
+  audioMixerGroup: {fileID: 24300002, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
+  audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
+  settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
 --- !u!4 &395868560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 375855116036094843, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
