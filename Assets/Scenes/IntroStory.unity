@@ -8159,10 +8159,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1280530537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff8a85807f70734ca311733b3c37e5c, type: 3}
+  m_Script: {fileID: 11500000, guid: cc6ce762385bc1d4bbef638e59eeb671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioManagerGO: {fileID: 985671389}
+  playThisSound:
+  - MechSound2
 --- !u!1 &1305548720
 GameObject:
   m_ObjectHideFlags: 0

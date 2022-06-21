@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioManagerGO = GameObject.FindGameObjectWithTag("SceneManager");
+        //audioManagerGO = GameObject.FindGameObjectWithTag("SceneManager");
         audioManager = audioManagerGO.GetComponent<AudioManager>();
         for (int i = 0; i< robotShootFrame.Length; i++)
         {

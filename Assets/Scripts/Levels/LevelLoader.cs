@@ -20,6 +20,7 @@ public class LevelLoader : MonoBehaviour
     private void OnEnable()
     {
         //Subscribe to get notified when game is paused
+        //This is relevant so if the screen moves on after clicking, then clicking in the pause menu won't count
         pause.Paused += SetPauseStatus;
     }
 

@@ -20,12 +20,15 @@ public class PauseMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log(gameIsPaused);
             if(gameIsPaused)
             {
+                Debug.Log("Resume");
                 Resume();
             }
             else
             {
+                Debug.Log("Pause");
                 Pause();
             }
         }

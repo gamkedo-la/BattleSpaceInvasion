@@ -31,3 +31,33 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: GalaxyBattleSoundV8
+    clip: {fileID: 8300000, guid: 4c8494ae1f2987a43a93a451ce21cdfb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GalaxyNebBossV2
+    clip: {fileID: 8300000, guid: 1b4e5ae6b707e234f8f90755e87bb3bd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: bossFight
+    clip: {fileID: 8300000, guid: 592aa8551ef8c034ca0db971b85700e1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: JunglePlanet4
+    clip: {fileID: 8300000, guid: e7055a6a7e4d1e34a84d0aa5cde41a1f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BirdSounds-edited
+    clip: {fileID: 8300000, guid: 40c3d185e401cea4c87ee15cb08b26ab, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
