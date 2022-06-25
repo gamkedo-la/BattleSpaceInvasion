@@ -11,7 +11,7 @@ public class Dialogue
 
     public string name;
 
-    [TextArea(3,100)] // first parameter states the minimum, and second one is the maximum
+    [TextArea(3,1000)] // first parameter states the minimum, and second one is the maximum
 
     public string[] sentences;
 
