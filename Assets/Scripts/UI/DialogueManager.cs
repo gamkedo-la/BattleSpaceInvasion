@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class DialogueManager : MonoBehaviour
         if(sentences.Count == 0)
         {
             EndDialogue();
+          
             return;
         }
 
@@ -50,7 +52,9 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        SceneManager.LoadScene("Mission Log 1");
         Debug.Log("End of conversation.");
+       
     }
 
 }
