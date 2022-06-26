@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Ignimbrite1 : MonoBehaviour
 {
+    public GameObject ignimbriteLaserPrefab;
+    public Transform ignimLaserFirePosition;
+    public GameObject handLaserPrefab;
+    public Transform handLaserFirePosition;
+
     public GameObject explosion;
     private float speed = 5.0f;
 
@@ -29,8 +34,21 @@ public class Ignimbrite1 : MonoBehaviour
         //scaleChange = new Vector3(0.4f, 0.4f, 1);
         totalHealth = health;
         NextPosition = Positions[0];
-
+        StartCoroutine(FireBigLaser());
     }
+
+    IEnumerator FireBigLaser()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5.0f);
+            GameObject laserGO = GameObject.Instantiate(ignimbriteLaserPrefab);
+            laserGO.transform.position = ignimLaserFirePosition.position;
+
+        }
+    }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -52,7 +70,16 @@ public class Ignimbrite1 : MonoBehaviour
 
     //}
 
-    void IgnimbriteMovement()
+    public void fireHandCannon()
+    {
+        Debug.Log("Hand up");
+       
+        GameObject laserGO = GameObject.Instantiate(handLaserPrefab);
+        laserGO.transform.position = handLaserFirePosition.position;
+
+    }
+
+void IgnimbriteMovement()
     {
         if (transform.position == NextPosition.position)
         {
@@ -68,6 +95,8 @@ public class Ignimbrite1 : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, NextPosition.position, speed * Time.deltaTime);
         }
     }
+
+
 
 
     void OnTriggerEnter2D(Collider2D other)

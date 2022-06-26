@@ -68,6 +68,8 @@ public class Drone1 : MonoBehaviour
 
     void fireLargeLaser()
     {
+       
+
         Vector3 rotationVector = new Vector3(0, 0, 180);
         //GameObject LargeLaser  = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(1.21f, 0, 0), Quaternion.Euler(rotationVector));
        
