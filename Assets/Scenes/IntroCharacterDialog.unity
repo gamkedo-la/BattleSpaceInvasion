@@ -2027,12 +2027,10 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - "Scientist from the Space Explorer program was able to detect the arrival of
-      \r\nthe alien craft. "
-    - 'Dr. Ana Samantha, the head of the exploring team found out through telepathy
-
-      that
-      the alien was an evacuee of the planet Sinjaraja. '
+    - "Scientists from the Space Explorer program was able to detect the arrival
+      of \r\nthe alien craft. "
+    - Dr. Ana Samantha, the head of the exploring team found out through telepathy,
+    - that the alien was an evacuee of the planet Sinjaraja.
     - 'The alien was forced to crash land on our planet due to another alien race
       trying to capture her that took over her planet. '
 --- !u!114 &570022116
@@ -2180,7 +2178,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Narrator
+  m_Text: 
 --- !u!222 &576528198
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2561,7 +2559,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the placeholder text
+  m_Text: 
 --- !u!222 &704473179
 CanvasRenderer:
   m_ObjectHideFlags: 0

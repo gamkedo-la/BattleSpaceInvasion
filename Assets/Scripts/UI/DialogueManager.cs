@@ -51,10 +51,21 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         //Debug.Log(sentence);
-        dialogueText.text = sentence;
+        //dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+
     }
 
-    
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter; // will append letter to the end of the string.
+            yield return null;// wait a single frame
+        }
+    }
 
     void EndDialogue()
     {
