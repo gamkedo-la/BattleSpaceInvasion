@@ -491,6 +491,10 @@ public class Player : MonoBehaviour
                 {
                     renderer.enabled = false;
                 }
+
+                drone1.SetActive(false);
+                drone2.SetActive(false);
+
                 jetEngineParticle.SetActive(false);
                 robotEngineParticle.SetActive(false);
                 BoxCollider2D collider2D = GetComponent<BoxCollider2D>();
