@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public PauseMenu pause { get; private set; }
-    public GameObject pauseGO;
+    public GameObject sceneManagerGO;
     public Animator transition;
     private bool isPaused;
     public float transitionTime = 1f;
@@ -14,7 +14,7 @@ public class LevelLoader : MonoBehaviour
 
     private void Awake()
     {
-        pause = pauseGO.GetComponent<PauseMenu>();
+        pause = sceneManagerGO.GetComponent<PauseMenu>();
     }
 
     private void OnEnable()

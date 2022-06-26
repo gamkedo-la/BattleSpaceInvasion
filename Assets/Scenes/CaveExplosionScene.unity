@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f33e9ca507c669444b77f36c85cf7e84, type: 2}
-  audioSlider: {fileID: 0}
+  audioSlider: {fileID: 1297556690}
   settings: {fileID: 11400000, guid: 6e0e67049c375fc41a278f3c8ae882b2, type: 2}
   audios: {fileID: 11400000, guid: 69a6937067226964b830e1e84437fea4, type: 2}
 --- !u!114 &289335200

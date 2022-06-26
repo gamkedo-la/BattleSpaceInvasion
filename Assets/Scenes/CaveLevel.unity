@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 2107182490}
+    - target: {fileID: 6553373225498961218, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
+      propertyPath: sceneManagerGO
+      value: 
+      objectReference: {fileID: 790601369}
     - target: {fileID: 8014557456134739435, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
       propertyPath: m_Name
       value: LevelLoader
