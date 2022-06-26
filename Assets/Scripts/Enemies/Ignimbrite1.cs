@@ -7,6 +7,8 @@ public class Ignimbrite1 : MonoBehaviour
 {
     public GameObject ignimbriteLaserPrefab;
     public Transform ignimLaserFirePosition;
+    public GameObject handLaserPrefab;
+    public Transform handLaserFirePosition;
 
     public GameObject explosion;
     private float speed = 5.0f;
@@ -71,9 +73,13 @@ public class Ignimbrite1 : MonoBehaviour
     public void fireHandCannon()
     {
         Debug.Log("Hand up");
+       
+        GameObject laserGO = GameObject.Instantiate(handLaserPrefab);
+        laserGO.transform.position = handLaserFirePosition.position;
+
     }
 
-    void IgnimbriteMovement()
+void IgnimbriteMovement()
     {
         if (transform.position == NextPosition.position)
         {

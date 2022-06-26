@@ -10986,6 +10986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignimbriteLaserPrefab: {fileID: 8199206738843259245, guid: f8a49ef1d059bb44a97d91a975119db6, type: 3}
   ignimLaserFirePosition: {fileID: 1838640338}
+  handLaserPrefab: {fileID: 6432337012038839194, guid: 0f7ae1a201775f54599b2d8e6a76d095, type: 3}
+  handLaserFirePosition: {fileID: 2057270943}
   explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
   health: 10
   Positions:
@@ -11152,7 +11154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057270942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.78, y: 1.04, z: 0}
+  m_LocalPosition: {x: -4.4, y: 1.64, z: 0}
   m_LocalScale: {x: 251359, y: 0.2730221, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
