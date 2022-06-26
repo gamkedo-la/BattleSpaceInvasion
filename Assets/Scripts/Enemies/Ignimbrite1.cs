@@ -41,7 +41,7 @@ public class Ignimbrite1 : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(5.0f);
             GameObject laserGO = GameObject.Instantiate(ignimbriteLaserPrefab);
             laserGO.transform.position = ignimLaserFirePosition.position;
 
