@@ -285,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8014557456134739435, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6553373225498961218, guid: 22a33349a86e6d140b669fde6a2089e0, type: 3}
@@ -10783,7 +10783,7 @@ GameObject:
   - component: {fileID: 1838640338}
   - component: {fileID: 1838640339}
   m_Layer: 0
-  m_Name: Ignimbrite_laser
+  m_Name: Ignimbrite_laserSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10811,7 +10811,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838640337}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10984,6 +10984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2903c46d58d428419fa0f3ba572f866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignimbriteLaserPrefab: {fileID: 8199206738843259245, guid: f8a49ef1d059bb44a97d91a975119db6, type: 3}
+  ignimLaserFirePosition: {fileID: 1838640338}
   explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
   health: 10
   Positions:
