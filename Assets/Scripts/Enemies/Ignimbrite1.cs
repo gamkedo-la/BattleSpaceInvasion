@@ -46,6 +46,8 @@ public class Ignimbrite1 : MonoBehaviour
         }
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -65,6 +67,11 @@ public class Ignimbrite1 : MonoBehaviour
     //    transform.Translate(Vector3.up * speed * Time.deltaTime);
 
     //}
+
+    public void fireHandCannon()
+    {
+        Debug.Log("Hand up");
+    }
 
     void IgnimbriteMovement()
     {
