@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 442255966407536336}
   - component: {fileID: 7670699687017639828}
   - component: {fileID: 232014936295116153}
+  - component: {fileID: 642674048596027029}
   m_Layer: 0
   m_Name: EnemyLaser
   m_TagString: Untagged
@@ -119,5 +120,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef69aa2a813446444a211742e127f15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserSpeed: 20
+  laserSpeed: 5
   moveLeft: 0
+--- !u!95 &642674048596027029
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6432337012038839194}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4918f78c8e80e1747bb8fe65606bd916, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
