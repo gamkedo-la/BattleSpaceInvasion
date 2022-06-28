@@ -19903,6 +19903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redSpaceShipPrefab: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
+  redSpaceShipLeftPrefab: {fileID: 1745677029978442622, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
   asteroid1Prefab: {fileID: 6232270740313948000, guid: 05dfbabd80048d24c93ba515900ba8be, type: 3}
   asteroid2Prefab: {fileID: 3677478000239250638, guid: 801963d422d43ee42b79ee3b2f3ebfd9, type: 3}
   asteroid3Prefab: {fileID: 2686016481869176294, guid: 71abb944eb94a8d4d831dcabc908c04f, type: 3}

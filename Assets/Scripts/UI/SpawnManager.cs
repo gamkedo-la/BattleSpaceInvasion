@@ -6,6 +6,10 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject redSpaceShipPrefab;
+
+    [SerializeField]
+    private GameObject redSpaceShipLeftPrefab;
+
     [SerializeField]
     private GameObject asteroid1Prefab;
 
@@ -42,6 +46,10 @@ public class SpawnManager : MonoBehaviour
             Vector3 postToSpawn = new Vector3(Random.Range(7f, -7f), 4, 0);
             Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.identity);
 
+
+            Vector3 redEnemyLeft = new Vector3(Random.Range(7f, -7f), 4, 0);
+            Instantiate(redSpaceShipLeftPrefab, redEnemyLeft, Quaternion.identity);
+
             Vector3 asteroid1ToSpawn = new Vector3(12, Random.Range(3f, -3f), 0);
             Instantiate(asteroid1Prefab, asteroid1ToSpawn, Quaternion.identity);
 
@@ -57,7 +65,10 @@ public class SpawnManager : MonoBehaviour
             
             GameObject newRedEnemy = Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.Euler(rotationVector));
             newRedEnemy.transform.parent = redEnemyContainer.transform;
-            
+
+            GameObject newRedEnemyLeft = Instantiate(redSpaceShipLeftPrefab, postToSpawn, Quaternion.Euler(rotationVector));
+            newRedEnemyLeft.transform.parent = redEnemyContainer.transform;
+
             GameObject newAsteriod1 = Instantiate(asteroid1Prefab, asteroid1ToSpawn, Quaternion.identity);
             newAsteriod1.transform.parent = redEnemyContainer.transform;
 
@@ -69,6 +80,10 @@ public class SpawnManager : MonoBehaviour
             newAsteriod2.transform.parent = redEnemyContainer.transform;
 
             yield return new WaitForSeconds(3.0f);
+
+            //new RedShipEnemyLeft
+
+
         }
         
     }
