@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 50138984591669721}
   - component: {fileID: 6535520826914083523}
   - component: {fileID: -5771361768806330887}
+  - component: {fileID: 5859000681551375475}
   m_Layer: 0
   m_Name: red-Space-Enemy2-left
   m_TagString: redShipEnemyLeft
@@ -97,5 +98,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff6e747a837bb04ab9b884e0409cad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
   redSpaceShipLeftLives: 3
+--- !u!61 &5859000681551375475
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745677029978442622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.65, y: 6.47}
+    newSize: {x: 5.65, y: 6.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.65, y: 6.47}
+  m_EdgeRadius: 0

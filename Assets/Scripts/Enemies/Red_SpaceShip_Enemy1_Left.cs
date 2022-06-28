@@ -17,7 +17,7 @@ public class Red_SpaceShip_Enemy1_Left : MonoBehaviour
     void Start()
     {
 
-        transform.position = new Vector3(-8f, -0.09f, 0);
+        transform.position = new Vector3(-8f, 72.46f, 0);
         scaleChange = new Vector3(0.4f, 0.4f, 1);
 
     }

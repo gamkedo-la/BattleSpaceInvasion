@@ -798,21 +798,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 709307171}
     m_Modifications:
+    - target: {fileID: -5771361768806330887, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
     - target: {fileID: 50138984591669721, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 50138984591669721, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.20507
+      value: 6.39
       objectReference: {fileID: 0}
     - target: {fileID: 50138984591669721, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 78.17903
+      value: 72.46
       objectReference: {fileID: 0}
     - target: {fileID: 50138984591669721, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.2028807
+      value: 2.01
       objectReference: {fileID: 0}
     - target: {fileID: 50138984591669721, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19294,6 +19298,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649722341}
   m_CullTransparentMesh: 1
+--- !u!1 &1666394309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1745677029978442622, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
+  m_PrefabInstance: {fileID: 150922344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1666394312
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666394309}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.65, y: 6.47}
+    newSize: {x: 5.65, y: 6.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.65, y: 6.47}
+  m_EdgeRadius: 0
 --- !u!1 &1678290692
 GameObject:
   m_ObjectHideFlags: 0
