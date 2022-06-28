@@ -12,8 +12,11 @@ public class Bird : MonoBehaviour
     private float speed;
     private Vector2 movement;
     //[SerializeField]
-   // private float attackSpeed;
+    // private float attackSpeed;
     // Start is called before the first frame update
+
+    public float degreesPerSec = 180f;
+  
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -28,6 +31,14 @@ public class Bird : MonoBehaviour
         //rb.rotation = angle;
         direction.Normalize();
         movement = direction;
+        Rotate();
+    }
+
+    private void Rotate()
+    {
+        float rotAmount = degreesPerSec * Time.deltaTime;
+        float currentRotation = transform.localRotation.eulerAngles.z;
+        transform.localRotation = Quaternion.Euler(new Vector3(0, 0, currentRotation + rotAmount));
     }
 
 

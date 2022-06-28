@@ -1857,7 +1857,7 @@ Transform:
   m_GameObject: {fileID: 543082495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 16.795118, y: -1.3756709, z: 0}
-  m_LocalScale: {x: 2.5319827, y: 1.4531441, z: 0.5}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1930,6 +1930,7 @@ MonoBehaviour:
   target: {fileID: 1825089941}
   t: 0.5
   speed: 2.8
+  degreesPerSec: 180
 --- !u!50 &543082499
 Rigidbody2D:
   serializedVersion: 4
@@ -3108,7 +3109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &984349836
 Transform:
   m_ObjectHideFlags: 0
@@ -3139,6 +3140,7 @@ MonoBehaviour:
   target: {fileID: 1825089941}
   t: 0
   speed: 2.8
+  degreesPerSec: 360
 --- !u!212 &984349838
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4878,7 +4880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1441751254
 Transform:
   m_ObjectHideFlags: 0
@@ -4909,6 +4911,7 @@ MonoBehaviour:
   target: {fileID: 1825089941}
   t: 0
   speed: 2.8
+  degreesPerSec: 360
 --- !u!212 &1441751256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6716,7 +6719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2025519940
 Transform:
   m_ObjectHideFlags: 0
@@ -6747,6 +6750,7 @@ MonoBehaviour:
   target: {fileID: 1825089941}
   t: 0
   speed: 2.8
+  degreesPerSec: 360
 --- !u!212 &2025519942
 SpriteRenderer:
   m_ObjectHideFlags: 0
