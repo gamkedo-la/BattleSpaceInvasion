@@ -58,10 +58,20 @@ public class LargeLaser : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-      
 
+        if (other.tag == "ignimbrite1")
+        {
+            // TODO: Deal damage to redSpaceShip
 
+            Ignimbrite1 ignimbrite1 = other.transform.GetComponent<Ignimbrite1>();
 
+            if (ignimbrite1 != null) // perform a null check error handling. 
+            {
+                ignimbrite1.ignimbrite1Damage();
+                Debug.Log("Laser Hits Ignimbrite 1 Commander");
+            }
+            Destroy(this.gameObject);
+        }
 
     }
 }
