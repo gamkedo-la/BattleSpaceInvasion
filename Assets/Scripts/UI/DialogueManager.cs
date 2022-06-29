@@ -9,6 +9,9 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
 
+    public Text annaText;
+    public Text annaDialogueText;
+
     public Animator animator;
 
     //central variable that will keep track of all the sentences in the current dialog
