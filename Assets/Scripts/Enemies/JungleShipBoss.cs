@@ -14,9 +14,18 @@ public class JungleShipBoss : MonoBehaviour
     [SerializeField]
     private int jungleShipBossLives = 10;
 
+    [SerializeField] Transform[] Positions;
+    Transform NextPosition;
+
+    [SerializeField] float ObjectSpeed;
+
+    int NextPositionIndex;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        NextPosition = Positions[0];
 
         //transform.position = new Vector3(13, 4, 0);
         //scaleChange = new Vector3(0.4f, 0.4f, 1);
@@ -26,6 +35,8 @@ public class JungleShipBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        MoveJungleShipBoss();
         //transform.localScale = scaleChange; // used localScale property to scale object. 
         ////redSpaceshipMovement();
         //if (transform.position.x < -9f)
@@ -35,6 +46,25 @@ public class JungleShipBoss : MonoBehaviour
         //}
     }
 
+
+
+    void MoveJungleShipBoss()
+    {
+        if (transform.position == NextPosition.position)
+        {
+            NextPositionIndex++;
+            if (NextPositionIndex >= Positions.Length)
+            {
+                NextPositionIndex = 0;
+            }
+            NextPosition = Positions[NextPositionIndex];
+
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NextPosition.position, ObjectSpeed * Time.deltaTime);
+        }
+    }
     //void redSpaceshipMovement()
     //{
 
