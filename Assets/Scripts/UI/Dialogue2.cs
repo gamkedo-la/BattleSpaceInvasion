@@ -10,9 +10,19 @@ public class Dialogue2 : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    public GameObject continueButton;
     void Start()
     {
         StartCoroutine(Type());
+    }
+
+    void Update()
+    {
+        if(textDisplay.text == sentences[index])
+        {
+            continueButton.SetActive(true);
+        }
+
     }
 
     IEnumerator Type()
@@ -26,6 +36,7 @@ public class Dialogue2 : MonoBehaviour
 
     public void NextSentence()
     {
+        continueButton.SetActive(false);
         if(index < sentences.Length - 1)
         {
             index++;
@@ -35,6 +46,7 @@ public class Dialogue2 : MonoBehaviour
         else
         {
             textDisplay.text = "";
+            continueButton.SetActive(false);
         }
     }
 }

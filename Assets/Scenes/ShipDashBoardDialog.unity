@@ -1867,6 +1867,7 @@ MonoBehaviour:
   - 'DR. ANNA: test sentences2'
   - 'CAPTAIN CID DASH: test semtences 3'
   typingSpeed: 0.02
+  continueButton: {fileID: 2054780178}
 --- !u!4 &754146693
 Transform:
   m_ObjectHideFlags: 0
@@ -14911,7 +14912,7 @@ GameObject:
   - component: {fileID: 2054780181}
   - component: {fileID: 2054780180}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ContinueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
