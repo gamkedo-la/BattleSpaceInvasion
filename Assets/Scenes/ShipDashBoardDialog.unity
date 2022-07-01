@@ -1863,7 +1863,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1464603274}
   sentences:
-  - 'NARRATOR: test sentences'
+  - 'RATOR: As Captain Cid dash was able to destory the Ignimbrite first fleet. He
+    decided to report back to HQ. For them to plan the phase 2 to deal with the alien
+    threat.'
   - 'DR. ANNA: test sentences2'
   - 'CAPTAIN CID DASH: test semtences 3'
   typingSpeed: 0.02
