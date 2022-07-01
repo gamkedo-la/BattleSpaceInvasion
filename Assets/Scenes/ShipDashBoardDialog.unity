@@ -1863,11 +1863,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1464603274}
   sentences:
-  - 'RATOR: As Captain Cid dash was able to destory the Ignimbrite first fleet. He
-    decided to report back to HQ. For them to plan the phase 2 to deal with the alien
-    threat.'
-  - 'DR. ANNA: test sentences2'
-  - 'CAPTAIN CID DASH: test semtences 3'
+  - 'NARRATOR: As Captain Cid Dash was able to destroy the Ignimbrite first fleet.
+    He decided to report back to HQ. For them to plan the phase 2 to deal with the
+    alien threat.'
+  - 'CAPTAIN DASH: This is Captain Cid Dash! Mission accomplish! I''m heading back
+    to HQ, over.'
+  - 'DR.ANNA: Roger that, glad that you are safe. Hurry back here for us to plan
+    our next course of action against the aliens and on how we can go to the planet
+    of princess Sadira. '
   typingSpeed: 0.02
   continueButton: {fileID: 2054780178}
 --- !u!4 &754146693
