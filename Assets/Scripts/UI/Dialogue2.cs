@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogue2 : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class Dialogue2 : MonoBehaviour
 
     public void NextSentence()
     {
+       
         continueButton.SetActive(false);
         if(index < sentences.Length - 1)
         {
@@ -48,5 +50,14 @@ public class Dialogue2 : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
         }
+    }
+
+    void EndDialogue()
+    {
+        //animator.SetBool("IsOpen", false);
+        SceneManager.LoadScene("Mission Log 2");
+        Debug.Log("End of conversation.");
+
+
     }
 }
