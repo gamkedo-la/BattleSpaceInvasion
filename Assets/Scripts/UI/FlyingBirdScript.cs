@@ -15,4 +15,8 @@ public class FlyingBirdScript : MonoBehaviour
     {
         
     }
+
+    //Normal bird will spawn
+    //Normal bird will have audio
+    //Normal bird will be able to move forward from the background.
 }
