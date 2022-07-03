@@ -4,12 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogue2 : MonoBehaviour
+public class DialogueNew : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
     private int index;
     public float typingSpeed;
+    public string sceneToOpenAfter;
 
     public GameObject continueButton;
     void Start()
@@ -50,7 +51,7 @@ public class Dialogue2 : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             //if dialogue scene dialogue introCharacterStory
-            EndDialogue1();
+            EndDialogue();
 
             // if dialogue scene dialogue shipDashBoard
 
@@ -58,21 +59,13 @@ public class Dialogue2 : MonoBehaviour
         }
     }
 
-    void EndDialogue1()
+    void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
-        SceneManager.LoadScene("Mission Log 1");
+        SceneManager.LoadScene(sceneToOpenAfter);
         Debug.Log("End of conversation.");
 
 
     }
 
-    void EndDialogue2()
-    {
-        //animator.SetBool("IsOpen", false);
-        SceneManager.LoadScene("Mission Log 2");
-        Debug.Log("End of conversation.");
-
-
-    }
 }

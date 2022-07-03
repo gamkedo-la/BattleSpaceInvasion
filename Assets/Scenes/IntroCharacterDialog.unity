@@ -352,11 +352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca477038e5d07d4190082440b8fd066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: 'Dr Anna '
-    sentences:
-    - Dr Ana test sentence1
-    - Dr Ana test sentence2
 --- !u!4 &51621380
 Transform:
   m_ObjectHideFlags: 0
@@ -401,11 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4992e4689011913429cc7d83669fd5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 576528197}
-  dialogueText: {fileID: 704473178}
-  annaText: {fileID: 1646631611}
-  annaDialogueText: {fileID: 1066075646}
-  animator: {fileID: 1623057003}
 --- !u!4 &96738475
 Transform:
   m_ObjectHideFlags: 0
@@ -822,6 +812,7 @@ MonoBehaviour:
   - 'NARRATOR: She wanted to also warn planet Earth of the incoming threat of the
     Ignimbrites.'
   typingSpeed: 0.02
+  sceneToOpenAfter: Mission Log 1
   continueButton: {fileID: 1728177092}
 --- !u!4 &135291707
 Transform:
@@ -2460,16 +2451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca477038e5d07d4190082440b8fd066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Narrator
-    sentences:
-    - "Scientists from the Space Explorer program was able to detect the arrival
-      of \r\nthe alien craft. "
-    - Dr. Ana Samantha, the head of the exploring team found out through telepathy,
-    - that the alien was an evacuee of the planet Sinjaraja.
-    - 'The alien was forced to crash land on our planet due to another alien race
-      trying to capture her that took over her planet. '
-    - She wanted to also warn planet Earth of the incoming threat of the Ignimbrites.
 --- !u!114 &570022116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4576,19 +4557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca477038e5d07d4190082440b8fd066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Narrator
-    sentences:
-    - 'Year 2022, an alien ship arrived on earth and plummeted in the middle of the
-      Bwindi forest. '
-    - "Scientist from the Space Explorer program was able to detect the arrival of
-      \r\nthe alien craft. "
-    - 'Dr. Ana Samantha, the head of the exploring team found out through telepathy
-
-      that
-      the alien was an evacuee of the planet Sinjaraja. '
-    - 'The alien was forced to crash land on our planet due to another alien race
-      trying to capture her that took over her planet. '
 --- !u!114 &1227190080
 MonoBehaviour:
   m_ObjectHideFlags: 0

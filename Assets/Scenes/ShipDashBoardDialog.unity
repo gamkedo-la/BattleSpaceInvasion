@@ -1872,6 +1872,7 @@ MonoBehaviour:
     our next course of action against the aliens and on how we can go to the planet
     of princess Sadira. '
   typingSpeed: 0.02
+  sceneToOpenAfter: Mission Log 2
   continueButton: {fileID: 2054780178}
 --- !u!4 &754146693
 Transform:
