@@ -49,13 +49,14 @@ public class Dialogue2 : MonoBehaviour
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
+            EndDialogue();
         }
     }
 
     void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
-        SceneManager.LoadScene("Mission Log 2");
+        SceneManager.LoadScene("Mission Log 1");
         Debug.Log("End of conversation.");
 
 
