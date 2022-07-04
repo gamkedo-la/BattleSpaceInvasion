@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: MainMenuTheme
-    clip: {fileID: 8300000, guid: 7fab2e5fe341ff64cbc166fbd3098147, type: 3}
+    clip: {fileID: 8300000, guid: f35e78388aa60484d89aa486c97572fc, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 0.73
     loop: 1
     source: {fileID: 0}
   - name: MechSound2
