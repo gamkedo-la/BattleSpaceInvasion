@@ -801,16 +801,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 260578745}
   sentences:
-  - 'NARRATOR: Year 2022, an alien ship arrived on earth and plummeted in the middle
-    of the Bwindi forest. '
-  - 'NARRATOR: Scientists from the Space Explorer program was able to detect the
-    arrival of  the alien craft. '
-  - 'NARRATOR: Dr. Ana Samantha, the head of the exploring team found out through
-    telepathy that the alien was an evacuee of the planet Sinjaraja. '
-  - 'NARRATOR:  The alien was forced to crash land on our planet due to another alien
-    race trying to capture her that took over her planet. '
-  - 'NARRATOR: She wanted to also warn planet Earth of the incoming threat of the
-    Ignimbrites.'
+  - 'NARRATOR: Dr.Anna Samantha found out from the alien princess that she came from
+    a very rich planet similar to the planet earth, full of life and resources. '
+  - 'Together with her friend, the rookie commander Captain Cid Dash, they learned
+    that princess Sadira took with her an important mystic element that can be used
+    against the Ignimbrite that was the key for the Ignimbrites to finally take over
+    their planet. '
+  - 'The element was called crystal of life, she was able to get half of the crystal
+    that was once kept by their planet guardian before the planet guardian was controlled
+    and defeated by the Ignimbrites. '
   typingSpeed: 0.02
   sceneToOpenAfter: Mission Log 1
   continueButton: {fileID: 1728177092}
