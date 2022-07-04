@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974077031901582488}
-  - component: {fileID: 974077031901582491}
+  - component: {fileID: 6351247586280574394}
   m_Layer: 0
-  m_Name: SpawnManager
+  m_Name: SpawnManager2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &974077031901582491
+--- !u!114 &6351247586280574394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,7 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 974077031901582489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc71fd8e0573da44095aa2be728a5910, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eaebe21ae32d2842841d5e41d2bf22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   redSpaceShipPrefab: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
+  redSpaceShipLeftPrefab: {fileID: 1745677029978442622, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
+  redEnemyContainer: {fileID: 3688364644243422041, guid: d31cd61722f13e24fa4c45456163d324, type: 3}
