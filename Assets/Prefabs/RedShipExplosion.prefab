@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1836924514197819867}
   - component: {fileID: 1836924514197819866}
   - component: {fileID: -7120716014947899707}
-  - component: {fileID: -1002719331767222847}
+  - component: {fileID: -8562284296620370596}
   m_Layer: 0
   m_Name: RedShipExplosion
   m_TagString: Untagged
@@ -4884,7 +4884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff57d9f62f6e34e478e0f0206dc4023a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &-1002719331767222847
+--- !u!82 &-8562284296620370596
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4894,7 +4894,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2d6aff1038909cb4bb37eaa79fc2b40b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 904217d32b40e6c47844783cf242069a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
