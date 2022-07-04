@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class JungleShipBoss : MonoBehaviour
 {
     public GameObject explosion;
+    public GameObject fireBallPrefab;
     private float speed = 5.0f;
     //private float health = 3f;
 
@@ -26,10 +27,20 @@ public class JungleShipBoss : MonoBehaviour
     {
 
         NextPosition = Positions[0];
+        StartCoroutine(fireBlastRepeat());
 
         //transform.position = new Vector3(13, 4, 0);
         //scaleChange = new Vector3(0.4f, 0.4f, 1);
 
+    }
+
+    IEnumerator fireBlastRepeat()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.0f));
+            GameObject blastEffect = GameObject.Instantiate(fireBallPrefab, transform.position - Vector3.right * 6.0f, Quaternion.identity);
+        }
     }
 
     // Update is called once per frame

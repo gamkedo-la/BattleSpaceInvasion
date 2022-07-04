@@ -5,12 +5,13 @@ using UnityEngine;
 public class ignimLaserMove : MonoBehaviour
 {
     public GameObject explosion;
-    private float moveSpeed = 50.0f;
+    public float moveSpeed = 50.0f;
+    public float selfDestructAfterSeconds = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
        
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, selfDestructAfterSeconds);
     }
 
     // Update is called once per frame
