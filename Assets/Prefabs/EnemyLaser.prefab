@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef69aa2a813446444a211742e127f15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserSpeed: 15
+  laserSpeed: 5
   moveLeft: 0
 --- !u!95 &642674048596027029
 Animator:
