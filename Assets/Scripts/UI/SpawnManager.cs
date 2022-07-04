@@ -20,6 +20,9 @@ public class SpawnManager : MonoBehaviour
     private GameObject asteroid3Prefab;
 
     [SerializeField]
+    private GameObject botTentaclesPrefab;
+
+    [SerializeField]
     private GameObject redEnemyContainer;
 
 
@@ -43,11 +46,11 @@ public class SpawnManager : MonoBehaviour
     {
         while (stopEnemySpawning == false)
         {
-            Vector3 postToSpawn = new Vector3(Random.Range(7f, -7f), 4, 0);
+            Vector3 postToSpawn = new Vector3(Random.Range(2.6f, -7f), 4, 0);
             Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.identity);
 
 
-            Vector3 redEnemyLeft = new Vector3(Random.Range(7f, -7f), 4, 0);
+            Vector3 redEnemyLeft = new Vector3(Random.Range(2.6f, -7f), 4, 0);
             Instantiate(redSpaceShipLeftPrefab, redEnemyLeft, Quaternion.identity);
 
             Vector3 asteroid1ToSpawn = new Vector3(12, Random.Range(3f, -3f), 0);

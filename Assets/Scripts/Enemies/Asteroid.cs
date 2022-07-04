@@ -6,7 +6,7 @@ public class Asteroid : MonoBehaviour
 {
     public GameObject explosion;
     public float degreesPerSec = 320f;
-    private float speed = 2f;
+    private float speed = 5f;
 
     // Update is called once per frame
     void Update()
