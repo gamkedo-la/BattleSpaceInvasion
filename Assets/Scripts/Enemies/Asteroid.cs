@@ -5,8 +5,8 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     public GameObject explosion;
-    public float degreesPerSec = 360f;
-    private float speed = 5f;
+    public float degreesPerSec = 320f;
+    private float speed = 2f;
 
     // Update is called once per frame
     void Update()
