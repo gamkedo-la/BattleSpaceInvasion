@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MetallicBird : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    //[SerializeField] GameObject player;
 
     // Start is called before the first frame update
     void Start()

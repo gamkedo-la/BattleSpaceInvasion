@@ -6798,6 +6798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2058269026}
   - component: {fileID: 2058269025}
+  - component: {fileID: 2058269027}
   m_Layer: 0
   m_Name: flyingBird
   m_TagString: Untagged
@@ -6872,6 +6873,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2058269027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058269024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e92d0570558c942ac75dc69743c6eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2092158120
 GameObject:
   m_ObjectHideFlags: 0
@@ -7144,6 +7157,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: {x: 0.2, y: 0}
+--- !u!1 &2098491079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8089304426491430424, guid: 3bfeb8ef19f268141be70954207081ab, type: 3}
+  m_PrefabInstance: {fileID: 879580197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2098491083
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098491079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 899e15978de3cc043aaa75529f54ccaa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2115742347
 GameObject:
   m_ObjectHideFlags: 0
