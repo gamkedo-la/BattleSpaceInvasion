@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 172862963693844627}
   - component: {fileID: 172862963693844628}
   - component: {fileID: 172862963693844629}
+  - component: {fileID: -835987978321675085}
   m_Layer: 0
   m_Name: botTentacles
   m_TagString: Untagged
@@ -100,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 1836924514197819864, guid: 708f272c96b343e909c1cf0e6701723d, type: 3}
   t: 0.5
   speed: 1
   degreesPerSec: 180
@@ -240,3 +242,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-835987978321675085
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172862963693844335}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

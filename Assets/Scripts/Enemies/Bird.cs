@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
-   
+    public GameObject explosion;
     //public Transform target;
     private AudioSource audioSource;
     private Rigidbody2D rb;
@@ -59,12 +59,53 @@ public class Bird : MonoBehaviour
 
 
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.tag == "laser")
+        {
+
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            ScoreManager.instance.AddPoints(1);
+            Destroy(other);
+            Destroy(gameObject);
+        }
+        else if (other.tag == "Player")
+        {
+            //CameraShake.instance.Shake(100.0f);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+
+            // TODO: Deal damage to player
+
+        }
+        if (other.tag == "largeLaser")
+        {
+
+
+
+            //CameraShake.instance.Shake(100.0f);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            ScoreManager.instance.AddPoints(3);
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+
+
+            //Destroy(this.gameObject);
+
+        }
+
+    }
+
+
+
+
     //void MoveBird(Vector2 direction)
     //{
     //   // transform.position = new Vector3(transform.position.x - (speed * Time.deltaTime), transform.position.y, 0);
     //    rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
-        
-        
+
+
     //    //Bird will shoot up
     //    //Remove the bird head and transition to bird launch (either front or back of jet)
     //    //Pick player position at that time and quickly fly toward it.
