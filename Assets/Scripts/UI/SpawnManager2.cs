@@ -14,6 +14,9 @@ public class SpawnManager2 : MonoBehaviour
     private GameObject botTentaclesPrefab;
 
     [SerializeField]
+    private GameObject projectileEnemyPrefab;
+
+    [SerializeField]
     private GameObject redEnemyContainer;
 
     private bool stopEnemySpawning = false;
@@ -47,6 +50,12 @@ public class SpawnManager2 : MonoBehaviour
 
             GameObject newBotTentacles = Instantiate(botTentaclesPrefab, botTentaclesToSpawn, Quaternion.identity);
             newBotTentacles.transform.parent = redEnemyContainer.transform;
+
+            Vector3 projectileEnemyToSpawn = new Vector3(12, Random.Range(2.6f, -4f), 0);
+            Instantiate(projectileEnemyPrefab, projectileEnemyToSpawn, Quaternion.identity);
+
+            GameObject newProjectileEnemy = Instantiate(projectileEnemyPrefab, projectileEnemyToSpawn, Quaternion.identity);
+            newProjectileEnemy.transform.parent = redEnemyContainer.transform;
 
 
             yield return new WaitForSeconds(3.0f);
