@@ -64,11 +64,14 @@ public class ProjectileScript : MonoBehaviour
         {
             CameraShake.instance.Shake(50.0f);
             SpaceShipDamage();
-            if (spaceshipLives < 3)
+            if (spaceshipLives == 0)
             {
-               
+                Instantiate(explosion, transform.position, Quaternion.identity);
+                ScoreManager.instance.AddPoints(3);
+                //explosionSound.Play();
                 Destroy(other.gameObject);
-               
+                Destroy(this.gameObject);
+
             }
             //Destroy(this.gameObject);
 
