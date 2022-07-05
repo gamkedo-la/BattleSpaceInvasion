@@ -150,7 +150,7 @@ public class JungleShipBoss : MonoBehaviour
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
-            SceneManager.LoadScene("CaveSceneEntrance");
+            SceneManager.LoadScene("CaveLevel");
         }
     }
 }
