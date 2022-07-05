@@ -3,7 +3,10 @@ guid: 1eaebe21ae32d2842841d5e41d2bf22b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - redSpaceShipPrefab: {instanceID: 0}
+  - redSpaceShipLeftPrefab: {instanceID: 0}
+  - redEnemyContainer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

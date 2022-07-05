@@ -11,6 +11,9 @@ public class SpawnManager2 : MonoBehaviour
     private GameObject redSpaceShipLeftPrefab;
 
     [SerializeField]
+    private GameObject botTentaclesPrefab;
+
+    [SerializeField]
     private GameObject redEnemyContainer;
 
     private bool stopEnemySpawning = false;
@@ -36,6 +39,14 @@ public class SpawnManager2 : MonoBehaviour
             GameObject newRedEnemy = Instantiate(redSpaceShipPrefab, postToSpawn, Quaternion.Euler(rotationVector));
             newRedEnemy.transform.parent = redEnemyContainer.transform;
 
+            GameObject newRedEnemyLeft = Instantiate(redSpaceShipLeftPrefab, redEnemyLeft, Quaternion.Euler(rotationVector));
+            newRedEnemyLeft.transform.parent = redEnemyContainer.transform;
+
+            Vector3 botTentaclesToSpawn = new Vector3(12, Random.Range(2.6f, -4f), 0);
+            Instantiate(botTentaclesPrefab, botTentaclesToSpawn, Quaternion.identity);
+
+            GameObject newBotTentacles = Instantiate(botTentaclesPrefab, botTentaclesToSpawn, Quaternion.identity);
+            newBotTentacles.transform.parent = redEnemyContainer.transform;
 
 
             yield return new WaitForSeconds(3.0f);
