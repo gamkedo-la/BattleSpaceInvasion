@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/JungleLevel.unity
     guid: 168eb199a6c1bc645b37632d68ff5470
   - enabled: 1
+    path: Assets/Scenes/CaveSceneEntrance.unity
+    guid: eb6aad46dafe67b49b9f4220263069eb
+  - enabled: 1
     path: Assets/Scenes/CaveLevel.unity
     guid: b957f478c52b93c4d92d3ad6774aa824
   - enabled: 1
