@@ -875,6 +875,55 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &342288121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 342288123}
+  - component: {fileID: 342288122}
+  m_Layer: 0
+  m_Name: SpawnManager2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &342288122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342288121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eaebe21ae32d2842841d5e41d2bf22b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redSpaceShipPrefab: {fileID: 8089304426491430424, guid: d4c3077a8a896b34ba4ba0c932c13bd0, type: 3}
+  redSpaceShipLeftPrefab: {fileID: 1745677029978442622, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
+  botTentaclesPrefab: {fileID: 172862963693844335, guid: 71e315cb058157a42be7c62cdf075cce, type: 3}
+  redEnemyContainer: {fileID: 1179999585}
+--- !u!4 &342288123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342288121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6045322, y: 2.4843361, z: -0.16968712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1179999586}
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354374354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,7 +2966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1825089941}
+  explosion: {fileID: 0}
   t: 0
   speed: 2.8
   degreesPerSec: 360
@@ -3885,6 +3934,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176633789}
   m_CullTransparentMesh: 1
+--- !u!1 &1179999585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1179999586}
+  m_Layer: 0
+  m_Name: RedEnemyContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1179999586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179999585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 342288123}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181307898
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,7 +4623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1825089941}
+  explosion: {fileID: 0}
   t: 0
   speed: 2.8
   degreesPerSec: 360
@@ -6413,7 +6493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a57ca0c015944c8ca81f1f32838c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1825089941}
+  explosion: {fileID: 0}
   t: 0
   speed: 2.8
   degreesPerSec: 360
