@@ -7,7 +7,7 @@ public class ProjectileScript : MonoBehaviour
     public GameObject explosion;
     public GameObject shotPrefab;
     public GameObject laserSpawnPoint;
-    private float speed = 2.0f;
+   [SerializeField] private float speed = 2.0f;
     //private float health = 3f;
 
     
