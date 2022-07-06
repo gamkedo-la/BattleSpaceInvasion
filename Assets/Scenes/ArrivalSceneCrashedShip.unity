@@ -1925,14 +1925,13 @@ MonoBehaviour:
   sentences:
   - 'NARRATOR: Year 2022, an alien ship arrived on earth and plummeted in the middle
     of the Bwindi forest. '
-  - 'NARRATOR: Scientists from the Space Explorer program was able to detect the
-    arrival of  the alien craft. '
-  - 'NARRATOR: Dr. Ana Samantha, the head of the exploring team found out through
-    telepathy that the alien was an evacuee of the planet Sinjaraja. '
-  - 'NARRATOR:  The alien was forced to crash land on our planet due to another alien
-    race trying to capture her that took over her planet. '
-  - 'NARRATOR: She wanted to also warn planet Earth of the incoming threat of the
-    Ignimbrites.'
+  - 'Scientists from the Space Explorer program was able to detect the arrival of 
+    the alien craft. '
+  - 'Dr. Ana Samantha, the head of the exploring team found out through telepathy
+    that the alien was an evacuee of the planet Sinjaraja. '
+  - 'The alien was forced to crash land on our planet due to another alien race trying
+    to capture her that took over her planet. '
+  - She wanted to also warn planet Earth of the incoming threat of the Ignimbrites.
   typingSpeed: 0.02
   sceneToOpenAfter: IntroCharacterDialog
   continueButton: {fileID: 828282177}
@@ -5467,7 +5466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 51, y: -14}
   m_SizeDelta: {x: 1374.658, y: 142.959}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1792592775
