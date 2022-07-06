@@ -2836,7 +2836,7 @@ MonoBehaviour:
   - 'CAPTAIN DASH: This is not good, the mind control Ignimbrite commander is in
     my head. '
   typingSpeed: 0.02
-  sceneToOpenAfter: CaveExplosionScene
+  sceneToOpenAfter: CidDashRetrievingArtifact
   continueButton: {fileID: 1875727593}
 --- !u!4 &994737830
 Transform:
