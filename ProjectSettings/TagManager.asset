@@ -20,6 +20,7 @@ TagManager:
   - laserLeft
   - planetGuardianBoss
   - SceneManager
+  - projectileLaser
   layers:
   - Default
   - TransparentFX
