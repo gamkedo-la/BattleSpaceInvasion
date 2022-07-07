@@ -2959,10 +2959,6 @@ MonoBehaviour:
   sentences:
   - 'CAPTAIN DASH: The Planet Guardian has been defeated, I''m retrieving the artifact
     now. '
-  - ' NARRATOR: As Captain Dash went out of his ship to retrieve the other half of
-    the crystal. He was attacked by the mind control Ignimbrite commander.'
-  - 'He did not notice that when he defeated the planet guardian, the mind control
-    Ignimbrite was able to separate itself from the guardian. '
   typingSpeed: 0.02
   sceneToOpenAfter: CidDashRetrievingArtifact
   continueButton: {fileID: 1875727593}

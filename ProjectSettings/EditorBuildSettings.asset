@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CidDashRetrievingArtifact.unity
     guid: 2f4156b51de179940b1be8b5f8eab7a4
   - enabled: 1
+    path: Assets/Scenes/ActivatePodEndScene.unity
+    guid: 948cc099b98dd624a9d754cc8649e505
+  - enabled: 1
     path: Assets/Scenes/CaveExplosionScene.unity
     guid: 4651ddfe787fd374cbe75319059db856
   - enabled: 1
