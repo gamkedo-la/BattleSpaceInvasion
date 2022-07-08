@@ -18,16 +18,17 @@ public class PlantGuardianBoss : MonoBehaviour
     private int NextPositionIndex;
     Transform NextPosition;
 
-    
 
+    public GameObject weaponPrefab;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(FireWithDelay());
         NextPosition = Positions[0];
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +49,17 @@ public class PlantGuardianBoss : MonoBehaviour
         else
         {
             transform.position = Vector3.MoveTowards(transform.position, NextPosition.position, speed * Time.deltaTime);
+        }
+    }
+
+
+    IEnumerator FireWithDelay()
+    {
+        while (true)
+        {
+
+            yield return new WaitForSeconds(3.0f);
+            GameObject newShot = GameObject.Instantiate(weaponPrefab, transform.position, Quaternion.identity);
         }
     }
 
