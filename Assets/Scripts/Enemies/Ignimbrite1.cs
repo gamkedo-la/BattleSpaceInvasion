@@ -151,7 +151,7 @@ void IgnimbriteMovement()
             {
                 player.PlayerDamage();
             }
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
 
         }
 
