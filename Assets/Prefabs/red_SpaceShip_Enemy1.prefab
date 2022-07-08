@@ -4914,6 +4914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
   redSpaceShipLives: 2
+  audioManagerGO: {fileID: 4737463487717263457, guid: 2aa0ad813206eed4fa00aba60dcaf922, type: 3}
 --- !u!61 &-8799395186085583300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4947,7 +4948,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8089304426491430424}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 904217d32b40e6c47844783cf242069a, type: 3}

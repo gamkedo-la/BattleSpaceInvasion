@@ -23,12 +23,10 @@ public class PauseMenu : MonoBehaviour
             Debug.Log(gameIsPaused);
             if(gameIsPaused)
             {
-                Debug.Log("Resume");
                 Resume();
             }
             else
             {
-                Debug.Log("Pause");
                 Pause();
             }
         }

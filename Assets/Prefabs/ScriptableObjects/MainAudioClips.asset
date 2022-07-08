@@ -61,3 +61,15 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Explosion2
+    clip: {fileID: 8300000, guid: 904217d32b40e6c47844783cf242069a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SoundtrackCaveLevel
+    clip: {fileID: 8300000, guid: 4ac0bae07e27a654f94252ac874fa552, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

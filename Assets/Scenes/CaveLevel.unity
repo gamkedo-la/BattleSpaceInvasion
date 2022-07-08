@@ -2376,6 +2376,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679662407}
   m_CullTransparentMesh: 1
+--- !u!1 &749857948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6554656002527452729, guid: e770c238132518d4bb5c0ad83f32b01b, type: 3}
+  m_PrefabInstance: {fileID: 1297490496049371502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &764067710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,7 +2608,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783157154}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4ac0bae07e27a654f94252ac874fa552, type: 3}
@@ -2850,6 +2855,7 @@ GameObject:
   - component: {fileID: 790601372}
   - component: {fileID: 790601373}
   - component: {fileID: 790601374}
+  - component: {fileID: 790601375}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: SceneManager
@@ -2921,6 +2927,21 @@ MonoBehaviour:
   pauseMenuPanels:
   - {fileID: 1659392422}
   - {fileID: 304465621}
+--- !u!114 &790601375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790601369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6ce762385bc1d4bbef638e59eeb671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManagerGO: {fileID: 749857948}
+  playThisSound:
+  - SoundtrackCaveLevel
 --- !u!1 &803095265
 GameObject:
   m_ObjectHideFlags: 0

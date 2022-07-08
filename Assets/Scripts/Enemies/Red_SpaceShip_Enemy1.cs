@@ -13,11 +13,14 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
     [SerializeField]
     private int redSpaceShipLives = 3;
 
-    private AudioSource explosionSound;
+    //private AudioSource explosionSound;
+    [SerializeField] GameObject audioManagerGO;
+    private AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
-        explosionSound = GetComponent<AudioSource>();
+        audioManager = audioManagerGO.GetComponent<AudioManager>();
+        //explosionSound = GetComponent<AudioSource>();
         transform.position = new Vector3(13, 4, 0);
         scaleChange = new Vector3(0.4f, 0.4f, 1);
         
@@ -57,7 +60,8 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
                 CameraShake.instance.Shake(100.0f);
                 Instantiate(explosion, transform.position, Quaternion.identity);
                 ScoreManager.instance.AddPoints(3);
-                explosionSound.Play();
+                //explosionSound.Play();
+                PlayAudioClip("Explosion2");
                 Destroy(other.gameObject);
                 Destroy(this.gameObject);
             }
@@ -98,6 +102,11 @@ public class Red_SpaceShip_Enemy1 : MonoBehaviour
 
 
 
+    }
+
+    public void PlayAudioClip(string sound)
+    {
+        audioManager.Play(sound);
     }
 
     public void redSpaceShipDamage()

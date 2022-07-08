@@ -19587,6 +19587,7 @@ MonoBehaviour:
   audioManagerGO: {fileID: 1283814772}
   playThisSound:
   - GalaxyBattleSoundV8
+  - Explosion2
 --- !u!1 &1794106020
 GameObject:
   m_ObjectHideFlags: 0

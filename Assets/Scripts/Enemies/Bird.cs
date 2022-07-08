@@ -7,6 +7,8 @@ public class Bird : MonoBehaviour
     public GameObject explosion;
     //public Transform target;
     private AudioSource audioSource;
+    [SerializeField] GameObject audioManagerGO;
+    private AudioManager audioManager;
     private Rigidbody2D rb;
     public float t;
      [SerializeField]
@@ -20,6 +22,8 @@ public class Bird : MonoBehaviour
   
     void Start()
     {
+        audioManager = audioManagerGO.GetComponent<AudioManager>();
+        PlayAudioClip("BirdSounds-edited");
         //rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -95,6 +99,11 @@ public class Bird : MonoBehaviour
 
         }
 
+    }
+
+       public void PlayAudioClip(string sound)
+    {
+        audioManager.Play(sound);
     }
 
 

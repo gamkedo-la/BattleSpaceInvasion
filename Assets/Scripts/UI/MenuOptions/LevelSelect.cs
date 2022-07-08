@@ -10,9 +10,21 @@ using UnityEngine.SceneManagement;
 public class LevelSelect : MonoBehaviour
 {
     [SerializeField] string levelName;
+    private PauseMenu pause;
+    private GameObject sceneManagerGO;
+
+    private void Start()
+    {
+        sceneManagerGO = GameObject.FindGameObjectWithTag("SceneManager");
+        if(sceneManagerGO != null)
+            pause = sceneManagerGO.GetComponent<PauseMenu>(); 
+    }
 
     public void LoadScene()
     {
+        if(pause != null)
+            pause.Resume();
+        ScoreManager.ResetScore();
         SceneManager.LoadScene(levelName);
     }
 }
