@@ -57,9 +57,9 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: BirdSounds-edited
     clip: {fileID: 8300000, guid: 40c3d185e401cea4c87ee15cb08b26ab, type: 3}
-    volume: 1
+    volume: 0.25
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: Explosion2
     clip: {fileID: 8300000, guid: 904217d32b40e6c47844783cf242069a, type: 3}

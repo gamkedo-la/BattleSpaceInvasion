@@ -6351,7 +6351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1836924514197819864, guid: 708f272c96b343e909c1cf0e6701723d, type: 3}
-  health: 100
+  health: 50
   Positions:
   - {fileID: 1792941353}
   - {fileID: 876748140}
