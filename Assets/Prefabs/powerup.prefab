@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -85386115
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8861b9568a7ac6448b29e0980428bdd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -124,7 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85ef140f5f76fbd439b5c7da99c312ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drone1: {fileID: 0}
-  drone2: {fileID: 0}
   degreesPerSec: 300
-  dronePowerUpPrefab: {fileID: 4234735222115688585}
