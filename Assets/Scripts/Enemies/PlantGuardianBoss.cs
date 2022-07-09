@@ -85,7 +85,7 @@ public class PlantGuardianBoss : MonoBehaviour
             {
                 player.PlayerDamage();
             }
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
 
         }
     }
