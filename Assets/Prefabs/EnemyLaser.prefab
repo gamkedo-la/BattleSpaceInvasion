@@ -167,5 +167,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee37741e91254994bb9ac53659b24a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserSpeed: 5
+  laserSpeed: 2
   moveLeft: 0
