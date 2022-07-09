@@ -43,7 +43,7 @@ public class IgnimbriteHandCanon : MonoBehaviour
             {
                 player.PlayerDamage();
             }
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
 
         }
 
