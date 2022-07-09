@@ -136,7 +136,7 @@ public class JungleShipBoss : MonoBehaviour
             {
                 player.PlayerDamage();
             }
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
 
         }
 
