@@ -11,8 +11,11 @@ public class MetallicBird : MonoBehaviour
     public float t;
     [SerializeField]
     private float speed;
-   
-      
+
+    private bool flyUp = false;
+    private bool flyAtPlayer = false;
+    private bool aimMode = false;
+
 
     void Start()
     {
@@ -23,20 +26,47 @@ public class MetallicBird : MonoBehaviour
     void Update()
     {
 
-        //transform.Translate(Vector3.left * speed * Time.deltaTime);
+     
         float facingDY = Player.instance.transform.position.y - transform.position.y;
         float facingDX = Player.instance.transform.position.x - transform.position.x;
         float facingAng = Mathf.Atan2(facingDY, facingDX) * Mathf.Rad2Deg;
 
         //Debug.Log(facingAng);
+        if (aimMode)
+        {
+            transform.rotation = Quaternion.Euler(0f, 0f, facingAng + 180f);
+        }
 
-        transform.rotation = Quaternion.Euler(0f, 0f, facingAng + 180f);
+        if (flyAtPlayer)
+        {
+            transform.Translate(transform.right * -1.0f * speed * Time.deltaTime);
+        }
 
+        if (flyUp)
+        {
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
+        }
     }
 
   
+    public void FlyUp()
+    {
+        Debug.Log("Fly Up");
+        flyUp = true;
+    }
 
+    public void AimAtPlayer()
+    {
+        Debug.Log("Aim at player");
+        aimMode = true;
+    }
 
+    public void FlyAttack()
+    {
+        Debug.Log("Fly attack");
+        flyAtPlayer = true;
+        aimMode = false;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
