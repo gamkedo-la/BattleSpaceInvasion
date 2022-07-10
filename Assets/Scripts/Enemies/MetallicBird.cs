@@ -51,7 +51,11 @@ public class MetallicBird : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
 
-          
+            Player player = other.transform.GetComponent<Player>();
+            if (player != null) // perform a null check error handling. 
+            {
+                player.PlayerDamage();
+            }
 
         }
         if (other.tag == "largeLaser")
