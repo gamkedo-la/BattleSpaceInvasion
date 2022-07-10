@@ -9,16 +9,33 @@ public class TankMech : MonoBehaviour
     int NextPositionIndex;
     Transform NextPos;
 
+    [SerializeField]
+    private GameObject tankMechLaserPrefab;
+    [SerializeField]
+    public GameObject laserSpawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
         NextPos = Positions[0];
+        StartCoroutine(AutoFire());
     }
 
     // Update is called once per frame
     void Update()
     {
         TankMechMovement();
+        TankMechLaser();
+    }
+
+    IEnumerator AutoFire()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.25f);
+            GameObject shotGO = GameObject.Instantiate(tankMechLaserPrefab) as GameObject;
+            shotGO.transform.position = laserSpawnPoint.transform.position;
+        }
     }
 
 
@@ -39,4 +56,11 @@ public class TankMech : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, NextPos.position, speed * Time.deltaTime);
         }
     }
+
+    void TankMechLaser()
+    {
+       
+    }
+
+    
 }

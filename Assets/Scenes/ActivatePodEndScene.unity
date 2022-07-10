@@ -246,10 +246,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1808551573}
   sentences:
-  - ' NARRATOR: As Captain Dash went out of his ship to retrieve the other half of
-    the crystal. He was attacked by the mind control Ignimbrite commander.'
-  - 'He did not notice that when he defeated the planet guardian, the mind control
-    Ignimbrite was able to separate itself from the guardian. '
+  - 'NARRATOR: Captain Dash, didn''t expect that the Ignimbrite monster was still
+    alive.'
+  - He became too complacent, he said to himself.
+  - 'However, he was there with a mission and he knew that he must try to acquire
+    the other half of the crystal of life no matter what to save the planet of Princess
+    Sadira. '
+  - 'With his quick thinking. He activated his emergency pod drone to acquire the
+    crystal of life. '
   typingSpeed: 0.02
   sceneToOpenAfter: CaveExplosionScene
   continueButton: {fileID: 745629118}
