@@ -23,14 +23,18 @@ public class MetallicBird : MonoBehaviour
     void Update()
     {
 
-        Move();
+        //transform.Translate(Vector3.left * speed * Time.deltaTime);
+        float facingDY = Player.instance.transform.position.y - transform.position.y;
+        float facingDX = Player.instance.transform.position.x - transform.position.x;
+        float facingAng = Mathf.Atan2(facingDY, facingDX) * Mathf.Rad2Deg;
+
+        //Debug.Log(facingAng);
+
+        transform.rotation = Quaternion.Euler(0f, 0f, facingAng + 180f);
 
     }
 
-    private void Move()
-    {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
-    }
+  
 
 
 
