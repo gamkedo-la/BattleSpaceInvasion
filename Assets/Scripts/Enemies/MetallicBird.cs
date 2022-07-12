@@ -26,7 +26,7 @@ public class MetallicBird : MonoBehaviour
     void Update()
     {
 
-     
+
         float facingDY = Player.instance.transform.position.y - transform.position.y;
         float facingDX = Player.instance.transform.position.x - transform.position.x;
         float facingAng = Mathf.Atan2(facingDY, facingDX) * Mathf.Rad2Deg;
@@ -39,7 +39,7 @@ public class MetallicBird : MonoBehaviour
 
         if (flyAtPlayer)
         {
-            transform.Translate(transform.right * -1.0f * speed * Time.deltaTime);
+            transform.Translate(transform.right * -1.0f * (speed * 3) * Time.deltaTime);
         }
 
         if (flyUp)
