@@ -32,7 +32,7 @@ public class TankMech : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.5f);
             GameObject shotGO = GameObject.Instantiate(tankMechLaserPrefab) as GameObject;
             shotGO.transform.position = laserSpawnPoint.transform.position;
         }
