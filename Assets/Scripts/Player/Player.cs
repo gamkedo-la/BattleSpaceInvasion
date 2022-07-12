@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
     public GameObject[] robotShootFrame;
 
     public GameObject jetEngineParticle;
@@ -92,6 +93,11 @@ public class Player : MonoBehaviour
     private bool isDrone1Active = false;
     public GameObject drone1;
     public GameObject drone2;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

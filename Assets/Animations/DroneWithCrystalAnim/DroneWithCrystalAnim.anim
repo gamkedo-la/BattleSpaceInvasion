@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: birdAttack
+  m_Name: DroneWithCrystalAnim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 1526d2f84d9b64e439d4b6ca19443e17, type: 3}
-    - time: 1.55
-      value: {fileID: 21300000, guid: 6bbb469699769c44cbef4be72aaca5c0, type: 3}
-    - time: 3.25
-      value: {fileID: 21300000, guid: c15685a80b0a1e84f93e98d7a2caeee1, type: 3}
-    - time: 3.2833333
-      value: {fileID: 21300000, guid: c15685a80b0a1e84f93e98d7a2caeee1, type: 3}
+      value: {fileID: 21300000, guid: afc117d9277c63a48885a188a5db0768, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 84cd5891394ae3c42aa4c2fcc892b418, type: 3}
+    - time: 0.45
+      value: {fileID: 21300000, guid: c3373b8ad40b79d44b2ba7bd3ca5852d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,21 +44,20 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 1526d2f84d9b64e439d4b6ca19443e17, type: 3}
-    - {fileID: 21300000, guid: 6bbb469699769c44cbef4be72aaca5c0, type: 3}
-    - {fileID: 21300000, guid: c15685a80b0a1e84f93e98d7a2caeee1, type: 3}
-    - {fileID: 21300000, guid: c15685a80b0a1e84f93e98d7a2caeee1, type: 3}
+    - {fileID: 21300000, guid: afc117d9277c63a48885a188a5db0768, type: 3}
+    - {fileID: 21300000, guid: 84cd5891394ae3c42aa4c2fcc892b418, type: 3}
+    - {fileID: 21300000, guid: c3373b8ad40b79d44b2ba7bd3ca5852d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 3.3166666
+    m_StopTime: 0.46666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -74,25 +71,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 1.5333333
-    functionName: FlyUp
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 3.2666667
-    functionName: AimAtPlayer
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 3.3166666
-    functionName: FlyAttack
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
