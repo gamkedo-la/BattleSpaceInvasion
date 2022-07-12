@@ -29,11 +29,15 @@ public class DialogueNew : MonoBehaviour
 
     IEnumerator Type()
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+        audioManager.Play("Narrarator");
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        audioManager.Stop("Narrarator");
+
     }
 
     public void NextSentence()

@@ -73,3 +73,9 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Narrarator
+    clip: {fileID: 8300000, guid: cd88e9c7d7f029e4981abdbd336d938e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
