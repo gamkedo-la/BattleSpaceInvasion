@@ -59,6 +59,7 @@ public class MetallicBird : MonoBehaviour
     {
         Debug.Log("Aim at player");
         aimMode = true;
+        flyUp = false;
     }
 
     public void FlyAttack()
