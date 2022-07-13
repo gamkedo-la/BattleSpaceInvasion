@@ -1398,7 +1398,7 @@ MonoBehaviour:
   - 'With his quick thinking. He activated his emergency pod drone to acquire the
     crystal of life. '
   typingSpeed: 0.02
-  sceneToOpenAfter: CaveExplosionScene
+  sceneToOpenAfter: PodEscapeScene
   continueButton: {fileID: 204497664}
 --- !u!4 &2012598319
 Transform:

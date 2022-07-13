@@ -57,6 +57,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PodCollectsDroneCrystal.unity
     guid: 66feb6b4f85cbc04e8136b9ac0b8ff80
   - enabled: 1
+    path: Assets/Scenes/PodEscapeScene.unity
+    guid: 4ed6ff22e00498d4c9192746d34b66aa
+  - enabled: 1
     path: Assets/Scenes/CaveExplosionScene.unity
     guid: 4651ddfe787fd374cbe75319059db856
   - enabled: 1
