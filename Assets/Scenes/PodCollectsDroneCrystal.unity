@@ -1389,14 +1389,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 624933663}
   sentences:
-  - 'NARRATOR: Captain Dash, didn''t expect that the Ignimbrite monster was still
-    alive.'
-  - He became too complacent, he said to himself.
-  - 'However, he was there with a mission and he knew that he must try to acquire
-    the other half of the crystal of life no matter what to save the planet of Princess
-    Sadira. '
-  - 'With his quick thinking. He activated his emergency pod drone to acquire the
-    crystal of life. '
+  - 'CAPTAIN DASH: I am sorry Anna, I might not be able to make it back. I let my
+    guard down.'
+  - I can feel the monster trying to take control of my mind. I am sending the crystal
+    back to base with one of my pods.
   typingSpeed: 0.02
   sceneToOpenAfter: PodEscapeScene
   continueButton: {fileID: 204497664}
