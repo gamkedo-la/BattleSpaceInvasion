@@ -34,7 +34,9 @@ public class TankMech : MonoBehaviour
         {
             yield return new WaitForSeconds(2f);
             GameObject shotGO = GameObject.Instantiate(tankMechLaserPrefab) as GameObject;
+            //shotGO.transform.position = laserSpawnPoint.transform.position;
             shotGO.transform.position = laserSpawnPoint.transform.position;
+            //transform.Translate(Vector3.up * Time.deltaTime);
         }
     }
 

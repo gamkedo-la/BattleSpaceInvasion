@@ -29,6 +29,7 @@ public class ProjectileScript : MonoBehaviour
             yield return new WaitForSeconds(0.25f);
             GameObject shotGO = GameObject.Instantiate(shotPrefab) as GameObject;
             shotGO.transform.position = laserSpawnPoint.transform.position;
+            //transform.Translate(Vector3.up * Time.deltaTime);
         }
     }
 

@@ -15863,6 +15863,7 @@ MonoBehaviour:
   redSpaceShipLeftPrefab: {fileID: 1745677029978442622, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
   botTentaclesPrefab: {fileID: 172862963693844335, guid: 71e315cb058157a42be7c62cdf075cce, type: 3}
   projectileEnemyPrefab: {fileID: 8089304426491430424, guid: 3bfeb8ef19f268141be70954207081ab, type: 3}
+  metallicBirdEnemyPrefab: {fileID: 6797641929617142478, guid: 1dcbda21f47a7934f861fefce111dd04, type: 3}
   redEnemyContainer: {fileID: 1312337265}
 --- !u!4 &2028964695
 Transform:
