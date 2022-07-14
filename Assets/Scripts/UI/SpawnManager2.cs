@@ -17,6 +17,9 @@ public class SpawnManager2 : MonoBehaviour
     private GameObject projectileEnemyPrefab;
 
     [SerializeField]
+    private GameObject metallicBirdEnemyPrefab;
+
+    [SerializeField]
     private GameObject redEnemyContainer;
 
     private bool stopEnemySpawning = false;
@@ -57,6 +60,11 @@ public class SpawnManager2 : MonoBehaviour
             GameObject newProjectileEnemy = Instantiate(projectileEnemyPrefab, projectileEnemyToSpawn, Quaternion.identity);
             newProjectileEnemy.transform.parent = redEnemyContainer.transform;
 
+            Vector3 metallicBirdEnemyToSpawn = new Vector3(12, Random.Range(4.51f, -2.5f), 0);
+            Instantiate(metallicBirdEnemyPrefab, metallicBirdEnemyToSpawn, Quaternion.identity);
+
+            GameObject newMetallicBirdEnemy = Instantiate(metallicBirdEnemyPrefab, metallicBirdEnemyToSpawn, Quaternion.identity);
+            newMetallicBirdEnemy.transform.parent = redEnemyContainer.transform;
 
             yield return new WaitForSeconds(3.0f);
 
