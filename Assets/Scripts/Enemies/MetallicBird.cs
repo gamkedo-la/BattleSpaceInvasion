@@ -29,7 +29,7 @@ public class MetallicBird : MonoBehaviour
 
         float facingDY = Player.instance.transform.position.y - transform.position.y;
         float facingDX = Player.instance.transform.position.x - transform.position.x;
-        float facingAng = Mathf.Atan2(facingDY, facingDX) * Mathf.Rad2Deg;
+        float facingAng = Mathf.Atan2(facingDY, facingDX * 2) * Mathf.Rad2Deg;
 
         //Debug.Log(facingAng);
         if (aimMode)
