@@ -65,7 +65,7 @@ public class SpawnManager : MonoBehaviour
             Vector3 asteroid3ToSpawn = new Vector3(12, Random.Range(2.6f, -4f), 0);
             Instantiate(asteroid1Prefab, asteroid3ToSpawn, Quaternion.identity);
 
-            Vector3 botTentaclesToSpawn = new Vector3(12, Random.Range(2.6f, -4f), 0);
+            Vector3 botTentaclesToSpawn = new Vector3(12, Random.Range(Player.instance.topMarker.position.y, Player.instance.bottomMarker.position.y), 0);
             Instantiate(botTentaclesPrefab, botTentaclesToSpawn, Quaternion.identity);
 
             Vector3 rotationVector = new Vector3(0, 0, 90);
