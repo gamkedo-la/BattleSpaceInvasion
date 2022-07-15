@@ -29,7 +29,7 @@ public class PowerUpManager : MonoBehaviour
     {
         while (stopPowerUpSpawning == false)
         {
-            Vector3 postToSpawn = new Vector3(4, Random.Range(7f, -7f), 0);
+            Vector3 postToSpawn = new Vector3(4, Random.Range(Player.instance.topMarker.position.y, Player.instance.bottomMarker.position.y), 0);
             Instantiate(powerUpDronePrefab, postToSpawn, Quaternion.identity);
             yield return new WaitForSeconds(10.0f);
         }
