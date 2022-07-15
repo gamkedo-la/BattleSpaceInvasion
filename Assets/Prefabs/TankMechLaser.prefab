@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6059761050761769715}
   - component: {fileID: 3865419523060299087}
   - component: {fileID: -7365919877326892401}
+  - component: {fileID: -4804472339354435355}
   m_Layer: 0
   m_Name: TankMechLaser
   m_TagString: Untagged
@@ -97,3 +98,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd84d8b81056819479b700226b721a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 1836924514197819864, guid: 708f272c96b343e909c1cf0e6701723d, type: 3}
+--- !u!61 &-4804472339354435355
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046677977453367835}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.67, y: 5}
+    newSize: {x: 3.67, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.67, y: 5}
+  m_EdgeRadius: 0
