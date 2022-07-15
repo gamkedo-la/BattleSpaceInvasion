@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 8089304426491430424}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 8, y: 4, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.45, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 940209149147076501}
@@ -134,7 +134,7 @@ MonoBehaviour:
   explosion: {fileID: 1836924514197819864, guid: edcfba26394b06642a3b1df81130396e, type: 3}
   shotPrefab: {fileID: 2714013109415283649, guid: 3f29e7ce15dd26c4a8dc743b52bd3968, type: 3}
   laserSpawnPoint: {fileID: 3846384239878184252}
-  speed: 5
+  speed: 2
   spaceshipLives: 1
 --- !u!61 &2098491087
 BoxCollider2D:

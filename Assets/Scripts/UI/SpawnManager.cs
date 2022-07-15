@@ -23,6 +23,9 @@ public class SpawnManager : MonoBehaviour
     private GameObject botTentaclesPrefab;
 
     [SerializeField]
+    private GameObject projectileEnemyPrefab;
+
+    [SerializeField]
     private GameObject redEnemyContainer;
 
 
@@ -87,6 +90,12 @@ public class SpawnManager : MonoBehaviour
 
             GameObject newBotTentacles = Instantiate(botTentaclesPrefab, botTentaclesToSpawn, Quaternion.identity);
             newBotTentacles.transform.parent = redEnemyContainer.transform;
+
+            Vector3 projectileEnemyToSpawn = new Vector3(8, Random.Range(4.6f, -4f), 0);
+            Instantiate(projectileEnemyPrefab, projectileEnemyToSpawn, Quaternion.identity);
+
+            GameObject newProjectileEnemy = Instantiate(projectileEnemyPrefab, projectileEnemyToSpawn, Quaternion.identity);
+            newProjectileEnemy.transform.parent = redEnemyContainer.transform;
 
             yield return new WaitForSeconds(3.0f);
 
