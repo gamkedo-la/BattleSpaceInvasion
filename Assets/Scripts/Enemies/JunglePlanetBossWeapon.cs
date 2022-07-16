@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JunglePlanetBossWeapon : MonoBehaviour
 {
+    public GameObject explosion;
     public GameObject shotPrefab;
     private static Transform topMarker;
     private static Transform bottomMarker;
@@ -53,4 +54,53 @@ public class JunglePlanetBossWeapon : MonoBehaviour
             }
         }
     }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //Add life variable to Red_SpaceShip - Ok
+        //If redSpaceship is hit by laser once start first fire animation and reduce life variable
+        //If redSpaceship is hit twice add additional fire animation and reduce life of variable.
+        // if redSpaceship is hit the third time, destroy and apply explosion animation. 
+
+        if (other.tag == "laser")
+        {
+          
+            
+                Destroy(other.gameObject);
+                Destroy(this.gameObject);
+          
+        }
+
+        if (other.tag == "largeLaser")
+        {
+
+
+        
+                Destroy(other.gameObject);
+                Destroy(this.gameObject);
+
+          
+        }
+
+        if (other.tag == "Player")
+        {
+            CameraShake.instance.Shake(100.0f);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            // TODO: Deal damage to player
+
+            Player player = other.transform.GetComponent<Player>();
+            if (player != null) // perform a null check error handling. 
+            {
+                player.PlayerDamage();
+            }
+            Destroy(this.gameObject);
+
+        }
+
+
+
+
+    }
+
 }
