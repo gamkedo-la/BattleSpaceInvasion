@@ -801,8 +801,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 260578745}
   sentences:
-  - 'NARRATOR: Dr.Anna Samantha found out from the alien princess that she came from
-    a very rich planet similar to planet earth, full of life and resources. '
+  - 'Dr.Anna Samantha found out from the alien princess that she came from a very
+    rich planet similar to planet earth, full of life and resources. '
   - 'Together with her friend, the rookie commander Captain Cid Dash, they learned
     that princess Sadira took with her an important mystic element that can be used
     against the Ignimbrite that was the key for the Ignimbrites to finally take over
