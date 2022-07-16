@@ -605,6 +605,11 @@ Transform:
   m_Father: {fileID: 1266765020}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &165804704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1218274405049184931, guid: 75d28fee960ba2541b720c0a83c5f250, type: 3}
+  m_PrefabInstance: {fileID: 1399453886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &210029503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,7 +2022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572772292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.2166, y: 0.9876, z: 0}
+  m_LocalPosition: {x: 12, y: 0.9876, z: 0}
   m_LocalScale: {x: 46.21, y: 10.01386, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4118,6 +4123,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnManager2
       objectReference: {fileID: 0}
+    - target: {fileID: 6351247586280574394, guid: 75d28fee960ba2541b720c0a83c5f250, type: 3}
+      propertyPath: spawnInterval
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247586280574394, guid: 75d28fee960ba2541b720c0a83c5f250, type: 3}
+      propertyPath: redEnemyContainer
+      value: 
+      objectReference: {fileID: 165804704}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d28fee960ba2541b720c0a83c5f250, type: 3}
 --- !u!1 &1408113552

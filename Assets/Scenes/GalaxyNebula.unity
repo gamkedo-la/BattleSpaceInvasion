@@ -19801,6 +19801,7 @@ MonoBehaviour:
   botTentaclesPrefab: {fileID: 172862963693844335, guid: 71e315cb058157a42be7c62cdf075cce, type: 3}
   projectileEnemyPrefab: {fileID: 1447645169377622232, guid: 3241aa3a6ddc2a6499774c164ccf87ea, type: 3}
   redEnemyContainer: {fileID: 1972834984}
+  spawnInterval: 3
 --- !u!1 &1906427893
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,9 @@ public class SpawnManager2 : MonoBehaviour
     [SerializeField]
     private GameObject redEnemyContainer;
 
+    [SerializeField]
+    private float spawnInterval = 3.0f;
+
     private bool stopEnemySpawning = false;
     // Start is called before the first frame update
     void Start()
@@ -66,7 +69,7 @@ public class SpawnManager2 : MonoBehaviour
             GameObject newMetallicBirdEnemy = Instantiate(metallicBirdEnemyPrefab, metallicBirdEnemyToSpawn, Quaternion.identity);
             newMetallicBirdEnemy.transform.parent = redEnemyContainer.transform;
 
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(spawnInterval);
 
             //new RedShipEnemyLeft
 
