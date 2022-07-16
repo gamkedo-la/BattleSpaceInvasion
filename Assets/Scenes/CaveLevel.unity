@@ -1434,6 +1434,8 @@ MonoBehaviour:
   - {fileID: 1837932564}
   - {fileID: 49306245}
   speed: 2
+  tankMechLaserPrefab: {fileID: 0}
+  laserSpawnPoint: {fileID: 0}
 --- !u!212 &430465572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3223,6 +3225,7 @@ MonoBehaviour:
   redSpaceShipLeftPrefab: {fileID: 1745677029978442622, guid: 037c57da25252024397e6f0919c1ea1e, type: 3}
   botTentaclesPrefab: {fileID: 172862963693844335, guid: 71e315cb058157a42be7c62cdf075cce, type: 3}
   projectileEnemyPrefab: {fileID: 8089304426491430424, guid: 3bfeb8ef19f268141be70954207081ab, type: 3}
+  metallicBirdEnemyPrefab: {fileID: 0}
   redEnemyContainer: {fileID: 143169353}
 --- !u!4 &851799929
 Transform:
@@ -6351,7 +6354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1836924514197819864, guid: 708f272c96b343e909c1cf0e6701723d, type: 3}
-  health: 10
+  health: 20
   Positions:
   - {fileID: 1792941353}
   - {fileID: 876748140}
