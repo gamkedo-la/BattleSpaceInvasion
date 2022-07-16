@@ -7,6 +7,9 @@ public class LargeLaser : MonoBehaviour
     [SerializeField]
     private int laserSpeed = 1000;
     public bool moveLeft = false;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
