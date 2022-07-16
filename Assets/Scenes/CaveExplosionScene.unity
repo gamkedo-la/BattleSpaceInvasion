@@ -8755,7 +8755,7 @@ MonoBehaviour:
   - 'NARRATOR: Captain Dash sacrificed himself to retrieve the crystal of life and
     was able to defeat the mind control Ignimbrite commander.'
   - His sacrifice led to a better chance to defeat the Ignimbrites, it helped princess
-    Sadira to regain a foothold in their fight against the Ignimbrites.
+    Sadira to regain a foothold with their fight against the Ignimbrites.
   typingSpeed: 0.02
   sceneToOpenAfter: TheEnd
   continueButton: {fileID: 1062108289}
