@@ -11,7 +11,8 @@ public class Drone1 : MonoBehaviour
     private GameObject largeLaserPrefab;
 
 
-   
+    //[SerializeField]
+    //private AudioClip largeLaserSound;
 
     [SerializeField]
     private GameObject drone1;
@@ -85,6 +86,8 @@ public class Drone1 : MonoBehaviour
         {
             GameObject LargeLaser = (GameObject)Instantiate(largeLaserPrefab, transform.position + new Vector3(1.21f, 0, 0), Quaternion.Euler(rotationVector));
         }
+
+        //PlayAudioClip("largeLaserSound");
     }
 
     //void fireLaserRobotLeft()
