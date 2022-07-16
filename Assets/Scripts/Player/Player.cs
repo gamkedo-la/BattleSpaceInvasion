@@ -187,11 +187,12 @@ public class Player : MonoBehaviour
             PlayerDamage();
         }
 
-        currentPos = transform.position;
-        if (isBotMode && robotWalkLevel)
-        {
-            transform.Translate(Vector3.up * -2.0f * Time.deltaTime);
-        }
+        //currentPos = transform.position;
+        //if (isBotMode && robotWalkLevel)
+        //{
+        //    transform.Translate(Vector3.up * -2.0f * Time.deltaTime);
+        //}
+
         jetMovement();
         if (Input.GetKeyDown(KeyCode.Space)  && Time.time > nextFire && isBotMode == false)
         {
