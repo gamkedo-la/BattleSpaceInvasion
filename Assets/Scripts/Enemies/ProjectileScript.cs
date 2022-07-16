@@ -77,7 +77,24 @@ public class ProjectileScript : MonoBehaviour
             //Destroy(this.gameObject);
 
         }
+
+        if (other.tag == "largeLaser")
+        {
+            SpaceShipDamage();
+
+            if (spaceshipLives == 0)
+            {
+                CameraShake.instance.Shake(100.0f);
+                Instantiate(explosion, transform.position, Quaternion.identity);
+                ScoreManager.instance.AddPoints(3);
+                Destroy(other.gameObject);
+                Destroy(this.gameObject);
+
+            }
         
+
+        }
+
         if (other.tag == "Player")
         {
           

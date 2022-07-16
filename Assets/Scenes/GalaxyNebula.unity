@@ -19799,7 +19799,7 @@ MonoBehaviour:
   asteroid2Prefab: {fileID: 3677478000239250638, guid: 801963d422d43ee42b79ee3b2f3ebfd9, type: 3}
   asteroid3Prefab: {fileID: 2686016481869176294, guid: 71abb944eb94a8d4d831dcabc908c04f, type: 3}
   botTentaclesPrefab: {fileID: 172862963693844335, guid: 71e315cb058157a42be7c62cdf075cce, type: 3}
-  projectileEnemyPrefab: {fileID: 8089304426491430424, guid: 3bfeb8ef19f268141be70954207081ab, type: 3}
+  projectileEnemyPrefab: {fileID: 1447645169377622232, guid: 3241aa3a6ddc2a6499774c164ccf87ea, type: 3}
   redEnemyContainer: {fileID: 1972834984}
 --- !u!1 &1906427893
 GameObject:
