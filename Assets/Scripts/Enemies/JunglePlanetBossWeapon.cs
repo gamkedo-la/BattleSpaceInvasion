@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JunglePlanetBossWeapon : MonoBehaviour
 {
-    public GameObject explosion;
+    //public GameObject explosion;
     public GameObject shotPrefab;
     private static Transform topMarker;
     private static Transform bottomMarker;
