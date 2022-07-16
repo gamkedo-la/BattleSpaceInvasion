@@ -79,3 +79,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: TheEnd
+    clip: {fileID: 8300000, guid: 2fcdab1ec728356428430f48d5e3eeec, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
