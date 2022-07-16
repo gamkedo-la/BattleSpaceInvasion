@@ -86,7 +86,7 @@ public class JunglePlanetBossWeapon : MonoBehaviour
         if (other.tag == "Player")
         {
             CameraShake.instance.Shake(100.0f);
-            Instantiate(explosion, transform.position, Quaternion.identity);
+            //Instantiate(explosion, transform.position, Quaternion.identity);
             // TODO: Deal damage to player
 
             Player player = other.transform.GetComponent<Player>();
