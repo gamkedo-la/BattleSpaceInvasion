@@ -17,9 +17,9 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private bool debugSpeedOn = false;
-    private float debugSpeed = 10.0f;
+    private float debugSpeed = 10.0f;//10
     private float speed = 2.5f;
-    private float speed_modifier = 1.0f;
+    private float speed_modifier = 5.0f;
 
    
 
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 
     //ROBOT energy variable
     [SerializeField]
-    private float robotEnergy = 20.0f;
+    private float robotEnergy = 100.0f;
 
     [SerializeField]
     private float fireMissileEnergyConsumption = 15f;

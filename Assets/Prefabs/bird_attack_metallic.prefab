@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1836924514197819864, guid: 708f272c96b343e909c1cf0e6701723d, type: 3}
   t: 0
-  speed: 2
+  speed: 1
 --- !u!95 &6797641929617142466
 Animator:
   serializedVersion: 4
