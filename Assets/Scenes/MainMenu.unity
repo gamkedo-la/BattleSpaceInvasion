@@ -14960,7 +14960,9 @@ MonoBehaviour:
     large laser graphic\n\nChrister \"McFunkypants\" Kaitila: Tank mech art, jungle
     boss tighter fit collider, jungle sun rays, light text editing\n\nAshleigh M.:
     Lives icon\n\nPatrick Moffett: Player lives implementation\n\nKlaim (A. Jo\xEBl
-    Lamotte): Playtesting\n\nGame developed in HomeTeamGameDev Lighthouse group"
+    Lamotte): Playtesting\n\nChris De Leon: Credits, Gentler Screenshake, Clicking
+    on story screen instanly finishing typing. \n\nGame developed in HomeTeamGameDev
+    Lighthouse group"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
