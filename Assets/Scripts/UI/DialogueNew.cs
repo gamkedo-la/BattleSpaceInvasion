@@ -11,6 +11,7 @@ public class DialogueNew : MonoBehaviour
     private int index;
     public float typingSpeed;
     public string sceneToOpenAfter;
+    private bool clickedSoSpeedUp = false;
 
     public GameObject continueButton;
     void Start()
@@ -20,7 +21,11 @@ public class DialogueNew : MonoBehaviour
 
     void Update()
     {
-        if(textDisplay.text == sentences[index])
+        if(Input.GetMouseButtonDown(0)) {
+            Debug.Log("clicked");
+            clickedSoSpeedUp = true;
+        }
+        if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
         }
@@ -34,7 +39,9 @@ public class DialogueNew : MonoBehaviour
         foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            if (clickedSoSpeedUp == false) {
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
         audioManager.Stop("Narrarator");
 
@@ -42,7 +49,7 @@ public class DialogueNew : MonoBehaviour
 
     public void NextSentence()
     {
-       
+        clickedSoSpeedUp = false;
         continueButton.SetActive(false);
         if(index < sentences.Length - 1)
         {
