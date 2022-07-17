@@ -7,8 +7,9 @@ public class CameraShake : MonoBehaviour
     public static CameraShake instance;
     private Vector3 cameraStart;
     private float shakeEnergy = 0.0f;
-    private float shakeDecay = 0.7f;
-    private float dampenEffect = 0.3f;
+    private float shakeDecay = 0.5f;
+    private float dampenEffect = 0.04f;
+
     void Start()
     {
         instance = this;
@@ -17,7 +18,9 @@ public class CameraShake : MonoBehaviour
 
     void FixedUpdate()
     {
-        Camera.main.transform.position = cameraStart + Random.insideUnitSphere * shakeEnergy * dampenEffect;
+        float smoothK = 0.9f;
+        Camera.main.transform.position = smoothK* Camera.main.transform.position +
+            (1.0f-smoothK)*(cameraStart + Random.insideUnitSphere * shakeEnergy * dampenEffect);
         shakeEnergy *= shakeDecay;
     }
 
