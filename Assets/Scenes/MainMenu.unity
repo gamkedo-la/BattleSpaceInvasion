@@ -14952,15 +14952,15 @@ MonoBehaviour:
     version2 & implement large laser sound to mainAudioClips\n\nColton Henderson:
     Assorted level fixes (ship damage issue, missing pause menu), pause menu improvements,
     main menu volume options, audio bug fix, improved mothership collision, score
-    reset issue. Alter spawning time of enemies & bug fixes\n\nMichael Monty Tanner:
-    Sounds (large laser, astroid explosion), red ship scoring, ignimbrite boss healthbar,
-    enemy laser culling\n\nDrew Beardall: Bird AI and art (including metallic version),
-    additional asteroid variation\ncookieoverflow: Player boundary checking (initial
-    implementation), asteroid explosion effect, asteroid collision, large laser graphic\n\nChrister
-    \"McFunkypants\" Kaitila: Tank mech art, jungle boss tighter fit collider, jungle
-    sun rays, light text editing\n\nAshleigh M.: Lives icon\n\nPatrick Moffett: Player
-    lives implementation\n\nKlaim (A. Jo\xEBl Lamotte): Playtesting\n\nGame developed
-    in HomeTeamGameDev Lighthouse group"
+    reset issue. Alternate spawning time of enemies & bug fixes\n\nMichael Monty
+    Tanner: Sounds (large laser, astroid explosion), red ship scoring, ignimbrite
+    boss healthbar, enemy laser culling\n\nDrew Beardall: Bird AI and art (including
+    metallic version), additional asteroid variation\ncookieoverflow: Player boundary
+    checking (initial implementation), asteroid explosion effect, asteroid collision,
+    large laser graphic\n\nChrister \"McFunkypants\" Kaitila: Tank mech art, jungle
+    boss tighter fit collider, jungle sun rays, light text editing\n\nAshleigh M.:
+    Lives icon\n\nPatrick Moffett: Player lives implementation\n\nKlaim (A. Jo\xEBl
+    Lamotte): Playtesting\n\nGame developed in HomeTeamGameDev Lighthouse group"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
